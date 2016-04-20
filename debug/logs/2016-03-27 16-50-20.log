@@ -1,0 +1,1589 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+16:50:17.0 (653522)|HEAP_ALLOCATE|[72]|Bytes:3
+16:50:17.0 (770271)|HEAP_ALLOCATE|[77]|Bytes:152
+16:50:17.0 (795368)|HEAP_ALLOCATE|[342]|Bytes:408
+16:50:17.0 (816629)|HEAP_ALLOCATE|[355]|Bytes:408
+16:50:17.0 (836256)|HEAP_ALLOCATE|[467]|Bytes:48
+16:50:17.2 (2602820)|STATEMENT_EXECUTE|[1]
+16:50:17.2 (2649978)|HEAP_ALLOCATE|[50]|Bytes:5
+16:50:17.2 (2680865)|HEAP_ALLOCATE|[56]|Bytes:5
+16:50:17.2 (2690029)|HEAP_ALLOCATE|[64]|Bytes:7
+16:50:17.2 (2719730)|SYSTEM_MODE_ENTER|false
+16:50:17.2 (2744697)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+16:50:17.2 (2749536)|STATEMENT_EXECUTE|[423]
+16:50:17.2 (2751462)|STATEMENT_EXECUTE|[446]
+16:50:17.2 (2752941)|STATEMENT_EXECUTE|[472]
+16:50:17.2 (2754089)|STATEMENT_EXECUTE|[488]
+16:50:17.2 (2760414)|SYSTEM_MODE_EXIT|false
+16:50:17.2 (2774675)|METHOD_EXIT|[1]|PermissionSetPortalControllers
+16:50:17.2 (2780119)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:7
+16:50:17.2 (2787074)|SYSTEM_MODE_ENTER|false
+16:50:17.2 (2799174)|VARIABLE_SCOPE_BEGIN|[221]|selectedObject|String|false|false
+16:50:17.2 (2836483)|VARIABLE_ASSIGNMENT|[221]|selectedObject|"account"
+16:50:17.2 (2854016)|HEAP_ALLOCATE|[222]|Bytes:5
+16:50:17.2 (2859006)|STATEMENT_EXECUTE|[221]
+16:50:17.2 (2860626)|STATEMENT_EXECUTE|[222]
+16:50:17.2 (2861876)|STATEMENT_EXECUTE|[222]
+16:50:17.2 (2863189)|STATEMENT_EXECUTE|[224]
+16:50:17.2 (2867107)|HEAP_ALLOCATE|[224]|Bytes:28
+16:50:17.2 (2884682)|HEAP_ALLOCATE|[224]|Bytes:35
+16:50:17.2 (2925936)|ENTERING_MANAGED_PKG|
+16:50:17.2 (2973600)|USER_DEBUG|[224]|DEBUG|##### Selected Object Name: account
+16:50:17.2 (2984642)|STATEMENT_EXECUTE|[226]
+16:50:17.2 (2991682)|HEAP_ALLOCATE|[226]|Bytes:4
+16:50:17.2 (3013931)|ENTERING_MANAGED_PKG|
+16:50:17.2 (3053030)|VARIABLE_SCOPE_BEGIN|[226]|individiaulObjFields|List<String>|true|false
+16:50:17.2 (3098008)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (3126975)|VARIABLE_ASSIGNMENT|[226]|individiaulObjFields|{"s":1,"v":[]}|0x230c9bd
+16:50:17.2 (3130968)|STATEMENT_EXECUTE|[229]
+16:50:17.2 (3158210)|ENTERING_MANAGED_PKG|
+16:50:17.2 (22113620)|HEAP_ALLOCATE|[229]|Bytes:1416
+16:50:17.2 (22147182)|VARIABLE_SCOPE_BEGIN|[229]|schemaMap|Map<String,Schema.SObjectType>|true|false
+16:50:17.2 (22463794)|VARIABLE_ASSIGNMENT|[229]|schemaMap|"{acceptedeventrelation=AcceptedEventRelation, account=Account, accountcleaninfo=AccountCleanInfo, accountcontactrole=AccountContactRole, accountfeed=AccountFeed, accounthistory=AccountHistory, accountpartner=AccountPartner, accountshare=AccountShare, actionlinkgrouptemplate=ActionLinkGroupTemplate, actionlinktemplate=ActionLinkTemplate, ...}"|0x5e82c576
+16:50:17.2 (22509050)|ENTERING_MANAGED_PKG|
+16:50:17.2 (22582133)|STATEMENT_EXECUTE|[233]
+16:50:17.2 (22585113)|STATEMENT_EXECUTE|[234]
+16:50:17.2 (22603937)|ENTERING_MANAGED_PKG|
+16:50:17.2 (23409218)|HEAP_ALLOCATE|[234]|Bytes:4
+16:50:17.2 (24828389)|HEAP_ALLOCATE|[234]|Bytes:264
+16:50:17.2 (24840302)|VARIABLE_SCOPE_BEGIN|[234]|IndividiaulfieldMap|Map<String,Schema.SObjectField>|true|false
+16:50:17.2 (25004390)|VARIABLE_ASSIGNMENT|[234]|IndividiaulfieldMap|"{accountnumber=AccountNumber, accountsource=AccountSource, annualrevenue=AnnualRevenue, billingaddress=BillingAddress, billingcity=BillingCity, billingcountry=BillingCountry, billinggeocodeaccuracy=BillingGeocodeAccuracy, billinglatitude=BillingLatitude, billinglongitude=BillingLongitude, billingpostalcode=BillingPostalCode, ...}"|0x5b01b915
+16:50:17.2 (25031135)|ENTERING_MANAGED_PKG|
+16:50:17.2 (25066305)|STATEMENT_EXECUTE|[237]
+16:50:17.2 (25085663)|ENTERING_MANAGED_PKG|
+16:50:17.2 (25160358)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:264
+16:50:17.2 (25189492)|HEAP_ALLOCATE|[238]|Bytes:264
+16:50:17.2 (25217974)|ENTERING_MANAGED_PKG|
+16:50:17.2 (25332595)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (25362042)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (25428956)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@320b31ee"|0x320b31ee
+16:50:17.2 (25435066)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (25436729)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (26119628)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (26165129)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (26247308)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@fc570650"|0x1887d6a6
+16:50:17.2 (26253137)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (26260180)|HEAP_ALLOCATE|[241]|Bytes:14
+16:50:17.2 (26299680)|ENTERING_MANAGED_PKG|
+16:50:17.2 (35588262)|HEAP_ALLOCATE|[241]|Bytes:1052
+16:50:17.2 (35618825)|HEAP_ALLOCATE|[241]|Bytes:1066
+16:50:17.2 (35647945)|ENTERING_MANAGED_PKG|
+16:50:17.2 (35662822)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=18;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Account ID;getLength=18;getLocalName=Id;getMask=null;getMaskType=null;getName=Id;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=ID;getSobjectField=Id;getType=ID;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=false;isCustom=false;isDefaultedOnCreate=true;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=true;isNameField=false;isNamePointing=false;isNillable=false;isPermissionable=false;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=false;isWriteRequiresMasterRead=false;]
+16:50:17.2 (35678387)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (35683614)|HEAP_ALLOCATE|[242]|Bytes:18
+16:50:17.2 (35700263)|HEAP_ALLOCATE|[242]|Bytes:2
+16:50:17.2 (35707304)|HEAP_ALLOCATE|[242]|Bytes:20
+16:50:17.2 (35722392)|ENTERING_MANAGED_PKG|
+16:50:17.2 (35754777)|USER_DEBUG|[242]|DEBUG|####### field key Id
+16:50:17.2 (35761959)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (35772146)|HEAP_ALLOCATE|[243]|Bytes:2
+16:50:17.2 (35796187)|ENTERING_MANAGED_PKG|
+16:50:17.2 (35835963)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (35859919)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (35880166)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (35952046)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@50c3cc6"|0x50c3cc6
+16:50:17.2 (35957760)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (35959199)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (36113346)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (36125270)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (36198489)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@fda9bfef"|0x5fc56287
+16:50:17.2 (36203830)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (36226101)|ENTERING_MANAGED_PKG|
+16:50:17.2 (36369983)|HEAP_ALLOCATE|[241]|Bytes:1080
+16:50:17.2 (36386868)|HEAP_ALLOCATE|[241]|Bytes:1094
+16:50:17.2 (36401016)|ENTERING_MANAGED_PKG|
+16:50:17.2 (36408097)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=0;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Deleted;getLength=0;getLocalName=IsDeleted;getMask=null;getMaskType=null;getName=IsDeleted;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=BOOLEAN;getSobjectField=IsDeleted;getType=BOOLEAN;isAccessible=true;isAggregatable=false;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=false;isCustom=false;isDefaultedOnCreate=true;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=false;isPermissionable=false;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=false;isWriteRequiresMasterRead=false;]
+16:50:17.2 (36420099)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (36427281)|HEAP_ALLOCATE|[242]|Bytes:9
+16:50:17.2 (36432416)|HEAP_ALLOCATE|[242]|Bytes:27
+16:50:17.2 (36443939)|ENTERING_MANAGED_PKG|
+16:50:17.2 (36449302)|USER_DEBUG|[242]|DEBUG|####### field key IsDeleted
+16:50:17.2 (36454523)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (36459159)|HEAP_ALLOCATE|[243]|Bytes:9
+16:50:17.2 (36471005)|ENTERING_MANAGED_PKG|
+16:50:17.2 (36474522)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (36488092)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (36503856)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (36565151)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@5313e463"|0x5313e463
+16:50:17.2 (36570663)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (36571971)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (36705065)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (36715667)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (36786238)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@9ebf3d58"|0x5155af9a
+16:50:17.2 (36791570)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (36813792)|ENTERING_MANAGED_PKG|
+16:50:17.2 (36943461)|HEAP_ALLOCATE|[241]|Bytes:1110
+16:50:17.2 (36960551)|HEAP_ALLOCATE|[241]|Bytes:1124
+16:50:17.2 (36980003)|ENTERING_MANAGED_PKG|
+16:50:17.2 (36987366)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=18;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Master Record ID;getLength=18;getLocalName=MasterRecordId;getMask=null;getMaskType=null;getName=MasterRecordId;getPrecision=0;getReferenceTargetField=null;getRelationshipName=MasterRecord;getRelationshipOrder=null;getScale=0;getSoapType=ID;getSobjectField=MasterRecordId;getType=REFERENCE;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=false;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=false;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=false;isWriteRequiresMasterRead=false;]
+16:50:17.2 (36999274)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (37006523)|HEAP_ALLOCATE|[242]|Bytes:14
+16:50:17.2 (37012540)|HEAP_ALLOCATE|[242]|Bytes:32
+16:50:17.2 (37023578)|ENTERING_MANAGED_PKG|
+16:50:17.2 (37029100)|USER_DEBUG|[242]|DEBUG|####### field key MasterRecordId
+16:50:17.2 (37034266)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (37038981)|HEAP_ALLOCATE|[243]|Bytes:14
+16:50:17.2 (37050663)|ENTERING_MANAGED_PKG|
+16:50:17.2 (37054139)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (37067392)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (37083220)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (37144223)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@1e22b8ee"|0x1e22b8ee
+16:50:17.2 (37150000)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (37151807)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (37339792)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (37350514)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (37419362)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@3424f4b9"|0x10a0e6a
+16:50:17.2 (37424678)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (37446435)|ENTERING_MANAGED_PKG|
+16:50:17.2 (37574888)|HEAP_ALLOCATE|[241]|Bytes:1069
+16:50:17.2 (37591589)|HEAP_ALLOCATE|[241]|Bytes:1083
+16:50:17.2 (37605364)|ENTERING_MANAGED_PKG|
+16:50:17.2 (37612385)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=765;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Account Name;getLength=255;getLocalName=Name;getMask=null;getMaskType=null;getName=Name;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=Name;getType=STRING;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=true;isNamePointing=false;isNillable=false;isPermissionable=false;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (37623359)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (37630459)|HEAP_ALLOCATE|[242]|Bytes:4
+16:50:17.2 (37635416)|HEAP_ALLOCATE|[242]|Bytes:22
+16:50:17.2 (37646298)|ENTERING_MANAGED_PKG|
+16:50:17.2 (37651606)|USER_DEBUG|[242]|DEBUG|####### field key Name
+16:50:17.2 (37656630)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (37661136)|HEAP_ALLOCATE|[243]|Bytes:4
+16:50:17.2 (37672644)|ENTERING_MANAGED_PKG|
+16:50:17.2 (37676768)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (37689823)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (37705296)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (37765973)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@75cd7e85"|0x75cd7e85
+16:50:17.2 (37771463)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (37772784)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (38506075)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (38518443)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (38588992)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@b00308e1"|0x4a71938
+16:50:17.2 (38594439)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (38616779)|ENTERING_MANAGED_PKG|
+16:50:17.2 (39265777)|HEAP_ALLOCATE|[241]|Bytes:1069
+16:50:17.2 (39284854)|HEAP_ALLOCATE|[241]|Bytes:1083
+16:50:17.2 (39299833)|ENTERING_MANAGED_PKG|
+16:50:17.2 (39307125)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=120;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Account Type;getLength=40;getLocalName=Type;getMask=null;getMaskType=null;getName=Type;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=Type;getType=PICKLIST;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (39318904)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (39326552)|HEAP_ALLOCATE|[242]|Bytes:4
+16:50:17.2 (39331594)|HEAP_ALLOCATE|[242]|Bytes:22
+16:50:17.2 (39342507)|ENTERING_MANAGED_PKG|
+16:50:17.2 (39348043)|USER_DEBUG|[242]|DEBUG|####### field key Type
+16:50:17.2 (39353270)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (39357915)|HEAP_ALLOCATE|[243]|Bytes:4
+16:50:17.2 (39369684)|ENTERING_MANAGED_PKG|
+16:50:17.2 (39373244)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (39387060)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (39402917)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (39464711)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@114396f6"|0x114396f6
+16:50:17.2 (39470329)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (39471679)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (39650606)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (39661204)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (39730949)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@d7c232dc"|0xd54c20d
+16:50:17.2 (39736499)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (39758361)|ENTERING_MANAGED_PKG|
+16:50:17.2 (39887450)|HEAP_ALLOCATE|[241]|Bytes:1084
+16:50:17.2 (39904115)|HEAP_ALLOCATE|[241]|Bytes:1098
+16:50:17.2 (39917772)|ENTERING_MANAGED_PKG|
+16:50:17.2 (39924665)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=18;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Parent Account ID;getLength=18;getLocalName=ParentId;getMask=null;getMaskType=null;getName=ParentId;getPrecision=0;getReferenceTargetField=null;getRelationshipName=Parent;getRelationshipOrder=null;getScale=0;getSoapType=ID;getSobjectField=ParentId;getType=REFERENCE;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (39935725)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (39942656)|HEAP_ALLOCATE|[242]|Bytes:8
+16:50:17.2 (39947521)|HEAP_ALLOCATE|[242]|Bytes:26
+16:50:17.2 (39958250)|ENTERING_MANAGED_PKG|
+16:50:17.2 (39967997)|USER_DEBUG|[242]|DEBUG|####### field key ParentId
+16:50:17.2 (39973694)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (39978607)|HEAP_ALLOCATE|[243]|Bytes:8
+16:50:17.2 (39991010)|ENTERING_MANAGED_PKG|
+16:50:17.2 (39994569)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (40007911)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (40024093)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (40084221)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@5d3f5841"|0x5d3f5841
+16:50:17.2 (40089929)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (40091253)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (40229718)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (40240545)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (40308917)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@10bb41d1"|0x159030da
+16:50:17.2 (40314290)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (40335819)|ENTERING_MANAGED_PKG|
+16:50:17.2 (40462752)|HEAP_ALLOCATE|[241]|Bytes:1099
+16:50:17.2 (40479488)|HEAP_ALLOCATE|[241]|Bytes:1113
+16:50:17.2 (40493073)|ENTERING_MANAGED_PKG|
+16:50:17.2 (40499988)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=765;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Billing Street;getLength=255;getLocalName=BillingStreet;getMask=null;getMaskType=null;getName=BillingStreet;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=BillingStreet;getType=TEXTAREA;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (40511264)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (40518159)|HEAP_ALLOCATE|[242]|Bytes:13
+16:50:17.2 (40523080)|HEAP_ALLOCATE|[242]|Bytes:31
+16:50:17.2 (40533741)|ENTERING_MANAGED_PKG|
+16:50:17.2 (40538879)|USER_DEBUG|[242]|DEBUG|####### field key BillingStreet
+16:50:17.2 (40544169)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (40548820)|HEAP_ALLOCATE|[243]|Bytes:13
+16:50:17.2 (40560370)|ENTERING_MANAGED_PKG|
+16:50:17.2 (40563836)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (40577033)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (40592478)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (40652146)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@56d17ec0"|0x56d17ec0
+16:50:17.2 (40657550)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (40658883)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (40780653)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (40791226)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (40858603)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@288bd3ae"|0x7eca13e
+16:50:17.2 (40863898)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (40885260)|ENTERING_MANAGED_PKG|
+16:50:17.2 (41015706)|HEAP_ALLOCATE|[241]|Bytes:1088
+16:50:17.2 (41032863)|HEAP_ALLOCATE|[241]|Bytes:1102
+16:50:17.2 (41046611)|ENTERING_MANAGED_PKG|
+16:50:17.2 (41053785)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=120;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Billing City;getLength=40;getLocalName=BillingCity;getMask=null;getMaskType=null;getName=BillingCity;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=BillingCity;getType=STRING;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (41065086)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (41072055)|HEAP_ALLOCATE|[242]|Bytes:11
+16:50:17.2 (41077135)|HEAP_ALLOCATE|[242]|Bytes:29
+16:50:17.2 (41087857)|ENTERING_MANAGED_PKG|
+16:50:17.2 (41093204)|USER_DEBUG|[242]|DEBUG|####### field key BillingCity
+16:50:17.2 (41098343)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (41102707)|HEAP_ALLOCATE|[243]|Bytes:11
+16:50:17.2 (41114383)|ENTERING_MANAGED_PKG|
+16:50:17.2 (41117973)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (41131089)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (41146718)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (41210559)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@48f61bc9"|0x48f61bc9
+16:50:17.2 (41216062)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (41217368)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (41339411)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (41349892)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (41417075)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@4902c9e"|0x76bd72b1
+16:50:17.2 (41422301)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (41443550)|ENTERING_MANAGED_PKG|
+16:50:17.2 (41568371)|HEAP_ALLOCATE|[241]|Bytes:1101
+16:50:17.2 (41584613)|HEAP_ALLOCATE|[241]|Bytes:1115
+16:50:17.2 (41598153)|ENTERING_MANAGED_PKG|
+16:50:17.2 (41605154)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=240;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Billing State/Province;getLength=80;getLocalName=BillingState;getMask=null;getMaskType=null;getName=BillingState;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=BillingState;getType=STRING;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (41616338)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (41623086)|HEAP_ALLOCATE|[242]|Bytes:12
+16:50:17.2 (41628097)|HEAP_ALLOCATE|[242]|Bytes:30
+16:50:17.2 (41638993)|ENTERING_MANAGED_PKG|
+16:50:17.2 (41644433)|USER_DEBUG|[242]|DEBUG|####### field key BillingState
+16:50:17.2 (41649500)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (41653857)|HEAP_ALLOCATE|[243]|Bytes:12
+16:50:17.2 (41665465)|ENTERING_MANAGED_PKG|
+16:50:17.2 (41668897)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (41682236)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (41697464)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (41757161)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@450fc007"|0x450fc007
+16:50:17.2 (41762460)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (41763752)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (41882992)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (41893354)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (41959921)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@740649bd"|0x77fcb048
+16:50:17.2 (41969387)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (41991055)|ENTERING_MANAGED_PKG|
+16:50:17.2 (42114738)|HEAP_ALLOCATE|[241]|Bytes:1116
+16:50:17.2 (42131734)|HEAP_ALLOCATE|[241]|Bytes:1130
+16:50:17.2 (42145610)|ENTERING_MANAGED_PKG|
+16:50:17.2 (42152489)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=60;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Billing Zip/Postal Code;getLength=20;getLocalName=BillingPostalCode;getMask=null;getMaskType=null;getName=BillingPostalCode;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=BillingPostalCode;getType=STRING;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (42164096)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (42171701)|HEAP_ALLOCATE|[242]|Bytes:17
+16:50:17.2 (42179893)|HEAP_ALLOCATE|[242]|Bytes:35
+16:50:17.2 (42196855)|ENTERING_MANAGED_PKG|
+16:50:17.2 (42203665)|USER_DEBUG|[242]|DEBUG|####### field key BillingPostalCode
+16:50:17.2 (42209341)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (42214626)|HEAP_ALLOCATE|[243]|Bytes:17
+16:50:17.2 (42226566)|ENTERING_MANAGED_PKG|
+16:50:17.2 (42230057)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (42243212)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (42258446)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (42318520)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@625565b7"|0x625565b7
+16:50:17.2 (42323889)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (42325185)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (42444729)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (42455255)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (42522022)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@47ddf6ed"|0x1a1d7b50
+16:50:17.2 (42527461)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (42548909)|ENTERING_MANAGED_PKG|
+16:50:17.2 (42672680)|HEAP_ALLOCATE|[241]|Bytes:1100
+16:50:17.2 (42688948)|HEAP_ALLOCATE|[241]|Bytes:1114
+16:50:17.2 (42702675)|ENTERING_MANAGED_PKG|
+16:50:17.2 (42709644)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=240;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Billing Country;getLength=80;getLocalName=BillingCountry;getMask=null;getMaskType=null;getName=BillingCountry;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=BillingCountry;getType=STRING;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (42721174)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (42728011)|HEAP_ALLOCATE|[242]|Bytes:14
+16:50:17.2 (42732935)|HEAP_ALLOCATE|[242]|Bytes:32
+16:50:17.2 (42743719)|ENTERING_MANAGED_PKG|
+16:50:17.2 (42749215)|USER_DEBUG|[242]|DEBUG|####### field key BillingCountry
+16:50:17.2 (42754179)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (42758748)|HEAP_ALLOCATE|[243]|Bytes:14
+16:50:17.2 (42770220)|ENTERING_MANAGED_PKG|
+16:50:17.2 (42773589)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (42786557)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (42801802)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (42861748)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@3faf2043"|0x3faf2043
+16:50:17.2 (42867408)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (42868705)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (42997311)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (43007746)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (43075131)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@ef300d1"|0x582c393d
+16:50:17.2 (43080374)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (43101331)|ENTERING_MANAGED_PKG|
+16:50:17.2 (43228370)|HEAP_ALLOCATE|[241]|Bytes:1104
+16:50:17.2 (43244494)|HEAP_ALLOCATE|[241]|Bytes:1118
+16:50:17.2 (43258255)|ENTERING_MANAGED_PKG|
+16:50:17.2 (43265290)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=0;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Billing Latitude;getLength=0;getLocalName=BillingLatitude;getMask=null;getMaskType=null;getName=BillingLatitude;getPrecision=18;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=15;getSoapType=DOUBLE;getSobjectField=BillingLatitude;getType=DOUBLE;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=false;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (43276335)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (43283074)|HEAP_ALLOCATE|[242]|Bytes:15
+16:50:17.2 (43288131)|HEAP_ALLOCATE|[242]|Bytes:33
+16:50:17.2 (43298879)|ENTERING_MANAGED_PKG|
+16:50:17.2 (43304010)|USER_DEBUG|[242]|DEBUG|####### field key BillingLatitude
+16:50:17.2 (43309351)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (43313880)|HEAP_ALLOCATE|[243]|Bytes:15
+16:50:17.2 (43325365)|ENTERING_MANAGED_PKG|
+16:50:17.2 (43328858)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (43341624)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (43356634)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (43415704)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@477f5c2c"|0x477f5c2c
+16:50:17.2 (43421221)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (43422503)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (43545229)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (43555730)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (43622901)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@84ccae71"|0x4a39e469
+16:50:17.2 (43628243)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (43649131)|ENTERING_MANAGED_PKG|
+16:50:17.2 (43772236)|HEAP_ALLOCATE|[241]|Bytes:1108
+16:50:17.2 (43788637)|HEAP_ALLOCATE|[241]|Bytes:1122
+16:50:17.2 (43802549)|ENTERING_MANAGED_PKG|
+16:50:17.2 (43809467)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=0;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Billing Longitude;getLength=0;getLocalName=BillingLongitude;getMask=null;getMaskType=null;getName=BillingLongitude;getPrecision=18;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=15;getSoapType=DOUBLE;getSobjectField=BillingLongitude;getType=DOUBLE;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=false;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (43820305)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (43827108)|HEAP_ALLOCATE|[242]|Bytes:16
+16:50:17.2 (43832158)|HEAP_ALLOCATE|[242]|Bytes:34
+16:50:17.2 (43842658)|ENTERING_MANAGED_PKG|
+16:50:17.2 (43848119)|USER_DEBUG|[242]|DEBUG|####### field key BillingLongitude
+16:50:17.2 (43853338)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (43857828)|HEAP_ALLOCATE|[243]|Bytes:16
+16:50:17.2 (43869340)|ENTERING_MANAGED_PKG|
+16:50:17.2 (43872743)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (43885552)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (43900959)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (43960681)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@7c4bb33c"|0x7c4bb33c
+16:50:17.2 (43970367)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (43971741)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (44094236)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (44105874)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (44173027)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@492e8385"|0x3ba145e3
+16:50:17.2 (44179500)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (44201006)|ENTERING_MANAGED_PKG|
+16:50:17.2 (44395394)|HEAP_ALLOCATE|[241]|Bytes:1135
+16:50:17.2 (44411727)|HEAP_ALLOCATE|[241]|Bytes:1149
+16:50:17.2 (44425405)|ENTERING_MANAGED_PKG|
+16:50:17.2 (44432255)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=120;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Billing Geocode Accuracy;getLength=40;getLocalName=BillingGeocodeAccuracy;getMask=null;getMaskType=null;getName=BillingGeocodeAccuracy;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=BillingGeocodeAccuracy;getType=PICKLIST;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (44443451)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (44450158)|HEAP_ALLOCATE|[242]|Bytes:22
+16:50:17.2 (44455070)|HEAP_ALLOCATE|[242]|Bytes:40
+16:50:17.2 (44465952)|ENTERING_MANAGED_PKG|
+16:50:17.2 (44471355)|USER_DEBUG|[242]|DEBUG|####### field key BillingGeocodeAccuracy
+16:50:17.2 (44476474)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (44480848)|HEAP_ALLOCATE|[243]|Bytes:22
+16:50:17.2 (44492472)|ENTERING_MANAGED_PKG|
+16:50:17.2 (44496313)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (44509563)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (44524783)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (44584425)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@357a09df"|0x357a09df
+16:50:17.2 (44589838)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (44591205)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (44718653)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (44728911)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (44795747)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@8d6d5cc5"|0x38463e38
+16:50:17.2 (44800968)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (44821767)|ENTERING_MANAGED_PKG|
+16:50:17.2 (44945022)|HEAP_ALLOCATE|[241]|Bytes:1103
+16:50:17.2 (44961108)|HEAP_ALLOCATE|[241]|Bytes:1117
+16:50:17.2 (44979703)|ENTERING_MANAGED_PKG|
+16:50:17.2 (44986927)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=0;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Billing Address;getLength=0;getLocalName=BillingAddress;getMask=null;getMaskType=null;getName=BillingAddress;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=ADDRESS;getSobjectField=BillingAddress;getType=ADDRESS;isAccessible=true;isAggregatable=false;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=false;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=false;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=true;isRestrictedDelete=false;isSortable=false;isUnique=false;isUpdateable=false;isWriteRequiresMasterRead=false;]
+16:50:17.2 (44998186)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (45005306)|HEAP_ALLOCATE|[242]|Bytes:14
+16:50:17.2 (45011328)|HEAP_ALLOCATE|[242]|Bytes:32
+16:50:17.2 (45022622)|ENTERING_MANAGED_PKG|
+16:50:17.2 (45028200)|USER_DEBUG|[242]|DEBUG|####### field key BillingAddress
+16:50:17.2 (45033413)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (45037882)|HEAP_ALLOCATE|[243]|Bytes:14
+16:50:17.2 (45049460)|ENTERING_MANAGED_PKG|
+16:50:17.2 (45053000)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (45065919)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (45081230)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (45140361)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@73918a0b"|0x73918a0b
+16:50:17.2 (45145646)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (45147021)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (45281369)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (45291945)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (45358609)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@d49e636e"|0x703aeba0
+16:50:17.2 (45364037)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (45385021)|ENTERING_MANAGED_PKG|
+16:50:17.2 (45508311)|HEAP_ALLOCATE|[241]|Bytes:1103
+16:50:17.2 (45524315)|HEAP_ALLOCATE|[241]|Bytes:1117
+16:50:17.2 (45537919)|ENTERING_MANAGED_PKG|
+16:50:17.2 (45544925)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=765;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Shipping Street;getLength=255;getLocalName=ShippingStreet;getMask=null;getMaskType=null;getName=ShippingStreet;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=ShippingStreet;getType=TEXTAREA;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (45556214)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (45563171)|HEAP_ALLOCATE|[242]|Bytes:14
+16:50:17.2 (45568129)|HEAP_ALLOCATE|[242]|Bytes:32
+16:50:17.2 (45578867)|ENTERING_MANAGED_PKG|
+16:50:17.2 (45584096)|USER_DEBUG|[242]|DEBUG|####### field key ShippingStreet
+16:50:17.2 (45589235)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (45593818)|HEAP_ALLOCATE|[243]|Bytes:14
+16:50:17.2 (45605527)|ENTERING_MANAGED_PKG|
+16:50:17.2 (45609003)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (45621926)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (45637020)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (45696235)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@4e323669"|0x4e323669
+16:50:17.2 (45701759)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (45703062)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (45820297)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (45830889)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (45897654)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@10df6707"|0x736065eb
+16:50:17.2 (45902899)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (45924055)|ENTERING_MANAGED_PKG|
+16:50:17.2 (46051866)|HEAP_ALLOCATE|[241]|Bytes:1092
+16:50:17.2 (46068635)|HEAP_ALLOCATE|[241]|Bytes:1106
+16:50:17.2 (46082386)|ENTERING_MANAGED_PKG|
+16:50:17.2 (46089500)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=120;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Shipping City;getLength=40;getLocalName=ShippingCity;getMask=null;getMaskType=null;getName=ShippingCity;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=ShippingCity;getType=STRING;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (46100494)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (46107287)|HEAP_ALLOCATE|[242]|Bytes:12
+16:50:17.2 (46112320)|HEAP_ALLOCATE|[242]|Bytes:30
+16:50:17.2 (46123185)|ENTERING_MANAGED_PKG|
+16:50:17.2 (46128714)|USER_DEBUG|[242]|DEBUG|####### field key ShippingCity
+16:50:17.2 (46134047)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (46138636)|HEAP_ALLOCATE|[243]|Bytes:12
+16:50:17.2 (46150236)|ENTERING_MANAGED_PKG|
+16:50:17.2 (46153660)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (46166519)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (46184729)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (46244837)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@6f41aec0"|0x6f41aec0
+16:50:17.2 (46250274)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (46251533)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (46370159)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (46380627)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (46447073)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@5157b148"|0x1df2368e
+16:50:17.2 (46452378)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (46473238)|ENTERING_MANAGED_PKG|
+16:50:17.2 (46596372)|HEAP_ALLOCATE|[241]|Bytes:1105
+16:50:17.2 (46612344)|HEAP_ALLOCATE|[241]|Bytes:1119
+16:50:17.2 (46626195)|ENTERING_MANAGED_PKG|
+16:50:17.2 (46633125)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=240;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Shipping State/Province;getLength=80;getLocalName=ShippingState;getMask=null;getMaskType=null;getName=ShippingState;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=ShippingState;getType=STRING;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (46644161)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (46650848)|HEAP_ALLOCATE|[242]|Bytes:13
+16:50:17.2 (46655848)|HEAP_ALLOCATE|[242]|Bytes:31
+16:50:17.2 (46666563)|ENTERING_MANAGED_PKG|
+16:50:17.2 (46671790)|USER_DEBUG|[242]|DEBUG|####### field key ShippingState
+16:50:17.2 (46677046)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (46681557)|HEAP_ALLOCATE|[243]|Bytes:13
+16:50:17.2 (46692880)|ENTERING_MANAGED_PKG|
+16:50:17.2 (46696289)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (46709002)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (46723955)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (46783522)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@a106606"|0xa106606
+16:50:17.2 (46788805)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (46790098)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (46907483)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (46918132)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (46989368)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@cbe86e62"|0x25adb430
+16:50:17.2 (46994690)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (47015751)|ENTERING_MANAGED_PKG|
+16:50:17.2 (47138615)|HEAP_ALLOCATE|[241]|Bytes:1120
+16:50:17.2 (47154456)|HEAP_ALLOCATE|[241]|Bytes:1134
+16:50:17.2 (47168115)|ENTERING_MANAGED_PKG|
+16:50:17.2 (47176582)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=60;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Shipping Zip/Postal Code;getLength=20;getLocalName=ShippingPostalCode;getMask=null;getMaskType=null;getName=ShippingPostalCode;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=ShippingPostalCode;getType=STRING;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (47189624)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (47196807)|HEAP_ALLOCATE|[242]|Bytes:18
+16:50:17.2 (47202109)|HEAP_ALLOCATE|[242]|Bytes:36
+16:50:17.2 (47213792)|ENTERING_MANAGED_PKG|
+16:50:17.2 (47219385)|USER_DEBUG|[242]|DEBUG|####### field key ShippingPostalCode
+16:50:17.2 (47224503)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (47229028)|HEAP_ALLOCATE|[243]|Bytes:18
+16:50:17.2 (47240651)|ENTERING_MANAGED_PKG|
+16:50:17.2 (47244457)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (47257487)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (47272740)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (47332368)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@75ae749d"|0x75ae749d
+16:50:17.2 (47337898)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (47339209)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (47457685)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (47468149)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (47534066)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@717a8b6c"|0x4ba687be
+16:50:17.2 (47539280)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (47560366)|ENTERING_MANAGED_PKG|
+16:50:17.2 (47681880)|HEAP_ALLOCATE|[241]|Bytes:1104
+16:50:17.2 (47697832)|HEAP_ALLOCATE|[241]|Bytes:1118
+16:50:17.2 (47711431)|ENTERING_MANAGED_PKG|
+16:50:17.2 (47718272)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=240;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Shipping Country;getLength=80;getLocalName=ShippingCountry;getMask=null;getMaskType=null;getName=ShippingCountry;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=ShippingCountry;getType=STRING;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (47729082)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (47736252)|HEAP_ALLOCATE|[242]|Bytes:15
+16:50:17.2 (47741272)|HEAP_ALLOCATE|[242]|Bytes:33
+16:50:17.2 (47752068)|ENTERING_MANAGED_PKG|
+16:50:17.2 (47757518)|USER_DEBUG|[242]|DEBUG|####### field key ShippingCountry
+16:50:17.2 (47762489)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (47767067)|HEAP_ALLOCATE|[243]|Bytes:15
+16:50:17.2 (47778617)|ENTERING_MANAGED_PKG|
+16:50:17.2 (47782090)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (47795175)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (47810497)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (47869718)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@2a70853f"|0x2a70853f
+16:50:17.2 (47875057)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (47876409)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (48003304)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (48014594)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (48080973)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@9857f17b"|0x2c6aa3b9
+16:50:17.2 (48086444)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (48107636)|ENTERING_MANAGED_PKG|
+16:50:17.2 (48233511)|HEAP_ALLOCATE|[241]|Bytes:1108
+16:50:17.2 (48249787)|HEAP_ALLOCATE|[241]|Bytes:1122
+16:50:17.2 (48263466)|ENTERING_MANAGED_PKG|
+16:50:17.2 (48270310)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=0;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Shipping Latitude;getLength=0;getLocalName=ShippingLatitude;getMask=null;getMaskType=null;getName=ShippingLatitude;getPrecision=18;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=15;getSoapType=DOUBLE;getSobjectField=ShippingLatitude;getType=DOUBLE;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=false;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (48282074)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (48288933)|HEAP_ALLOCATE|[242]|Bytes:16
+16:50:17.2 (48293852)|HEAP_ALLOCATE|[242]|Bytes:34
+16:50:17.2 (48304405)|ENTERING_MANAGED_PKG|
+16:50:17.2 (48309821)|USER_DEBUG|[242]|DEBUG|####### field key ShippingLatitude
+16:50:17.2 (48314776)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (48319509)|HEAP_ALLOCATE|[243]|Bytes:16
+16:50:17.2 (48331014)|ENTERING_MANAGED_PKG|
+16:50:17.2 (48334346)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (48347178)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (48362222)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (48421858)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@4825191f"|0x4825191f
+16:50:17.2 (48427099)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (48428399)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (48548651)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (48558981)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (48625425)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@9dbd6c34"|0x56b9b414
+16:50:17.2 (48630721)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (48651727)|ENTERING_MANAGED_PKG|
+16:50:17.2 (48774911)|HEAP_ALLOCATE|[241]|Bytes:1112
+16:50:17.2 (48790926)|HEAP_ALLOCATE|[241]|Bytes:1126
+16:50:17.2 (48804705)|ENTERING_MANAGED_PKG|
+16:50:17.2 (48811602)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=0;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Shipping Longitude;getLength=0;getLocalName=ShippingLongitude;getMask=null;getMaskType=null;getName=ShippingLongitude;getPrecision=18;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=15;getSoapType=DOUBLE;getSobjectField=ShippingLongitude;getType=DOUBLE;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=false;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (48822286)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (48829046)|HEAP_ALLOCATE|[242]|Bytes:17
+16:50:17.2 (48834130)|HEAP_ALLOCATE|[242]|Bytes:35
+16:50:17.2 (48844745)|ENTERING_MANAGED_PKG|
+16:50:17.2 (48850271)|USER_DEBUG|[242]|DEBUG|####### field key ShippingLongitude
+16:50:17.2 (48855270)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (48859755)|HEAP_ALLOCATE|[243]|Bytes:17
+16:50:17.2 (48871324)|ENTERING_MANAGED_PKG|
+16:50:17.2 (48874691)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (48887390)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (48902351)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (48961148)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@418c664b"|0x418c664b
+16:50:17.2 (48970736)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (48972083)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (49089517)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (49100631)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (49166481)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@8bbd02cd"|0x73316af2
+16:50:17.2 (49172151)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (49195602)|ENTERING_MANAGED_PKG|
+16:50:17.2 (49364420)|HEAP_ALLOCATE|[241]|Bytes:1139
+16:50:17.2 (49381139)|HEAP_ALLOCATE|[241]|Bytes:1153
+16:50:17.2 (49394894)|ENTERING_MANAGED_PKG|
+16:50:17.2 (49402018)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=120;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Shipping Geocode Accuracy;getLength=40;getLocalName=ShippingGeocodeAccuracy;getMask=null;getMaskType=null;getName=ShippingGeocodeAccuracy;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=ShippingGeocodeAccuracy;getType=PICKLIST;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (49413548)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (49420447)|HEAP_ALLOCATE|[242]|Bytes:23
+16:50:17.2 (49425412)|HEAP_ALLOCATE|[242]|Bytes:41
+16:50:17.2 (49436265)|ENTERING_MANAGED_PKG|
+16:50:17.2 (49441674)|USER_DEBUG|[242]|DEBUG|####### field key ShippingGeocodeAccuracy
+16:50:17.2 (49446770)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (49451354)|HEAP_ALLOCATE|[243]|Bytes:23
+16:50:17.2 (49462861)|ENTERING_MANAGED_PKG|
+16:50:17.2 (49466384)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (49479305)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (49494627)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (49554048)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@4780e87b"|0x4780e87b
+16:50:17.2 (49559318)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (49561028)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (49667050)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (49677334)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (49743050)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@46a3ba18"|0x4c94871a
+16:50:17.2 (49748200)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (49769085)|ENTERING_MANAGED_PKG|
+16:50:17.2 (49890951)|HEAP_ALLOCATE|[241]|Bytes:1107
+16:50:17.2 (49906767)|HEAP_ALLOCATE|[241]|Bytes:1121
+16:50:17.2 (49920561)|ENTERING_MANAGED_PKG|
+16:50:17.2 (49927500)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=0;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Shipping Address;getLength=0;getLocalName=ShippingAddress;getMask=null;getMaskType=null;getName=ShippingAddress;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=ADDRESS;getSobjectField=ShippingAddress;getType=ADDRESS;isAccessible=true;isAggregatable=false;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=false;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=false;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=true;isRestrictedDelete=false;isSortable=false;isUnique=false;isUpdateable=false;isWriteRequiresMasterRead=false;]
+16:50:17.2 (49938501)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (49945343)|HEAP_ALLOCATE|[242]|Bytes:15
+16:50:17.2 (49950319)|HEAP_ALLOCATE|[242]|Bytes:33
+16:50:17.2 (49961012)|ENTERING_MANAGED_PKG|
+16:50:17.2 (49971317)|USER_DEBUG|[242]|DEBUG|####### field key ShippingAddress
+16:50:17.2 (49976821)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (49981711)|HEAP_ALLOCATE|[243]|Bytes:15
+16:50:17.2 (49994241)|ENTERING_MANAGED_PKG|
+16:50:17.2 (49997719)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (50010386)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (50026268)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (50085730)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@6977d4c9"|0x6977d4c9
+16:50:17.2 (50090943)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (50092237)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (50236540)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (50246882)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (50313047)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@cce7d598"|0x158069c7
+16:50:17.2 (50318312)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (50339554)|ENTERING_MANAGED_PKG|
+16:50:17.2 (50462776)|HEAP_ALLOCATE|[241]|Bytes:1070
+16:50:17.2 (50478807)|HEAP_ALLOCATE|[241]|Bytes:1084
+16:50:17.2 (50492371)|ENTERING_MANAGED_PKG|
+16:50:17.2 (50499336)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=120;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Account Phone;getLength=40;getLocalName=Phone;getMask=null;getMaskType=null;getName=Phone;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=Phone;getType=PHONE;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (50510947)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (50518067)|HEAP_ALLOCATE|[242]|Bytes:5
+16:50:17.2 (50522926)|HEAP_ALLOCATE|[242]|Bytes:23
+16:50:17.2 (50533583)|ENTERING_MANAGED_PKG|
+16:50:17.2 (50538751)|USER_DEBUG|[242]|DEBUG|####### field key Phone
+16:50:17.2 (50543778)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (50548131)|HEAP_ALLOCATE|[243]|Bytes:5
+16:50:17.2 (50559480)|ENTERING_MANAGED_PKG|
+16:50:17.2 (50562819)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (50575668)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (50590667)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (50649885)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@9fad519"|0x9fad519
+16:50:17.2 (50655329)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (50656648)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (50795038)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (50805516)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (50872254)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@473e414c"|0x4f065476
+16:50:17.2 (50877876)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (50898987)|ENTERING_MANAGED_PKG|
+16:50:17.2 (51026800)|HEAP_ALLOCATE|[241]|Bytes:1062
+16:50:17.2 (51043747)|HEAP_ALLOCATE|[241]|Bytes:1076
+16:50:17.2 (51057791)|ENTERING_MANAGED_PKG|
+16:50:17.2 (51064758)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=120;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Account Fax;getLength=40;getLocalName=Fax;getMask=null;getMaskType=null;getName=Fax;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=Fax;getType=PHONE;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (51075272)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (51082126)|HEAP_ALLOCATE|[242]|Bytes:3
+16:50:17.2 (51087118)|HEAP_ALLOCATE|[242]|Bytes:21
+16:50:17.2 (51097742)|ENTERING_MANAGED_PKG|
+16:50:17.2 (51102789)|USER_DEBUG|[242]|DEBUG|####### field key Fax
+16:50:17.2 (51107858)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (51112247)|HEAP_ALLOCATE|[243]|Bytes:3
+16:50:17.2 (51123874)|ENTERING_MANAGED_PKG|
+16:50:17.2 (51127281)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (51139907)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (51154821)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (51217069)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@2be65453"|0x2be65453
+16:50:17.2 (51222709)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (51224076)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (51351105)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (51361357)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (51427361)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@8c9bae38"|0x16106f13
+16:50:17.2 (51432494)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (51453324)|ENTERING_MANAGED_PKG|
+16:50:17.2 (51575013)|HEAP_ALLOCATE|[241]|Bytes:1096
+16:50:17.2 (51590954)|HEAP_ALLOCATE|[241]|Bytes:1110
+16:50:17.2 (51604676)|ENTERING_MANAGED_PKG|
+16:50:17.2 (51611637)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=120;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Account Number;getLength=40;getLocalName=AccountNumber;getMask=null;getMaskType=null;getName=AccountNumber;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=AccountNumber;getType=STRING;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (51623345)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (51630050)|HEAP_ALLOCATE|[242]|Bytes:13
+16:50:17.2 (51634966)|HEAP_ALLOCATE|[242]|Bytes:31
+16:50:17.2 (51645780)|ENTERING_MANAGED_PKG|
+16:50:17.2 (51650906)|USER_DEBUG|[242]|DEBUG|####### field key AccountNumber
+16:50:17.2 (51656341)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (51660922)|HEAP_ALLOCATE|[243]|Bytes:13
+16:50:17.2 (51672375)|ENTERING_MANAGED_PKG|
+16:50:17.2 (51675762)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (51688321)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (51703265)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (51762537)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@6be5b264"|0x6be5b264
+16:50:17.2 (51767910)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (51769212)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (51906436)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (51917049)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (51989033)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@cd3f238"|0xc70484a
+16:50:17.2 (51994279)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (52015235)|ENTERING_MANAGED_PKG|
+16:50:17.2 (52138855)|HEAP_ALLOCATE|[241]|Bytes:1069
+16:50:17.2 (52154738)|HEAP_ALLOCATE|[241]|Bytes:1083
+16:50:17.2 (52168440)|ENTERING_MANAGED_PKG|
+16:50:17.2 (52177326)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=765;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Website;getLength=255;getLocalName=Website;getMask=null;getMaskType=null;getName=Website;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=Website;getType=URL;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (52190099)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (52197401)|HEAP_ALLOCATE|[242]|Bytes:7
+16:50:17.2 (52202665)|HEAP_ALLOCATE|[242]|Bytes:25
+16:50:17.2 (52214308)|ENTERING_MANAGED_PKG|
+16:50:17.2 (52219964)|USER_DEBUG|[242]|DEBUG|####### field key Website
+16:50:17.2 (52224992)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (52229527)|HEAP_ALLOCATE|[243]|Bytes:7
+16:50:17.2 (52241159)|ENTERING_MANAGED_PKG|
+16:50:17.2 (52244735)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (52257339)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (52272303)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (52330633)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@3ce3f24d"|0x3ce3f24d
+16:50:17.2 (52336082)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (52337385)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (52444718)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (52455134)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (52521629)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@26e7f529"|0x215e950d
+16:50:17.2 (52526882)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (52547721)|ENTERING_MANAGED_PKG|
+16:50:17.2 (52669990)|HEAP_ALLOCATE|[241]|Bytes:1077
+16:50:17.2 (52685929)|HEAP_ALLOCATE|[241]|Bytes:1091
+16:50:17.2 (52699442)|ENTERING_MANAGED_PKG|
+16:50:17.2 (52706377)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=765;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Photo URL;getLength=255;getLocalName=PhotoUrl;getMask=null;getMaskType=null;getName=PhotoUrl;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=PhotoUrl;getType=URL;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=false;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=false;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=false;isWriteRequiresMasterRead=false;]
+16:50:17.2 (52718000)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (52725033)|HEAP_ALLOCATE|[242]|Bytes:8
+16:50:17.2 (52729896)|HEAP_ALLOCATE|[242]|Bytes:26
+16:50:17.2 (52740448)|ENTERING_MANAGED_PKG|
+16:50:17.2 (52745684)|USER_DEBUG|[242]|DEBUG|####### field key PhotoUrl
+16:50:17.2 (52750663)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (52755076)|HEAP_ALLOCATE|[243]|Bytes:8
+16:50:17.2 (52766604)|ENTERING_MANAGED_PKG|
+16:50:17.2 (52770003)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (52782892)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (52798038)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (52857106)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@636eaad5"|0x636eaad5
+16:50:17.2 (52862377)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (52863678)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (52998073)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (53008595)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (53076213)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@a55b90d4"|0x656eebef
+16:50:17.2 (53081477)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (53102538)|ENTERING_MANAGED_PKG|
+16:50:17.2 (53225022)|HEAP_ALLOCATE|[241]|Bytes:1059
+16:50:17.2 (53241043)|HEAP_ALLOCATE|[241]|Bytes:1073
+16:50:17.2 (53254641)|ENTERING_MANAGED_PKG|
+16:50:17.2 (53261593)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=60;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=SIC Code;getLength=20;getLocalName=Sic;getMask=null;getMaskType=null;getName=Sic;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=Sic;getType=STRING;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (53272691)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (53279558)|HEAP_ALLOCATE|[242]|Bytes:3
+16:50:17.2 (53284559)|HEAP_ALLOCATE|[242]|Bytes:21
+16:50:17.2 (53295291)|ENTERING_MANAGED_PKG|
+16:50:17.2 (53300698)|USER_DEBUG|[242]|DEBUG|####### field key Sic
+16:50:17.2 (53305761)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (53310240)|HEAP_ALLOCATE|[243]|Bytes:3
+16:50:17.2 (53321675)|ENTERING_MANAGED_PKG|
+16:50:17.2 (53325164)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (53337974)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (53352836)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (53411485)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@7ab32e27"|0x7ab32e27
+16:50:17.2 (53416707)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (53417982)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (53548886)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (53559237)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (53625794)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@f72402bd"|0x74090e71
+16:50:17.2 (53631000)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (53651775)|ENTERING_MANAGED_PKG|
+16:50:17.2 (54176661)|HEAP_ALLOCATE|[241]|Bytes:1077
+16:50:17.2 (54194553)|HEAP_ALLOCATE|[241]|Bytes:1091
+16:50:17.2 (54209471)|ENTERING_MANAGED_PKG|
+16:50:17.2 (54216603)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=120;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Industry;getLength=40;getLocalName=Industry;getMask=null;getMaskType=null;getName=Industry;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=Industry;getType=PICKLIST;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (54228009)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (54235098)|HEAP_ALLOCATE|[242]|Bytes:8
+16:50:17.2 (54240152)|HEAP_ALLOCATE|[242]|Bytes:26
+16:50:17.2 (54251192)|ENTERING_MANAGED_PKG|
+16:50:17.2 (54256555)|USER_DEBUG|[242]|DEBUG|####### field key Industry
+16:50:17.2 (54261510)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (54265990)|HEAP_ALLOCATE|[243]|Bytes:8
+16:50:17.2 (54277565)|ENTERING_MANAGED_PKG|
+16:50:17.2 (54280997)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (54293728)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (54308930)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (54369379)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@3c83d587"|0x3c83d587
+16:50:17.2 (54374771)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (54376078)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (54553995)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (54565067)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (54633030)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@5666abe2"|0x59adaab7
+16:50:17.2 (54638464)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (54659838)|ENTERING_MANAGED_PKG|
+16:50:17.2 (54784866)|HEAP_ALLOCATE|[241]|Bytes:1097
+16:50:17.2 (54800840)|HEAP_ALLOCATE|[241]|Bytes:1111
+16:50:17.2 (54814624)|ENTERING_MANAGED_PKG|
+16:50:17.2 (54821683)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=0;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Annual Revenue;getLength=0;getLocalName=AnnualRevenue;getMask=null;getMaskType=null;getName=AnnualRevenue;getPrecision=18;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=DOUBLE;getSobjectField=AnnualRevenue;getType=CURRENCY;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=false;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (54832630)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (54839439)|HEAP_ALLOCATE|[242]|Bytes:13
+16:50:17.2 (54844515)|HEAP_ALLOCATE|[242]|Bytes:31
+16:50:17.2 (54855297)|ENTERING_MANAGED_PKG|
+16:50:17.2 (54860694)|USER_DEBUG|[242]|DEBUG|####### field key AnnualRevenue
+16:50:17.2 (54865716)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (54870080)|HEAP_ALLOCATE|[243]|Bytes:13
+16:50:17.2 (54881645)|ENTERING_MANAGED_PKG|
+16:50:17.2 (54885180)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (54898415)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (54913252)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (54977286)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@1f5129c0"|0x1f5129c0
+16:50:17.2 (54982880)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (54984200)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (55117769)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (55129379)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (55197556)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@b1069818"|0x6c4e526
+16:50:17.2 (55202867)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (55223923)|ENTERING_MANAGED_PKG|
+16:50:17.2 (55348142)|HEAP_ALLOCATE|[241]|Bytes:1102
+16:50:17.2 (55364100)|HEAP_ALLOCATE|[241]|Bytes:1116
+16:50:17.2 (55377613)|ENTERING_MANAGED_PKG|
+16:50:17.2 (55384683)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=0;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=8;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Employees;getLength=0;getLocalName=NumberOfEmployees;getMask=null;getMaskType=null;getName=NumberOfEmployees;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=INTEGER;getSobjectField=NumberOfEmployees;getType=INTEGER;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (55396194)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (55403294)|HEAP_ALLOCATE|[242]|Bytes:17
+16:50:17.2 (55408212)|HEAP_ALLOCATE|[242]|Bytes:35
+16:50:17.2 (55418814)|ENTERING_MANAGED_PKG|
+16:50:17.2 (55423936)|USER_DEBUG|[242]|DEBUG|####### field key NumberOfEmployees
+16:50:17.2 (55429131)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (55433609)|HEAP_ALLOCATE|[243]|Bytes:17
+16:50:17.2 (55445228)|ENTERING_MANAGED_PKG|
+16:50:17.2 (55448769)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (55461529)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (55476340)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (55535237)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@97f10fd"|0x97f10fd
+16:50:17.2 (55540634)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (55541945)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (55671623)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (55682083)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (55748309)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@cfeb202"|0x495f48d3
+16:50:17.2 (55753888)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (55775115)|ENTERING_MANAGED_PKG|
+16:50:17.2 (56272315)|HEAP_ALLOCATE|[241]|Bytes:1081
+16:50:17.2 (56290106)|HEAP_ALLOCATE|[241]|Bytes:1095
+16:50:17.2 (56304501)|ENTERING_MANAGED_PKG|
+16:50:17.2 (56311613)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=120;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Ownership;getLength=40;getLocalName=Ownership;getMask=null;getMaskType=null;getName=Ownership;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=Ownership;getType=PICKLIST;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (56322595)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (56329502)|HEAP_ALLOCATE|[242]|Bytes:9
+16:50:17.2 (56334816)|HEAP_ALLOCATE|[242]|Bytes:27
+16:50:17.2 (56346020)|ENTERING_MANAGED_PKG|
+16:50:17.2 (56351422)|USER_DEBUG|[242]|DEBUG|####### field key Ownership
+16:50:17.2 (56356613)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (56361125)|HEAP_ALLOCATE|[243]|Bytes:9
+16:50:17.2 (56372838)|ENTERING_MANAGED_PKG|
+16:50:17.2 (56376310)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (56389453)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (56404525)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (56464386)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@6adec5e3"|0x6adec5e3
+16:50:17.2 (56469951)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (56471247)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (56605929)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (56616590)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (56683429)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@c85202ea"|0x359ef6de
+16:50:17.2 (56688699)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (56709745)|ENTERING_MANAGED_PKG|
+16:50:17.2 (56832417)|HEAP_ALLOCATE|[241]|Bytes:1091
+16:50:17.2 (56848708)|HEAP_ALLOCATE|[241]|Bytes:1105
+16:50:17.2 (56862259)|ENTERING_MANAGED_PKG|
+16:50:17.2 (56869221)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=60;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Ticker Symbol;getLength=20;getLocalName=TickerSymbol;getMask=null;getMaskType=null;getName=TickerSymbol;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=TickerSymbol;getType=STRING;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (56879557)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (56886368)|HEAP_ALLOCATE|[242]|Bytes:12
+16:50:17.2 (56891226)|HEAP_ALLOCATE|[242]|Bytes:30
+16:50:17.2 (56902104)|ENTERING_MANAGED_PKG|
+16:50:17.2 (56907466)|USER_DEBUG|[242]|DEBUG|####### field key TickerSymbol
+16:50:17.2 (56912793)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (56917258)|HEAP_ALLOCATE|[243]|Bytes:12
+16:50:17.2 (56928816)|ENTERING_MANAGED_PKG|
+16:50:17.2 (56932205)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (56945032)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (56959940)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (57024282)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@48530ad2"|0x48530ad2
+16:50:17.2 (57030587)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (57031943)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (57173658)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (57184354)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (57250920)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@6b55ff71"|0x69f32630
+16:50:17.2 (57256107)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (57277213)|ENTERING_MANAGED_PKG|
+16:50:17.2 (57400648)|HEAP_ALLOCATE|[241]|Bytes:1106
+16:50:17.2 (57416848)|HEAP_ALLOCATE|[241]|Bytes:1120
+16:50:17.2 (57430363)|ENTERING_MANAGED_PKG|
+16:50:17.2 (57437582)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=96000;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Account Description;getLength=32000;getLocalName=Description;getMask=null;getMaskType=null;getName=Description;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=Description;getType=TEXTAREA;isAccessible=true;isAggregatable=false;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=false;isGroupable=false;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=false;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (57448574)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (57455241)|HEAP_ALLOCATE|[242]|Bytes:11
+16:50:17.2 (57460183)|HEAP_ALLOCATE|[242]|Bytes:29
+16:50:17.2 (57470680)|ENTERING_MANAGED_PKG|
+16:50:17.2 (57475855)|USER_DEBUG|[242]|DEBUG|####### field key Description
+16:50:17.2 (57481017)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (57485518)|HEAP_ALLOCATE|[243]|Bytes:11
+16:50:17.2 (57496937)|ENTERING_MANAGED_PKG|
+16:50:17.2 (57500266)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (57513009)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (57528211)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (57587574)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@5eda2531"|0x5eda2531
+16:50:17.2 (57592930)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (57594379)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (57726444)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (57737431)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (57804197)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@a3edcb53"|0x425447e7
+16:50:17.2 (57809585)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (57830700)|ENTERING_MANAGED_PKG|
+16:50:17.2 (58305201)|HEAP_ALLOCATE|[241]|Bytes:1077
+16:50:17.2 (58323009)|HEAP_ALLOCATE|[241]|Bytes:1091
+16:50:17.2 (58337318)|ENTERING_MANAGED_PKG|
+16:50:17.2 (58344449)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=120;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Account Rating;getLength=40;getLocalName=Rating;getMask=null;getMaskType=null;getName=Rating;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=Rating;getType=PICKLIST;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (58356003)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (58363003)|HEAP_ALLOCATE|[242]|Bytes:6
+16:50:17.2 (58368119)|HEAP_ALLOCATE|[242]|Bytes:24
+16:50:17.2 (58379200)|ENTERING_MANAGED_PKG|
+16:50:17.2 (58384603)|USER_DEBUG|[242]|DEBUG|####### field key Rating
+16:50:17.2 (58389763)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (58394276)|HEAP_ALLOCATE|[243]|Bytes:6
+16:50:17.2 (58405681)|ENTERING_MANAGED_PKG|
+16:50:17.2 (58409128)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (58422066)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (58437630)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (58497831)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@2fd32eef"|0x2fd32eef
+16:50:17.2 (58503322)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (58504728)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (58634518)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (58645181)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (58712523)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@2e8f4db5"|0x10d5e5b6
+16:50:17.2 (58717757)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (58738970)|ENTERING_MANAGED_PKG|
+16:50:17.2 (58861414)|HEAP_ALLOCATE|[241]|Bytes:1067
+16:50:17.2 (58877148)|HEAP_ALLOCATE|[241]|Bytes:1081
+16:50:17.2 (58890703)|ENTERING_MANAGED_PKG|
+16:50:17.2 (58897632)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=240;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Account Site;getLength=80;getLocalName=Site;getMask=null;getMaskType=null;getName=Site;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=Site;getType=STRING;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (58909134)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (58916109)|HEAP_ALLOCATE|[242]|Bytes:4
+16:50:17.2 (58921486)|HEAP_ALLOCATE|[242]|Bytes:22
+16:50:17.2 (58932076)|ENTERING_MANAGED_PKG|
+16:50:17.2 (58937232)|USER_DEBUG|[242]|DEBUG|####### field key Site
+16:50:17.2 (58942264)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (58946611)|HEAP_ALLOCATE|[243]|Bytes:4
+16:50:17.2 (58957838)|ENTERING_MANAGED_PKG|
+16:50:17.2 (58961306)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (58979610)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (58994664)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (59053773)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@33be172b"|0x33be172b
+16:50:17.2 (59059932)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (59061251)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (59216320)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (59226877)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (59294567)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@67fc11d4"|0x5d40be52
+16:50:17.2 (59299868)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (59321200)|ENTERING_MANAGED_PKG|
+16:50:17.2 (59450316)|HEAP_ALLOCATE|[241]|Bytes:1072
+16:50:17.2 (59466439)|HEAP_ALLOCATE|[241]|Bytes:1086
+16:50:17.2 (59480083)|ENTERING_MANAGED_PKG|
+16:50:17.2 (59487063)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=18;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Owner ID;getLength=18;getLocalName=OwnerId;getMask=null;getMaskType=null;getName=OwnerId;getPrecision=0;getReferenceTargetField=null;getRelationshipName=Owner;getRelationshipOrder=null;getScale=0;getSoapType=ID;getSobjectField=OwnerId;getType=REFERENCE;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=true;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=false;isPermissionable=false;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (59498165)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (59505042)|HEAP_ALLOCATE|[242]|Bytes:7
+16:50:17.2 (59510156)|HEAP_ALLOCATE|[242]|Bytes:25
+16:50:17.2 (59520882)|ENTERING_MANAGED_PKG|
+16:50:17.2 (59526158)|USER_DEBUG|[242]|DEBUG|####### field key OwnerId
+16:50:17.2 (59531136)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (59535689)|HEAP_ALLOCATE|[243]|Bytes:7
+16:50:17.2 (59547081)|ENTERING_MANAGED_PKG|
+16:50:17.2 (59550397)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (59563214)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (59578137)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (59637652)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@63eb8e14"|0x63eb8e14
+16:50:17.2 (59642921)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (59644553)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (59778366)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (59788943)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (59855442)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@90739e"|0x59c5c8a5
+16:50:17.2 (59860622)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (59881803)|ENTERING_MANAGED_PKG|
+16:50:17.2 (60028006)|HEAP_ALLOCATE|[241]|Bytes:1093
+16:50:17.2 (60045090)|HEAP_ALLOCATE|[241]|Bytes:1107
+16:50:17.2 (60058767)|ENTERING_MANAGED_PKG|
+16:50:17.2 (60065765)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=0;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Created Date;getLength=0;getLocalName=CreatedDate;getMask=null;getMaskType=null;getName=CreatedDate;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=DATETIME;getSobjectField=CreatedDate;getType=DATETIME;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=false;isCustom=false;isDefaultedOnCreate=true;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=false;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=false;isPermissionable=false;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=false;isWriteRequiresMasterRead=false;]
+16:50:17.2 (60076580)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (60083406)|HEAP_ALLOCATE|[242]|Bytes:11
+16:50:17.2 (60088380)|HEAP_ALLOCATE|[242]|Bytes:29
+16:50:17.2 (60099380)|ENTERING_MANAGED_PKG|
+16:50:17.2 (60104593)|USER_DEBUG|[242]|DEBUG|####### field key CreatedDate
+16:50:17.2 (60109693)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (60114212)|HEAP_ALLOCATE|[243]|Bytes:11
+16:50:17.2 (60126087)|ENTERING_MANAGED_PKG|
+16:50:17.2 (60129529)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (60142285)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (60157233)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (60216337)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@6c97dcf5"|0x6c97dcf5
+16:50:17.2 (60221732)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (60223010)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (60358960)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (60369600)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (60436935)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@ba264cde"|0x28f2219b
+16:50:17.2 (60442300)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (60463502)|ENTERING_MANAGED_PKG|
+16:50:17.2 (60603590)|HEAP_ALLOCATE|[241]|Bytes:1095
+16:50:17.2 (60619915)|HEAP_ALLOCATE|[241]|Bytes:1109
+16:50:17.2 (60633614)|ENTERING_MANAGED_PKG|
+16:50:17.2 (60640688)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=18;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Created By ID;getLength=18;getLocalName=CreatedById;getMask=null;getMaskType=null;getName=CreatedById;getPrecision=0;getReferenceTargetField=null;getRelationshipName=CreatedBy;getRelationshipOrder=null;getScale=0;getSoapType=ID;getSobjectField=CreatedById;getType=REFERENCE;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=false;isCustom=false;isDefaultedOnCreate=true;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=false;isPermissionable=false;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=false;isWriteRequiresMasterRead=false;]
+16:50:17.2 (60651928)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (60659132)|HEAP_ALLOCATE|[242]|Bytes:11
+16:50:17.2 (60664096)|HEAP_ALLOCATE|[242]|Bytes:29
+16:50:17.2 (60674763)|ENTERING_MANAGED_PKG|
+16:50:17.2 (60680151)|USER_DEBUG|[242]|DEBUG|####### field key CreatedById
+16:50:17.2 (60685305)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (60689675)|HEAP_ALLOCATE|[243]|Bytes:11
+16:50:17.2 (60701027)|ENTERING_MANAGED_PKG|
+16:50:17.2 (60704510)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (60717185)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (60732240)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (60790875)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@5a0533de"|0x5a0533de
+16:50:17.2 (60796301)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (60797598)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (60925153)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (60935728)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (61007859)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@b3a97e16"|0x31db60f0
+16:50:17.2 (61014058)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (61035167)|ENTERING_MANAGED_PKG|
+16:50:17.2 (61174473)|HEAP_ALLOCATE|[241]|Bytes:1114
+16:50:17.2 (61191014)|HEAP_ALLOCATE|[241]|Bytes:1128
+16:50:17.2 (61204522)|ENTERING_MANAGED_PKG|
+16:50:17.2 (61211445)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=0;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Last Modified Date;getLength=0;getLocalName=LastModifiedDate;getMask=null;getMaskType=null;getName=LastModifiedDate;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=DATETIME;getSobjectField=LastModifiedDate;getType=DATETIME;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=false;isCustom=false;isDefaultedOnCreate=true;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=false;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=false;isPermissionable=false;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=false;isWriteRequiresMasterRead=false;]
+16:50:17.2 (61222634)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (61229372)|HEAP_ALLOCATE|[242]|Bytes:16
+16:50:17.2 (61234387)|HEAP_ALLOCATE|[242]|Bytes:34
+16:50:17.2 (61244924)|ENTERING_MANAGED_PKG|
+16:50:17.2 (61250102)|USER_DEBUG|[242]|DEBUG|####### field key LastModifiedDate
+16:50:17.2 (61255155)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (61259585)|HEAP_ALLOCATE|[243]|Bytes:16
+16:50:17.2 (61270996)|ENTERING_MANAGED_PKG|
+16:50:17.2 (61274459)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (61287371)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (61302310)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (61361513)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@19c160fa"|0x19c160fa
+16:50:17.2 (61366827)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (61368143)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (61504063)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (61514735)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (61582001)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@7a9039b1"|0x35a941b0
+16:50:17.2 (61587271)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (61608320)|ENTERING_MANAGED_PKG|
+16:50:17.2 (61748003)|HEAP_ALLOCATE|[241]|Bytes:1121
+16:50:17.2 (61764774)|HEAP_ALLOCATE|[241]|Bytes:1135
+16:50:17.2 (61778474)|ENTERING_MANAGED_PKG|
+16:50:17.2 (61785411)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=18;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Last Modified By ID;getLength=18;getLocalName=LastModifiedById;getMask=null;getMaskType=null;getName=LastModifiedById;getPrecision=0;getReferenceTargetField=null;getRelationshipName=LastModifiedBy;getRelationshipOrder=null;getScale=0;getSoapType=ID;getSobjectField=LastModifiedById;getType=REFERENCE;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=false;isCustom=false;isDefaultedOnCreate=true;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=false;isPermissionable=false;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=false;isWriteRequiresMasterRead=false;]
+16:50:17.2 (61796511)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (61803373)|HEAP_ALLOCATE|[242]|Bytes:16
+16:50:17.2 (61808306)|HEAP_ALLOCATE|[242]|Bytes:34
+16:50:17.2 (61818951)|ENTERING_MANAGED_PKG|
+16:50:17.2 (61824441)|USER_DEBUG|[242]|DEBUG|####### field key LastModifiedById
+16:50:17.2 (61829649)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (61834236)|HEAP_ALLOCATE|[243]|Bytes:16
+16:50:17.2 (61845913)|ENTERING_MANAGED_PKG|
+16:50:17.2 (61849357)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (61862372)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (61877389)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (61936122)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@2665d6f8"|0x2665d6f8
+16:50:17.2 (61941531)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (61942817)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (62053404)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (62064793)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (62130852)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@cd22578d"|0x53ef2003
+16:50:17.2 (62136162)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (62157086)|ENTERING_MANAGED_PKG|
+16:50:17.2 (62284655)|HEAP_ALLOCATE|[241]|Bytes:1105
+16:50:17.2 (62301201)|HEAP_ALLOCATE|[241]|Bytes:1119
+16:50:17.2 (62315056)|ENTERING_MANAGED_PKG|
+16:50:17.2 (62321943)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=0;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=System Modstamp;getLength=0;getLocalName=SystemModstamp;getMask=null;getMaskType=null;getName=SystemModstamp;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=DATETIME;getSobjectField=SystemModstamp;getType=DATETIME;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=false;isCustom=false;isDefaultedOnCreate=true;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=false;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=false;isPermissionable=false;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=false;isWriteRequiresMasterRead=false;]
+16:50:17.2 (62333120)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (62339932)|HEAP_ALLOCATE|[242]|Bytes:14
+16:50:17.2 (62344865)|HEAP_ALLOCATE|[242]|Bytes:32
+16:50:17.2 (62355423)|ENTERING_MANAGED_PKG|
+16:50:17.2 (62360786)|USER_DEBUG|[242]|DEBUG|####### field key SystemModstamp
+16:50:17.2 (62366071)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (62370613)|HEAP_ALLOCATE|[243]|Bytes:14
+16:50:17.2 (62381930)|ENTERING_MANAGED_PKG|
+16:50:17.2 (62385371)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (62398234)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (62413058)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (62472226)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@7447d6b5"|0x7447d6b5
+16:50:17.2 (62477452)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (62478779)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (62586977)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (62597498)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (62663680)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@3acb048d"|0x4179d302
+16:50:17.2 (62668965)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (62689864)|ENTERING_MANAGED_PKG|
+16:50:17.2 (62811826)|HEAP_ALLOCATE|[241]|Bytes:1100
+16:50:17.2 (62827994)|HEAP_ALLOCATE|[241]|Bytes:1114
+16:50:17.2 (62841479)|ENTERING_MANAGED_PKG|
+16:50:17.2 (62848490)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=0;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Last Activity;getLength=0;getLocalName=LastActivityDate;getMask=null;getMaskType=null;getName=LastActivityDate;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=DATE;getSobjectField=LastActivityDate;getType=DATE;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=false;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=false;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=false;isWriteRequiresMasterRead=false;]
+16:50:17.2 (62859602)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (62866232)|HEAP_ALLOCATE|[242]|Bytes:16
+16:50:17.2 (62871318)|HEAP_ALLOCATE|[242]|Bytes:34
+16:50:17.2 (62882237)|ENTERING_MANAGED_PKG|
+16:50:17.2 (62887628)|USER_DEBUG|[242]|DEBUG|####### field key LastActivityDate
+16:50:17.2 (62892745)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (62897422)|HEAP_ALLOCATE|[243]|Bytes:16
+16:50:17.2 (62909342)|ENTERING_MANAGED_PKG|
+16:50:17.2 (62912649)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (62925522)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (62940641)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (63004674)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@72f8020"|0x72f8020
+16:50:17.2 (63010863)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (63012216)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (63118137)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (63128672)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (63194757)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@fc87619c"|0x5f7383d7
+16:50:17.2 (63199937)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (63220971)|ENTERING_MANAGED_PKG|
+16:50:17.2 (63343138)|HEAP_ALLOCATE|[241]|Bytes:1106
+16:50:17.2 (63359387)|HEAP_ALLOCATE|[241]|Bytes:1120
+16:50:17.2 (63372932)|ENTERING_MANAGED_PKG|
+16:50:17.2 (63379815)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=0;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Last Viewed Date;getLength=0;getLocalName=LastViewedDate;getMask=null;getMaskType=null;getName=LastViewedDate;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=DATETIME;getSobjectField=LastViewedDate;getType=DATETIME;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=false;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=false;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=false;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=false;isWriteRequiresMasterRead=false;]
+16:50:17.2 (63391287)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (63398382)|HEAP_ALLOCATE|[242]|Bytes:14
+16:50:17.2 (63403223)|HEAP_ALLOCATE|[242]|Bytes:32
+16:50:17.2 (63414000)|ENTERING_MANAGED_PKG|
+16:50:17.2 (63419231)|USER_DEBUG|[242]|DEBUG|####### field key LastViewedDate
+16:50:17.2 (63424324)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (63428864)|HEAP_ALLOCATE|[243]|Bytes:14
+16:50:17.2 (63440219)|ENTERING_MANAGED_PKG|
+16:50:17.2 (63443708)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (63456563)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (63471253)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (63529921)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@15fbe68f"|0x15fbe68f
+16:50:17.2 (63535313)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (63536643)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (63642266)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (63652872)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (63719568)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@1ef99426"|0x234d0b82
+16:50:17.2 (63724813)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (63745754)|ENTERING_MANAGED_PKG|
+16:50:17.2 (63867750)|HEAP_ALLOCATE|[241]|Bytes:1122
+16:50:17.2 (63883774)|HEAP_ALLOCATE|[241]|Bytes:1136
+16:50:17.2 (63897431)|ENTERING_MANAGED_PKG|
+16:50:17.2 (63904321)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=0;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Last Referenced Date;getLength=0;getLocalName=LastReferencedDate;getMask=null;getMaskType=null;getName=LastReferencedDate;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=DATETIME;getSobjectField=LastReferencedDate;getType=DATETIME;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=false;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=false;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=false;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=false;isWriteRequiresMasterRead=false;]
+16:50:17.2 (63915766)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (63922469)|HEAP_ALLOCATE|[242]|Bytes:18
+16:50:17.2 (63927385)|HEAP_ALLOCATE|[242]|Bytes:36
+16:50:17.2 (63938081)|ENTERING_MANAGED_PKG|
+16:50:17.2 (63943382)|USER_DEBUG|[242]|DEBUG|####### field key LastReferencedDate
+16:50:17.2 (63948408)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (63952760)|HEAP_ALLOCATE|[243]|Bytes:18
+16:50:17.2 (63968441)|ENTERING_MANAGED_PKG|
+16:50:17.2 (63972269)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (63985697)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (64000900)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (64061147)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@1d2130de"|0x1d2130de
+16:50:17.2 (64066548)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (64067914)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (64199320)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (64210053)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (64276554)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@973adbf1"|0x6e9652a8
+16:50:17.2 (64281897)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (64303001)|ENTERING_MANAGED_PKG|
+16:50:17.2 (64426165)|HEAP_ALLOCATE|[241]|Bytes:1072
+16:50:17.2 (64442219)|HEAP_ALLOCATE|[241]|Bytes:1086
+16:50:17.2 (64455624)|ENTERING_MANAGED_PKG|
+16:50:17.2 (64462536)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=60;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Data.com Key;getLength=20;getLocalName=Jigsaw;getMask=null;getMaskType=null;getName=Jigsaw;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=Jigsaw;getType=STRING;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (64473219)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (64479930)|HEAP_ALLOCATE|[242]|Bytes:6
+16:50:17.2 (64484852)|HEAP_ALLOCATE|[242]|Bytes:24
+16:50:17.2 (64495658)|ENTERING_MANAGED_PKG|
+16:50:17.2 (64500913)|USER_DEBUG|[242]|DEBUG|####### field key Jigsaw
+16:50:17.2 (64506483)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (64511035)|HEAP_ALLOCATE|[243]|Bytes:6
+16:50:17.2 (64522400)|ENTERING_MANAGED_PKG|
+16:50:17.2 (64525784)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (64538662)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (64553521)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (64612340)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@5799afb1"|0x5799afb1
+16:50:17.2 (64617645)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (64618936)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (64736661)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (64747166)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (64813188)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@a6d68819"|0x3628c153
+16:50:17.2 (64818503)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (64839587)|ENTERING_MANAGED_PKG|
+16:50:17.2 (64966210)|HEAP_ALLOCATE|[241]|Bytes:1116
+16:50:17.2 (64982881)|HEAP_ALLOCATE|[241]|Bytes:1130
+16:50:17.2 (64997304)|ENTERING_MANAGED_PKG|
+16:50:17.2 (65004308)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=60;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Jigsaw Company ID;getLength=20;getLocalName=JigsawCompanyId;getMask=null;getMaskType=null;getName=JigsawCompanyId;getPrecision=0;getReferenceTargetField=null;getRelationshipName=JigsawCompany;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=JigsawCompanyId;getType=STRING;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=false;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=false;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=false;isWriteRequiresMasterRead=false;]
+16:50:17.2 (65016718)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (65023534)|HEAP_ALLOCATE|[242]|Bytes:15
+16:50:17.2 (65028852)|HEAP_ALLOCATE|[242]|Bytes:33
+16:50:17.2 (65039633)|ENTERING_MANAGED_PKG|
+16:50:17.2 (65044901)|USER_DEBUG|[242]|DEBUG|####### field key JigsawCompanyId
+16:50:17.2 (65049911)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (65054477)|HEAP_ALLOCATE|[243]|Bytes:15
+16:50:17.2 (65065895)|ENTERING_MANAGED_PKG|
+16:50:17.2 (65069437)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (65082225)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (65097144)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (65155828)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@2c4c1be2"|0x2c4c1be2
+16:50:17.2 (65161339)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (65162630)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (65320557)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (65331387)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (65397696)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@dd09615"|0x693511ed
+16:50:17.2 (65403109)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (65424104)|ENTERING_MANAGED_PKG|
+16:50:17.2 (65578502)|HEAP_ALLOCATE|[241]|Bytes:1090
+16:50:17.2 (65594681)|HEAP_ALLOCATE|[241]|Bytes:1104
+16:50:17.2 (65608584)|ENTERING_MANAGED_PKG|
+16:50:17.2 (65615544)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=120;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Clean Status;getLength=40;getLocalName=CleanStatus;getMask=null;getMaskType=null;getName=CleanStatus;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=CleanStatus;getType=PICKLIST;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (65627196)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (65634059)|HEAP_ALLOCATE|[242]|Bytes:11
+16:50:17.2 (65638935)|HEAP_ALLOCATE|[242]|Bytes:29
+16:50:17.2 (65649683)|ENTERING_MANAGED_PKG|
+16:50:17.2 (65654976)|USER_DEBUG|[242]|DEBUG|####### field key CleanStatus
+16:50:17.2 (65660206)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (65664850)|HEAP_ALLOCATE|[243]|Bytes:11
+16:50:17.2 (65676375)|ENTERING_MANAGED_PKG|
+16:50:17.2 (65679924)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (65693044)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (65707939)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (65766737)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@66c94f7a"|0x66c94f7a
+16:50:17.2 (65772091)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (65773439)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (65902472)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (65912938)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (65983994)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@f3fc81c0"|0x3974aab7
+16:50:17.2 (65989564)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (66010635)|ENTERING_MANAGED_PKG|
+16:50:17.2 (66488888)|HEAP_ALLOCATE|[241]|Bytes:1098
+16:50:17.2 (66505891)|HEAP_ALLOCATE|[241]|Bytes:1112
+16:50:17.2 (66520289)|ENTERING_MANAGED_PKG|
+16:50:17.2 (66527284)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=120;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Account Source;getLength=40;getLocalName=AccountSource;getMask=null;getMaskType=null;getName=AccountSource;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=AccountSource;getType=PICKLIST;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (66538770)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (66546291)|HEAP_ALLOCATE|[242]|Bytes:13
+16:50:17.2 (66551406)|HEAP_ALLOCATE|[242]|Bytes:31
+16:50:17.2 (66562652)|ENTERING_MANAGED_PKG|
+16:50:17.2 (66568087)|USER_DEBUG|[242]|DEBUG|####### field key AccountSource
+16:50:17.2 (66573196)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (66577830)|HEAP_ALLOCATE|[243]|Bytes:13
+16:50:17.2 (66589329)|ENTERING_MANAGED_PKG|
+16:50:17.2 (66592738)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (66605697)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (66620789)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (66681398)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@72fa24bd"|0x72fa24bd
+16:50:17.2 (66686792)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (66688140)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (66819535)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (66830280)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (66896694)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@b7f6d6d7"|0x2632f8a2
+16:50:17.2 (66902029)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (66923134)|ENTERING_MANAGED_PKG|
+16:50:17.2 (67052306)|HEAP_ALLOCATE|[241]|Bytes:1085
+16:50:17.2 (67069301)|HEAP_ALLOCATE|[241]|Bytes:1099
+16:50:17.2 (67082939)|ENTERING_MANAGED_PKG|
+16:50:17.2 (67089899)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=27;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=D-U-N-S Number;getLength=9;getLocalName=DunsNumber;getMask=null;getMaskType=null;getName=DunsNumber;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=DunsNumber;getType=STRING;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (67101556)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (67108345)|HEAP_ALLOCATE|[242]|Bytes:10
+16:50:17.2 (67113341)|HEAP_ALLOCATE|[242]|Bytes:28
+16:50:17.2 (67124043)|ENTERING_MANAGED_PKG|
+16:50:17.2 (67129303)|USER_DEBUG|[242]|DEBUG|####### field key DunsNumber
+16:50:17.2 (67134407)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (67138854)|HEAP_ALLOCATE|[243]|Bytes:10
+16:50:17.2 (67150211)|ENTERING_MANAGED_PKG|
+16:50:17.2 (67153671)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (67166673)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (67181910)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (67240570)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@6804f974"|0x6804f974
+16:50:17.2 (67246273)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (67247655)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (67378238)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (67388899)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (67455116)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@f3b6fd39"|0x24b7016a
+16:50:17.2 (67460300)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (67481279)|ENTERING_MANAGED_PKG|
+16:50:17.2 (67603683)|HEAP_ALLOCATE|[241]|Bytes:1084
+16:50:17.2 (67619582)|HEAP_ALLOCATE|[241]|Bytes:1098
+16:50:17.2 (67633046)|ENTERING_MANAGED_PKG|
+16:50:17.2 (67639869)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=765;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Tradestyle;getLength=255;getLocalName=Tradestyle;getMask=null;getMaskType=null;getName=Tradestyle;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=Tradestyle;getType=STRING;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (67650995)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (67657710)|HEAP_ALLOCATE|[242]|Bytes:10
+16:50:17.2 (67662760)|HEAP_ALLOCATE|[242]|Bytes:28
+16:50:17.2 (67673596)|ENTERING_MANAGED_PKG|
+16:50:17.2 (67678814)|USER_DEBUG|[242]|DEBUG|####### field key Tradestyle
+16:50:17.2 (67684053)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (67688870)|HEAP_ALLOCATE|[243]|Bytes:10
+16:50:17.2 (67700370)|ENTERING_MANAGED_PKG|
+16:50:17.2 (67703846)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (67722276)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (67743506)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (67803296)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@24db7c9d"|0x24db7c9d
+16:50:17.2 (67808726)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (67810042)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (67940671)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (67951173)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (68022394)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@b5cafe01"|0x6164aece
+16:50:17.2 (68028554)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (68049768)|ENTERING_MANAGED_PKG|
+16:50:17.2 (68172991)|HEAP_ALLOCATE|[241]|Bytes:1078
+16:50:17.2 (68188921)|HEAP_ALLOCATE|[241]|Bytes:1092
+16:50:17.2 (68202539)|ENTERING_MANAGED_PKG|
+16:50:17.2 (68209573)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=24;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=NAICS Code;getLength=8;getLocalName=NaicsCode;getMask=null;getMaskType=null;getName=NaicsCode;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=NaicsCode;getType=STRING;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (68220608)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (68227352)|HEAP_ALLOCATE|[242]|Bytes:9
+16:50:17.2 (68232493)|HEAP_ALLOCATE|[242]|Bytes:27
+16:50:17.2 (68243458)|ENTERING_MANAGED_PKG|
+16:50:17.2 (68248741)|USER_DEBUG|[242]|DEBUG|####### field key NaicsCode
+16:50:17.2 (68253744)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (68257980)|HEAP_ALLOCATE|[243]|Bytes:9
+16:50:17.2 (68269289)|ENTERING_MANAGED_PKG|
+16:50:17.2 (68272763)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (68285539)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (68300572)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (68359491)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@84545e3"|0x84545e3
+16:50:17.2 (68364895)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (68366208)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (68494816)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (68505466)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (68571539)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@b0a73908"|0x63098eaa
+16:50:17.2 (68576672)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (68597500)|ENTERING_MANAGED_PKG|
+16:50:17.2 (68720503)|HEAP_ALLOCATE|[241]|Bytes:1088
+16:50:17.2 (68736264)|HEAP_ALLOCATE|[241]|Bytes:1102
+16:50:17.2 (68749926)|ENTERING_MANAGED_PKG|
+16:50:17.2 (68756847)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=360;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=NAICS Description;getLength=120;getLocalName=NaicsDesc;getMask=null;getMaskType=null;getName=NaicsDesc;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=NaicsDesc;getType=STRING;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (68768091)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (68774711)|HEAP_ALLOCATE|[242]|Bytes:9
+16:50:17.2 (68779718)|HEAP_ALLOCATE|[242]|Bytes:27
+16:50:17.2 (68790404)|ENTERING_MANAGED_PKG|
+16:50:17.2 (68795673)|USER_DEBUG|[242]|DEBUG|####### field key NaicsDesc
+16:50:17.2 (68800741)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (68805199)|HEAP_ALLOCATE|[243]|Bytes:9
+16:50:17.2 (68816453)|ENTERING_MANAGED_PKG|
+16:50:17.2 (68819909)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (68832582)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (68847922)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (68906904)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@2bb9479a"|0x2bb9479a
+16:50:17.2 (68912228)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (68913487)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (69048042)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (69059527)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (69125638)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@6c3ef5b3"|0x34f3ea56
+16:50:17.2 (69130857)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (69151846)|ENTERING_MANAGED_PKG|
+16:50:17.2 (69274443)|HEAP_ALLOCATE|[241]|Bytes:1086
+16:50:17.2 (69290654)|HEAP_ALLOCATE|[241]|Bytes:1100
+16:50:17.2 (69304400)|ENTERING_MANAGED_PKG|
+16:50:17.2 (69311327)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=12;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Year Started;getLength=4;getLocalName=YearStarted;getMask=null;getMaskType=null;getName=YearStarted;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=YearStarted;getType=STRING;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (69322909)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (69329616)|HEAP_ALLOCATE|[242]|Bytes:11
+16:50:17.2 (69334978)|HEAP_ALLOCATE|[242]|Bytes:29
+16:50:17.2 (69345505)|ENTERING_MANAGED_PKG|
+16:50:17.2 (69350661)|USER_DEBUG|[242]|DEBUG|####### field key YearStarted
+16:50:17.2 (69355792)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (69360441)|HEAP_ALLOCATE|[243]|Bytes:11
+16:50:17.2 (69371645)|ENTERING_MANAGED_PKG|
+16:50:17.2 (69375093)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (69387670)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (69402712)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (69461429)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@64b9c4c0"|0x64b9c4c0
+16:50:17.2 (69466873)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (69468313)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (69595831)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (69606319)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (69672550)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@d43f6c69"|0x42636734
+16:50:17.2 (69677761)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (69698692)|ENTERING_MANAGED_PKG|
+16:50:17.2 (69822301)|HEAP_ALLOCATE|[241]|Bytes:1079
+16:50:17.2 (69838274)|HEAP_ALLOCATE|[241]|Bytes:1093
+16:50:17.2 (69851755)|ENTERING_MANAGED_PKG|
+16:50:17.2 (69858752)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=240;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=SIC Description;getLength=80;getLocalName=SicDesc;getMask=null;getMaskType=null;getName=SicDesc;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=SicDesc;getType=STRING;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (69869539)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (69876444)|HEAP_ALLOCATE|[242]|Bytes:7
+16:50:17.2 (69881441)|HEAP_ALLOCATE|[242]|Bytes:25
+16:50:17.2 (69892189)|ENTERING_MANAGED_PKG|
+16:50:17.2 (69897392)|USER_DEBUG|[242]|DEBUG|####### field key SicDesc
+16:50:17.2 (69902388)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (69907000)|HEAP_ALLOCATE|[243]|Bytes:7
+16:50:17.2 (69918792)|ENTERING_MANAGED_PKG|
+16:50:17.2 (69922099)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (69934722)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (69949785)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (70013327)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@1bf9635e"|0x1bf9635e
+16:50:17.2 (70019547)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (70021209)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (70207334)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (70218030)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (70285875)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@2d3e80e1"|0x56e96437
+16:50:17.2 (70291207)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (70312242)|ENTERING_MANAGED_PKG|
+16:50:17.2 (70437065)|HEAP_ALLOCATE|[241]|Bytes:1105
+16:50:17.2 (70453078)|HEAP_ALLOCATE|[241]|Bytes:1119
+16:50:17.2 (70466837)|ENTERING_MANAGED_PKG|
+16:50:17.2 (70473678)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=18;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=D&B Company ID;getLength=18;getLocalName=DandbCompanyId;getMask=null;getMaskType=null;getName=DandbCompanyId;getPrecision=0;getReferenceTargetField=null;getRelationshipName=DandbCompany;getRelationshipOrder=null;getScale=0;getSoapType=ID;getSobjectField=DandbCompanyId;getType=REFERENCE;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=false;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (70484522)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (70491622)|HEAP_ALLOCATE|[242]|Bytes:14
+16:50:17.2 (70496536)|HEAP_ALLOCATE|[242]|Bytes:32
+16:50:17.2 (70507144)|ENTERING_MANAGED_PKG|
+16:50:17.2 (70512495)|USER_DEBUG|[242]|DEBUG|####### field key DandbCompanyId
+16:50:17.2 (70517525)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (70521941)|HEAP_ALLOCATE|[243]|Bytes:14
+16:50:17.2 (70533908)|ENTERING_MANAGED_PKG|
+16:50:17.2 (70537223)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (70550073)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (70564964)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (70623834)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@3931579f"|0x3931579f
+16:50:17.2 (70629115)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (70630387)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (70780959)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (70791543)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (70858572)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@fe2c9c17"|0x14afbfd3
+16:50:17.2 (70863836)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (70884743)|ENTERING_MANAGED_PKG|
+16:50:17.2 (71320133)|HEAP_ALLOCATE|[241]|Bytes:1149
+16:50:17.2 (71338058)|HEAP_ALLOCATE|[241]|Bytes:1163
+16:50:17.2 (71352509)|ENTERING_MANAGED_PKG|
+16:50:17.2 (71359396)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=765;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Customer Priority;getLength=255;getLocalName=CustomerPriority__c;getMask=null;getMaskType=null;getName=shiva15testns__CustomerPriority__c;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=shiva15testns__CustomerPriority__c;getType=PICKLIST;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=true;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (71371511)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (71378833)|HEAP_ALLOCATE|[242]|Bytes:34
+16:50:17.2 (71383807)|HEAP_ALLOCATE|[242]|Bytes:52
+16:50:17.2 (71394791)|ENTERING_MANAGED_PKG|
+16:50:17.2 (71400141)|USER_DEBUG|[242]|DEBUG|####### field key shiva15testns__CustomerPriority__c
+16:50:17.2 (71405523)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (71410060)|HEAP_ALLOCATE|[243]|Bytes:34
+16:50:17.2 (71421934)|ENTERING_MANAGED_PKG|
+16:50:17.2 (71425338)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (71438253)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (71453499)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (71513905)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@58d552b4"|0x58d552b4
+16:50:17.2 (71519364)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (71520689)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (71647762)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (71658443)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (71725467)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@1e106dda"|0x2da7475f
+16:50:17.2 (71730947)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (71752228)|ENTERING_MANAGED_PKG|
+16:50:17.2 (72240323)|HEAP_ALLOCATE|[241]|Bytes:1096
+16:50:17.2 (72258112)|HEAP_ALLOCATE|[241]|Bytes:1110
+16:50:17.2 (72272903)|ENTERING_MANAGED_PKG|
+16:50:17.2 (72279921)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=765;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=SLA;getLength=255;getLocalName=SLA__c;getMask=null;getMaskType=null;getName=shiva15testns__SLA__c;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=shiva15testns__SLA__c;getType=PICKLIST;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=true;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (72290952)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (72297943)|HEAP_ALLOCATE|[242]|Bytes:21
+16:50:17.2 (72303046)|HEAP_ALLOCATE|[242]|Bytes:39
+16:50:17.2 (72314065)|ENTERING_MANAGED_PKG|
+16:50:17.2 (72319373)|USER_DEBUG|[242]|DEBUG|####### field key shiva15testns__SLA__c
+16:50:17.2 (72324556)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (72329250)|HEAP_ALLOCATE|[243]|Bytes:21
+16:50:17.2 (72341187)|ENTERING_MANAGED_PKG|
+16:50:17.2 (72344747)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (72357481)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (72372551)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (72447577)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@72e012aa"|0x72e012aa
+16:50:17.2 (72453264)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (72454648)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (72581875)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (72592512)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (72660055)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@47c16736"|0x19bb3cc2
+16:50:17.2 (72665393)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (72686597)|ENTERING_MANAGED_PKG|
+16:50:17.2 (73429840)|HEAP_ALLOCATE|[241]|Bytes:1108
+16:50:17.2 (73447927)|HEAP_ALLOCATE|[241]|Bytes:1122
+16:50:17.2 (73462426)|ENTERING_MANAGED_PKG|
+16:50:17.2 (73469423)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=765;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Active;getLength=255;getLocalName=Active__c;getMask=null;getMaskType=null;getName=shiva15testns__Active__c;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=shiva15testns__Active__c;getType=PICKLIST;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=true;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (73480835)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (73487789)|HEAP_ALLOCATE|[242]|Bytes:24
+16:50:17.2 (73492757)|HEAP_ALLOCATE|[242]|Bytes:42
+16:50:17.2 (73503623)|ENTERING_MANAGED_PKG|
+16:50:17.2 (73509133)|USER_DEBUG|[242]|DEBUG|####### field key shiva15testns__Active__c
+16:50:17.2 (73514292)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (73518879)|HEAP_ALLOCATE|[243]|Bytes:24
+16:50:17.2 (73530662)|ENTERING_MANAGED_PKG|
+16:50:17.2 (73534326)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (73547396)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (73562388)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (73622806)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@22d36c3b"|0x22d36c3b
+16:50:17.2 (73628367)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (73629685)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (73757045)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (73767529)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (73835004)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@3eac3542"|0x37b67783
+16:50:17.2 (73840376)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (73861513)|ENTERING_MANAGED_PKG|
+16:50:17.2 (73995985)|HEAP_ALLOCATE|[241]|Bytes:1149
+16:50:17.2 (74012580)|HEAP_ALLOCATE|[241]|Bytes:1163
+16:50:17.2 (74027456)|ENTERING_MANAGED_PKG|
+16:50:17.2 (74034322)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=0;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Number of Locations;getLength=0;getLocalName=NumberofLocations__c;getMask=null;getMaskType=null;getName=shiva15testns__NumberofLocations__c;getPrecision=3;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=DOUBLE;getSobjectField=shiva15testns__NumberofLocations__c;getType=DOUBLE;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=true;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=false;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (74046119)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (74053164)|HEAP_ALLOCATE|[242]|Bytes:35
+16:50:17.2 (74058142)|HEAP_ALLOCATE|[242]|Bytes:53
+16:50:17.2 (74069252)|ENTERING_MANAGED_PKG|
+16:50:17.2 (74074634)|USER_DEBUG|[242]|DEBUG|####### field key shiva15testns__NumberofLocations__c
+16:50:17.2 (74079777)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (74084307)|HEAP_ALLOCATE|[243]|Bytes:35
+16:50:17.2 (74095695)|ENTERING_MANAGED_PKG|
+16:50:17.2 (74099193)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (74112223)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (74127060)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (74186544)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@116d5a51"|0x116d5a51
+16:50:17.2 (74192020)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (74193313)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (74317906)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (74328341)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (74395391)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@7103d38d"|0x689d3b45
+16:50:17.2 (74400613)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (74421742)|ENTERING_MANAGED_PKG|
+16:50:17.2 (74913339)|HEAP_ALLOCATE|[241]|Bytes:1153
+16:50:17.2 (74930478)|HEAP_ALLOCATE|[241]|Bytes:1167
+16:50:17.2 (74945191)|ENTERING_MANAGED_PKG|
+16:50:17.2 (74952289)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=765;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=Upsell Opportunity;getLength=255;getLocalName=UpsellOpportunity__c;getMask=null;getMaskType=null;getName=shiva15testns__UpsellOpportunity__c;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=shiva15testns__UpsellOpportunity__c;getType=PICKLIST;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=true;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (74968861)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (74976170)|HEAP_ALLOCATE|[242]|Bytes:35
+16:50:17.2 (74981635)|HEAP_ALLOCATE|[242]|Bytes:53
+16:50:17.2 (74993195)|ENTERING_MANAGED_PKG|
+16:50:17.2 (74998766)|USER_DEBUG|[242]|DEBUG|####### field key shiva15testns__UpsellOpportunity__c
+16:50:17.2 (75004200)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (75009895)|HEAP_ALLOCATE|[243]|Bytes:35
+16:50:17.2 (75022021)|ENTERING_MANAGED_PKG|
+16:50:17.2 (75025540)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (75038678)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (75054144)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (75114530)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@635ffa3a"|0x635ffa3a
+16:50:17.2 (75120002)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (75121369)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (75246985)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (75257377)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (75326808)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@27b1ee62"|0x266eb8c1
+16:50:17.2 (75334183)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (75359215)|ENTERING_MANAGED_PKG|
+16:50:17.2 (75488235)|HEAP_ALLOCATE|[241]|Bytes:1142
+16:50:17.2 (75504462)|HEAP_ALLOCATE|[241]|Bytes:1156
+16:50:17.2 (75518796)|ENTERING_MANAGED_PKG|
+16:50:17.2 (75525782)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=30;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=SLA Serial Number;getLength=10;getLocalName=SLASerialNumber__c;getMask=null;getMaskType=null;getName=shiva15testns__SLASerialNumber__c;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=STRING;getSobjectField=shiva15testns__SLASerialNumber__c;getType=STRING;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=true;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (75537738)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (75544661)|HEAP_ALLOCATE|[242]|Bytes:33
+16:50:17.2 (75549826)|HEAP_ALLOCATE|[242]|Bytes:51
+16:50:17.2 (75563779)|ENTERING_MANAGED_PKG|
+16:50:17.2 (75570987)|USER_DEBUG|[242]|DEBUG|####### field key shiva15testns__SLASerialNumber__c
+16:50:17.2 (75576988)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (75582136)|HEAP_ALLOCATE|[243]|Bytes:33
+16:50:17.2 (75594084)|ENTERING_MANAGED_PKG|
+16:50:17.2 (75597644)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (75610472)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (75625325)|VARIABLE_SCOPE_BEGIN|[238]|sfield|Schema.SObjectField|true|false
+16:50:17.2 (75684835)|VARIABLE_ASSIGNMENT|[238]|sfield|"common.apex.runtime.impl.ApexFieldToken@1158d1b9"|0x1158d1b9
+16:50:17.2 (75690194)|STATEMENT_EXECUTE|[239]
+16:50:17.2 (75691480)|STATEMENT_EXECUTE|[240]
+16:50:17.2 (75816393)|HEAP_ALLOCATE|[240]|Bytes:8
+16:50:17.2 (75826838)|VARIABLE_SCOPE_BEGIN|[240]|dfield|Schema.DescribeFieldResult|true|false
+16:50:17.2 (75893528)|VARIABLE_ASSIGNMENT|[240]|dfield|"common.api.soap.wsdl.Field@ef290f57"|0x65780168
+16:50:17.2 (75898814)|STATEMENT_EXECUTE|[241]
+16:50:17.2 (75919896)|ENTERING_MANAGED_PKG|
+16:50:17.2 (76053636)|HEAP_ALLOCATE|[241]|Bytes:1144
+16:50:17.2 (76070761)|HEAP_ALLOCATE|[241]|Bytes:1158
+16:50:17.2 (76084876)|ENTERING_MANAGED_PKG|
+16:50:17.2 (76091749)|USER_DEBUG|[241]|DEBUG|####### field Schema.DescribeFieldResult[getByteLength=0;getCalculatedFormula=null;getController=null;getDefaultValue=null;getDefaultValueFormula=null;getDigits=0;getFilteredLookupInfo=null;getInlineHelpText=null;getLabel=SLA Expiration Date;getLength=0;getLocalName=SLAExpirationDate__c;getMask=null;getMaskType=null;getName=shiva15testns__SLAExpirationDate__c;getPrecision=0;getReferenceTargetField=null;getRelationshipName=null;getRelationshipOrder=null;getScale=0;getSoapType=DATE;getSobjectField=shiva15testns__SLAExpirationDate__c;getType=DATE;isAccessible=true;isAggregatable=true;isAutoNumber=false;isCalculated=false;isCascadeDelete=false;isCaseSensitive=false;isCreateable=true;isCustom=true;isDefaultedOnCreate=false;isDependentPicklist=false;isDeprecatedAndHidden=false;isDisplayLocationInDecimal=false;isEncrypted=false;isExternalId=false;isFilterable=true;isGroupable=true;isHighScaleNumber=false;isHtmlFormatted=false;isIdLookup=false;isNameField=false;isNamePointing=false;isNillable=true;isPermissionable=true;isQueryByDistance=false;isRestrictedDelete=false;isSortable=true;isUnique=false;isUpdateable=true;isWriteRequiresMasterRead=false;]
+16:50:17.2 (76103418)|STATEMENT_EXECUTE|[242]
+16:50:17.2 (76110078)|HEAP_ALLOCATE|[242]|Bytes:35
+16:50:17.2 (76115214)|HEAP_ALLOCATE|[242]|Bytes:53
+16:50:17.2 (76126030)|ENTERING_MANAGED_PKG|
+16:50:17.2 (76131234)|USER_DEBUG|[242]|DEBUG|####### field key shiva15testns__SLAExpirationDate__c
+16:50:17.2 (76136326)|STATEMENT_EXECUTE|[243]
+16:50:17.2 (76141127)|HEAP_ALLOCATE|[243]|Bytes:35
+16:50:17.2 (76152711)|ENTERING_MANAGED_PKG|
+16:50:17.2 (76156447)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:50:17.2 (76169298)|HEAP_ALLOCATE|[238]|Bytes:5
+16:50:17.2 (76187435)|VARIABLE_ASSIGNMENT|[238]|sfield|null|
+16:50:17.2 (76193049)|STATEMENT_EXECUTE|[248]
+16:50:17.2 (76212656)|SYSTEM_MODE_EXIT|false
+16:50:17.76 (76264596)|CUMULATIVE_LIMIT_USAGE
+16:50:17.76 (76264596)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+16:50:17.76 (76264596)|LIMIT_USAGE_FOR_NS|shiva15testns|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+16:50:17.76 (76264596)|CUMULATIVE_LIMIT_USAGE_END
+
+16:50:17.2 (76366452)|CODE_UNIT_FINISHED|PermissionSetPortalControllers.getAllFields

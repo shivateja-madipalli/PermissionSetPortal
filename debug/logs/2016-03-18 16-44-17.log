@@ -1,0 +1,76 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+16:44:16.0 (449918)|EXECUTION_STARTED
+16:44:16.0 (481406)|CODE_UNIT_STARTED|[EXTERNAL]|01p36000005Jpvx|PermissionSetPortalControllers.getAllFields
+16:44:16.0 (1239159)|VARIABLE_SCOPE_BEGIN|[2]|PermissionSetPortalControllers.AllObjectsofOrg|Map<String,Schema.SObjectType>|true|true
+16:44:16.0 (1258297)|VARIABLE_SCOPE_BEGIN|[3]|PermissionSetPortalControllers.AllPermissionSets|List<PermissionSet>|true|true
+16:44:16.0 (1273140)|VARIABLE_SCOPE_BEGIN|[4]|PermissionSetPortalControllers.inputField|String|false|true
+16:44:16.0 (1471252)|HEAP_ALLOCATE|[72]|Bytes:3
+16:44:16.0 (1531563)|HEAP_ALLOCATE|[77]|Bytes:152
+16:44:16.0 (1553276)|HEAP_ALLOCATE|[342]|Bytes:408
+16:44:16.0 (1574884)|HEAP_ALLOCATE|[355]|Bytes:408
+16:44:16.0 (1594030)|HEAP_ALLOCATE|[467]|Bytes:48
+16:44:16.0 (1629163)|HEAP_ALLOCATE|[139]|Bytes:6
+16:44:16.0 (1656176)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:88
+16:44:16.0 (1661568)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:9
+16:44:16.0 (1664538)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:14
+16:44:16.0 (1681839)|METHOD_ENTRY|[1]|01p36000005Jpvx|PermissionSetPortalControllers.PermissionSetPortalControllers()
+16:44:16.0 (1686481)|STATEMENT_EXECUTE|[1]
+16:44:16.0 (1694455)|STATEMENT_EXECUTE|[1]
+16:44:16.0 (1728513)|HEAP_ALLOCATE|[50]|Bytes:5
+16:44:16.0 (1756607)|HEAP_ALLOCATE|[56]|Bytes:5
+16:44:16.0 (1766470)|HEAP_ALLOCATE|[64]|Bytes:7
+16:44:16.0 (1814046)|SYSTEM_MODE_ENTER|false
+16:44:16.0 (1836617)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+16:44:16.0 (1844795)|SYSTEM_MODE_EXIT|false
+16:44:16.0 (1856153)|METHOD_EXIT|[1]|PermissionSetPortalControllers
+16:44:16.0 (1868736)|SYSTEM_MODE_ENTER|false
+16:44:16.0 (1878848)|VARIABLE_SCOPE_BEGIN|[63]|selectedObject|String|false|false
+16:44:16.0 (1910718)|VARIABLE_ASSIGNMENT|[63]|selectedObject|null
+16:44:16.0 (1927412)|HEAP_ALLOCATE|[65]|Bytes:5
+16:44:16.0 (1931614)|STATEMENT_EXECUTE|[63]
+16:44:16.0 (1933438)|STATEMENT_EXECUTE|[65]
+16:44:16.0 (1937657)|HEAP_ALLOCATE|[65]|Bytes:28
+16:44:16.0 (1970489)|HEAP_ALLOCATE|[65]|Bytes:32
+16:44:16.0 (2031128)|ENTERING_MANAGED_PKG|
+16:44:16.0 (2067798)|USER_DEBUG|[65]|DEBUG|##### Selected Object Name: null
+16:44:16.0 (2076480)|STATEMENT_EXECUTE|[66]
+16:44:16.0 (2083816)|HEAP_ALLOCATE|[66]|Bytes:4
+16:44:16.0 (2102491)|ENTERING_MANAGED_PKG|
+16:44:16.0 (2126261)|VARIABLE_SCOPE_BEGIN|[66]|individiaulObjFields|List<String>|true|false
+16:44:16.0 (2169500)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:44:16.0 (2189688)|VARIABLE_ASSIGNMENT|[66]|individiaulObjFields|{"s":1,"v":[]}|0x6557a469
+16:44:16.0 (2193507)|STATEMENT_EXECUTE|[69]
+16:44:16.0 (2216753)|ENTERING_MANAGED_PKG|
+16:44:16.0 (21670787)|HEAP_ALLOCATE|[69]|Bytes:1412
+16:44:16.0 (21693473)|VARIABLE_SCOPE_BEGIN|[69]|schemaMap|Map<String,Schema.SObjectType>|true|false
+16:44:16.0 (21940641)|VARIABLE_ASSIGNMENT|[69]|schemaMap|"{acceptedeventrelation=AcceptedEventRelation, account=Account, accountcleaninfo=AccountCleanInfo, accountcontactrole=AccountContactRole, accountfeed=AccountFeed, accounthistory=AccountHistory, accountpartner=AccountPartner, accountshare=AccountShare, actionlinkgrouptemplate=ActionLinkGroupTemplate, actionlinktemplate=ActionLinkTemplate, ...}"|0x264d59ef
+16:44:16.0 (21970801)|ENTERING_MANAGED_PKG|
+16:44:16.0 (22019238)|STATEMENT_EXECUTE|[73]
+16:44:16.0 (22022690)|STATEMENT_EXECUTE|[74]
+16:44:16.0 (22035017)|ENTERING_MANAGED_PKG|
+16:44:16.0 (22145007)|HEAP_ALLOCATE|[74]|Bytes:41
+16:44:16.0 (22239091)|FATAL_ERROR|System.NullPointerException: Attempt to de-reference a null object
+
+Class.shiva15testns.PermissionSetPortalControllers.getAllFields: line 74, column 1
+16:44:16.0 (22251800)|FATAL_ERROR|System.NullPointerException: Attempt to de-reference a null object
+
+Class.shiva15testns.PermissionSetPortalControllers.getAllFields: line 74, column 1
+16:44:16.22 (22262321)|CUMULATIVE_LIMIT_USAGE
+16:44:16.22 (22262321)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+16:44:16.22 (22262321)|CUMULATIVE_LIMIT_USAGE_END
+
+16:44:16.0 (22323209)|CODE_UNIT_FINISHED|PermissionSetPortalControllers.getAllFields
+16:44:16.0 (24432510)|EXECUTION_FINISHED

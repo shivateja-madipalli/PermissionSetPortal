@@ -1,0 +1,68 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+Execute Anonymous: PermissionSetPortalControllers.getAllFields('contract');
+16:13:36.1 (1692153)|EXECUTION_STARTED
+16:13:36.1 (1709104)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+16:13:36.1 (1973468)|HEAP_ALLOCATE|[72]|Bytes:3
+16:13:36.1 (2033074)|HEAP_ALLOCATE|[77]|Bytes:152
+16:13:36.1 (2055505)|HEAP_ALLOCATE|[342]|Bytes:408
+16:13:36.1 (2076236)|HEAP_ALLOCATE|[355]|Bytes:408
+16:13:36.1 (2096052)|HEAP_ALLOCATE|[467]|Bytes:48
+16:13:36.1 (2146467)|HEAP_ALLOCATE|[139]|Bytes:6
+16:13:36.1 (2178868)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:1
+16:13:36.1 (2287938)|STATEMENT_EXECUTE|[1]
+16:13:36.1 (2291502)|STATEMENT_EXECUTE|[1]
+16:13:36.1 (2295666)|HEAP_ALLOCATE|[1]|Bytes:8
+16:13:36.1 (2358183)|HEAP_ALLOCATE|[50]|Bytes:5
+16:13:36.1 (2384596)|HEAP_ALLOCATE|[56]|Bytes:5
+16:13:36.1 (2394280)|HEAP_ALLOCATE|[64]|Bytes:7
+16:13:36.1 (2424163)|SYSTEM_MODE_ENTER|false
+16:13:36.1 (2458662)|HEAP_ALLOCATE|[1]|Bytes:5
+16:13:36.1 (4167161)|VARIABLE_SCOPE_BEGIN|[2]|PermissionSetPortalControllers.AllObjectsofOrg|Map<String,Schema.SObjectType>|true|true
+16:13:36.1 (4314141)|VARIABLE_SCOPE_BEGIN|[3]|PermissionSetPortalControllers.AllPermissionSets|List<PermissionSet>|true|true
+16:13:36.1 (4332655)|VARIABLE_SCOPE_BEGIN|[4]|PermissionSetPortalControllers.inputField|String|false|true
+16:13:36.1 (4394878)|HEAP_ALLOCATE|[1]|Bytes:88
+16:13:36.1 (4402578)|HEAP_ALLOCATE|[1]|Bytes:9
+16:13:36.1 (4406022)|HEAP_ALLOCATE|[1]|Bytes:11
+16:13:36.1 (4435199)|METHOD_ENTRY|[1]|01p36000005Jpvx|PermissionSetPortalControllers.PermissionSetPortalControllers()
+16:13:36.1 (4440651)|STATEMENT_EXECUTE|[1]
+16:13:36.1 (4447572)|STATEMENT_EXECUTE|[1]
+16:13:36.1 (4455919)|HEAP_ALLOCATE|[1]|Bytes:5
+16:13:36.1 (4471529)|METHOD_EXIT|[1]|PermissionSetPortalControllers
+16:13:36.1 (4505642)|METHOD_ENTRY|[1]|01p36000005Jpvx|shiva15testns.PermissionSetPortalControllers.getAllFields(String)
+16:13:36.1 (4533816)|VARIABLE_SCOPE_BEGIN|[63]|objectName|String|false|false
+16:13:36.1 (4563025)|VARIABLE_ASSIGNMENT|[63]|objectName|"contract"
+16:13:36.1 (4576852)|HEAP_ALLOCATE|[65]|Bytes:5
+16:13:36.1 (4581342)|STATEMENT_EXECUTE|[63]
+16:13:36.1 (4582840)|STATEMENT_EXECUTE|[65]
+16:13:36.1 (4589787)|HEAP_ALLOCATE|[65]|Bytes:4
+16:13:36.1 (4631774)|ENTERING_MANAGED_PKG|
+16:13:36.1 (4690591)|VARIABLE_SCOPE_BEGIN|[65]|individiaulObjFields|List<String>|true|false
+16:13:36.1 (4725394)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:13:36.1 (4753435)|VARIABLE_ASSIGNMENT|[65]|individiaulObjFields|{"s":1,"v":[]}|0x380854d0
+16:13:36.1 (4820741)|HEAP_ALLOCATE|[66]|Bytes:41
+16:13:36.1 (4846891)|METHOD_EXIT|[1]|01p36000005Jpvx|shiva15testns.PermissionSetPortalControllers.getAllFields(String)
+16:13:36.1 (4854850)|SYSTEM_MODE_EXIT|false
+16:13:36.1 (4972299)|FATAL_ERROR|System.NullPointerException: Attempt to de-reference a null object
+
+Class.shiva15testns.PermissionSetPortalControllers.getAllFields: line 66, column 1
+AnonymousBlock: line 1, column 1
+AnonymousBlock: line 1, column 1
+16:13:36.5 (5009426)|CUMULATIVE_LIMIT_USAGE
+16:13:36.5 (5009426)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+16:13:36.5 (5009426)|CUMULATIVE_LIMIT_USAGE_END
+
+16:13:36.1 (5068577)|CODE_UNIT_FINISHED|execute_anonymous_apex
+16:13:36.1 (6150995)|EXECUTION_FINISHED

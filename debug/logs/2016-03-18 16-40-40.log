@@ -1,0 +1,71 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+16:40:39.0 (495609)|EXECUTION_STARTED
+16:40:39.0 (530147)|CODE_UNIT_STARTED|[EXTERNAL]|01p36000005Jpvx|PermissionSetPortalControllers.getAllFields
+16:40:39.0 (683341)|VARIABLE_SCOPE_BEGIN|[2]|PermissionSetPortalControllers.AllObjectsofOrg|Map<String,Schema.SObjectType>|true|true
+16:40:39.0 (702183)|VARIABLE_SCOPE_BEGIN|[3]|PermissionSetPortalControllers.AllPermissionSets|List<PermissionSet>|true|true
+16:40:39.0 (718444)|VARIABLE_SCOPE_BEGIN|[4]|PermissionSetPortalControllers.inputField|String|false|true
+16:40:39.0 (909657)|HEAP_ALLOCATE|[72]|Bytes:3
+16:40:39.0 (954320)|HEAP_ALLOCATE|[77]|Bytes:152
+16:40:39.0 (972509)|HEAP_ALLOCATE|[342]|Bytes:408
+16:40:39.0 (993031)|HEAP_ALLOCATE|[355]|Bytes:408
+16:40:39.0 (1011832)|HEAP_ALLOCATE|[467]|Bytes:48
+16:40:39.0 (1048342)|HEAP_ALLOCATE|[139]|Bytes:6
+16:40:39.0 (1073052)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:88
+16:40:39.0 (1078429)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:9
+16:40:39.0 (1081318)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:11
+16:40:39.0 (1102276)|METHOD_ENTRY|[1]|01p36000005Jpvx|PermissionSetPortalControllers.PermissionSetPortalControllers()
+16:40:39.0 (1107100)|STATEMENT_EXECUTE|[1]
+16:40:39.0 (1112865)|STATEMENT_EXECUTE|[1]
+16:40:39.0 (1155670)|HEAP_ALLOCATE|[50]|Bytes:5
+16:40:39.0 (1183505)|HEAP_ALLOCATE|[56]|Bytes:5
+16:40:39.0 (1193642)|HEAP_ALLOCATE|[64]|Bytes:7
+16:40:39.0 (1216945)|SYSTEM_MODE_ENTER|false
+16:40:39.0 (1234608)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+16:40:39.0 (1243097)|SYSTEM_MODE_EXIT|false
+16:40:39.0 (1255929)|METHOD_EXIT|[1]|PermissionSetPortalControllers
+16:40:39.0 (1265527)|SYSTEM_MODE_ENTER|false
+16:40:39.0 (1275834)|VARIABLE_SCOPE_BEGIN|[63]|selectedObject|String|false|false
+16:40:39.0 (1307554)|VARIABLE_ASSIGNMENT|[63]|selectedObject|null
+16:40:39.0 (1321838)|HEAP_ALLOCATE|[65]|Bytes:5
+16:40:39.0 (1326241)|STATEMENT_EXECUTE|[63]
+16:40:39.0 (1328647)|STATEMENT_EXECUTE|[65]
+16:40:39.0 (1336894)|HEAP_ALLOCATE|[65]|Bytes:4
+16:40:39.0 (1382908)|ENTERING_MANAGED_PKG|
+16:40:39.0 (1417969)|VARIABLE_SCOPE_BEGIN|[65]|individiaulObjFields|List<String>|true|false
+16:40:39.0 (1467614)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:40:39.0 (1492960)|VARIABLE_ASSIGNMENT|[65]|individiaulObjFields|{"s":1,"v":[]}|0xc21d453
+16:40:39.0 (1496341)|STATEMENT_EXECUTE|[68]
+16:40:39.0 (1526800)|ENTERING_MANAGED_PKG|
+16:40:39.0 (13685270)|HEAP_ALLOCATE|[68]|Bytes:1412
+16:40:39.0 (13706399)|VARIABLE_SCOPE_BEGIN|[68]|schemaMap|Map<String,Schema.SObjectType>|true|false
+16:40:39.0 (13962599)|VARIABLE_ASSIGNMENT|[68]|schemaMap|"{acceptedeventrelation=AcceptedEventRelation, account=Account, accountcleaninfo=AccountCleanInfo, accountcontactrole=AccountContactRole, accountfeed=AccountFeed, accounthistory=AccountHistory, accountpartner=AccountPartner, accountshare=AccountShare, actionlinkgrouptemplate=ActionLinkGroupTemplate, actionlinktemplate=ActionLinkTemplate, ...}"|0x6c53489a
+16:40:39.0 (13991969)|ENTERING_MANAGED_PKG|
+16:40:39.0 (14035855)|STATEMENT_EXECUTE|[72]
+16:40:39.0 (14039355)|STATEMENT_EXECUTE|[73]
+16:40:39.0 (14051797)|ENTERING_MANAGED_PKG|
+16:40:39.0 (14155492)|HEAP_ALLOCATE|[73]|Bytes:41
+16:40:39.0 (14259718)|FATAL_ERROR|System.NullPointerException: Attempt to de-reference a null object
+
+Class.shiva15testns.PermissionSetPortalControllers.getAllFields: line 73, column 1
+16:40:39.0 (14279040)|FATAL_ERROR|System.NullPointerException: Attempt to de-reference a null object
+
+Class.shiva15testns.PermissionSetPortalControllers.getAllFields: line 73, column 1
+16:40:39.14 (14290939)|CUMULATIVE_LIMIT_USAGE
+16:40:39.14 (14290939)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+16:40:39.14 (14290939)|CUMULATIVE_LIMIT_USAGE_END
+
+16:40:39.0 (14356785)|CODE_UNIT_FINISHED|PermissionSetPortalControllers.getAllFields
+16:40:39.0 (16140375)|EXECUTION_FINISHED

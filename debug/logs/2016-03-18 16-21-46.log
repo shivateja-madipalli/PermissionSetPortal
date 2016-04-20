@@ -1,0 +1,51 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+16:21:44.0 (891531)|HEAP_ALLOCATE|[72]|Bytes:3
+16:21:44.0 (991274)|HEAP_ALLOCATE|[77]|Bytes:152
+16:21:44.0 (1013939)|HEAP_ALLOCATE|[342]|Bytes:408
+16:21:44.0 (1037060)|HEAP_ALLOCATE|[355]|Bytes:408
+16:21:44.0 (1057319)|HEAP_ALLOCATE|[467]|Bytes:48
+16:21:44.3 (3413336)|STATEMENT_EXECUTE|[1]
+16:21:44.3 (3459831)|HEAP_ALLOCATE|[50]|Bytes:5
+16:21:44.3 (3495029)|HEAP_ALLOCATE|[56]|Bytes:5
+16:21:44.3 (3504979)|HEAP_ALLOCATE|[64]|Bytes:7
+16:21:44.3 (3535004)|SYSTEM_MODE_ENTER|false
+16:21:44.3 (3555164)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+16:21:44.3 (3564280)|SYSTEM_MODE_EXIT|false
+16:21:44.3 (3578240)|METHOD_EXIT|[1]|PermissionSetPortalControllers
+16:21:44.3 (3584433)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:15
+16:21:44.3 (3592647)|SYSTEM_MODE_ENTER|false
+16:21:44.3 (3602485)|VARIABLE_SCOPE_BEGIN|[63]|objectName|String|false|false
+16:21:44.3 (3629367)|VARIABLE_ASSIGNMENT|[63]|objectName|"contracthistory"
+16:21:44.3 (3645514)|HEAP_ALLOCATE|[65]|Bytes:5
+16:21:44.3 (3649677)|STATEMENT_EXECUTE|[63]
+16:21:44.3 (3651502)|STATEMENT_EXECUTE|[65]
+16:21:44.3 (3658259)|HEAP_ALLOCATE|[65]|Bytes:4
+16:21:44.3 (3680612)|ENTERING_MANAGED_PKG|
+16:21:44.3 (3708932)|VARIABLE_SCOPE_BEGIN|[65]|individiaulObjFields|List<String>|true|false
+16:21:44.3 (3750601)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:21:44.3 (3771255)|VARIABLE_ASSIGNMENT|[65]|individiaulObjFields|{"s":1,"v":[]}|0x46a31864
+16:21:44.3 (3842724)|HEAP_ALLOCATE|[66]|Bytes:41
+16:21:44.3 (3927014)|FATAL_ERROR|System.NullPointerException: Attempt to de-reference a null object
+
+Class.shiva15testns.PermissionSetPortalControllers.getAllFields: line 66, column 1
+16:21:44.3 (3938971)|FATAL_ERROR|System.NullPointerException: Attempt to de-reference a null object
+
+Class.shiva15testns.PermissionSetPortalControllers.getAllFields: line 66, column 1
+16:21:44.3 (3947602)|CUMULATIVE_LIMIT_USAGE
+16:21:44.3 (3947602)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+16:21:44.3 (3947602)|CUMULATIVE_LIMIT_USAGE_END
+
+16:21:44.3 (3999191)|CODE_UNIT_FINISHED|PermissionSetPortalControllers.getAllFields

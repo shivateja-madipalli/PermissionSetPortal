@@ -1,0 +1,154 @@
+<aura:component implements="force:appHostable" controller="PermissionSetPortalControllers">
+  <aura:handler name="init" value="{!this}" action="{!c.onPageload}" />
+  <ltng:require styles="/resource/slds100/assets/styles/salesforce-lightning-design-system.min.css"/>
+  <ltng:require scripts="/resource/1458034652000/shiva15testns__jquery"/>
+  <ltng:require styles="/resource/bootstrap"/>
+
+  <aura:attribute name="divInnerHtml" type="String"></aura:attribute>
+  <aura:attribute name="allPsDetails" type="Object"></aura:attribute>
+  <aura:attribute name="allObjectDetails" type="Object"></aura:attribute>
+  <aura:attribute name="changedAllObjectDetails" type="Object"></aura:attribute>
+  <aura:attribute name="text" type="Object"> </aura:attribute>
+  <aura:attribute name="changedRecordedObj" type="Object"> </aura:attribute>
+
+  <div>
+    <div id="permissionSetOptions">
+      <div>
+        <h5>Permission Set Options</h5>
+        Choose Existing:
+        <select id="permissionSetNamesddl" onchange="{!c.permissionSetNamesddlChange}">
+        </select>
+        <button type="button" class="slds-button slds-button--neutral slds-not-selected editBtnClass" id="permissionSetEditBtn" onclick="{!c.permissionSetEditClick}" disabled="true">Edit</button>
+        <button type="button" class="slds-button slds-button--neutral slds-not-selected cloneBtnClass" id="permissionSetCloneBtn" onclick="{!c.permissionSetCloneClick}" disabled="true">Clone</button>
+      </div>
+      <div>
+        <button type="button" class="slds-button slds-button--neutral slds-not-selected createNewBtnClass" id="permissionSetCreateNewBtn" onclick="{!c.permissionSetCreateNewClick}">Create New</button>
+        <button type="button" class="slds-button slds-button--neutral slds-not-selected createNewBtnClass" id="permissionSetSaveBtn" onclick="{!c.permissionSetSaveChanges}">Save</button>
+      </div>
+      <div>
+        <label id="successorErrorMessageLabel"> </label>
+      </div>
+    </div>
+    <div id="mainDivForAllSubDivs" class="mainDivForAllSubDivsClass displayNullAnyDivWithThisClass">
+      <div id="PermissionSetDetailsDiv">
+        <aura:iteration items="{!v.permissionSetNamesDataSetasInput}" var="pSetData">
+          <div id="{!pSetData.id + 'IndividualDiv'}" class="individualPermissionSetDetailsClass">
+            <table class="psDetailsTableClass">
+              <tr>
+                <td>
+                  <label for= "{!pSetData.id + 'psDetailsInputEle'}" class="psDetailsInputLabelClass">Name: </label>
+                  <input type="Text" id="{!pSetData.id + 'psDetailsName'}" name="{!pSetData.id}" class="psDetailsInputTagClass" value="{!pSetData.label}" onchange="{!c.pSetNameChange}"> </input>
+                </td>
+                <td>
+                  <label for= "{!pSetData.id + 'UserLicense'}" class="psDetailsInputLabelClass">User License: </label>
+                  <label id= "{!pSetData.id + 'UserLicense'}" class="psDetailsInputLabelClass">{!pSetData.userLicenseId} </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for= "{!pSetData.id + 'psDetailsInputEle'}" class="psDetailsInputLabelClass">API Name: </label>
+                  <input type="Text" id="{!pSetData.id + 'psDetailsAPIName'}" name="{!pSetData.id}" class="psDetailsInputTagClass" value="{!pSetData.apiName}" onchange="{!c.pSetAPINameChange}"> </input>
+                </td>
+                <td>
+                  <label for= "{!pSetData.id + 'CreatedDate'}" class="psDetailsInputLabelClass">Created Date: </label>
+                  <label id= "{!pSetData.id + 'CreatedDate'}" class="psDetailsInputLabelClass">{!pSetData.createdDate} </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for= "{!pSetData.id + 'Description'}" class="psDetailsInputLabelClass">Description: </label>
+                  <textarea id="{!pSetData.id + 'Description'}" name="{!pSetData.id}" maxLength = "5000" cols="0" rows="7" class="psDetailsTextAreaClass" onchange="{!c.pSetDescriptionChange}"> {!pSetData.description} </textarea>
+                </td>
+                <td> </td>
+              </tr>
+            </table>
+          </div>
+
+        </aura:iteration>
+
+
+      </div>
+
+      <input class="pointers slds-button--icon-bare specificPointerClass" id="PointerForEditPermissionsonAllFieldsofAllObjs" value="+" type="button" onclick="{!c.opennCloseEditPermissionsonAllFieldsofAllObjs}"/>
+      <span > Edit Advanced Permissions on All Fields of All Objects </span>
+      <div id="editPermissionsonAllFieldsofAllObjs" class="displayNullAnyDivWithThisClass editPermissionsonAllFieldsofAllObjsClass">
+
+        <ul id="editPermissionsonAllFieldsofAllObjsList" class="editPermissionsonAllFieldsofAllObjsListClass">
+          <li><input type="checkbox" id="readForAllFieldsOfAllObjs" class="editPermissionsonAllFieldsofAllObjsListLi" onclick="{!c.readForAllFieldsOfAllObjsOnClick}"></input> <span> READ for ALL Fields of ALL Objects </span> </li>
+          <li><input type="checkbox" id="editForAllFieldsOfAllObjs" class="editPermissionsonAllFieldsofAllObjsListLi" onclick="{!c.editForAllFieldsOfAllObjsOnClick}"></input> <span> EDIT for ALL Fields of ALL Objects </span> </li>
+        </ul>
+      </div>
+
+      <input class="pointers slds-button--icon-bare specificPointerClass"  value="+" id="PointerForEditPermissionsonIndividualObjectsandFields" type="button" onclick="{!c.opennCloseEditPermissionsonIndividualObjectsandFields}"/>
+      <span> Edit Permissions on Individual Objects and Fields </span>
+      <div id="editPermissionsonIndividualObjectsandFields" class="editPermissionsonIndividualObjectsandFieldsClass displayNullAnyDivWithThisClass">
+        <table class="objectOptionsTable slds-text-heading--medium">
+          <tr>
+            <td class="permissionNamesClass">
+
+            </td>
+            <td class="permissionNamesClass"> <input type="checkbox" id="readforAllObjsChkBox" onclick="{!c.readforAllObjsChkBoxClick}"></input> Read</td>
+            <td class="permissionNamesClass"> <input type="checkbox" id="createforAllObjsChkBox" onclick="{!c.createforAllObjsChkBoxClick}"></input> Create</td>
+            <td class="permissionNamesClass"> <input type="checkbox" id="editforAllObjsChkBox" onclick="{!c.editforAllObjsChkBoxClick}"></input> Edit</td>
+            <td class="permissionNamesClass"> <input type="checkbox" id="deleteforAllObjsChkBox" onclick="{!c.deleteforAllObjsChkBoxClick}"></input> Delete</td>
+            <td class="permissionNamesClass"> <input type="checkbox" id="viewAllforAllObjsChkBox" onclick="{!c.viewAllforAllObjsChkBoxClick}"></input> View All</td>
+            <td class="permissionNamesClass"> <input type="checkbox" id="modifyAllforAllObjsChkBox" onclick="{!c.modifyAllforAllObjsChkBoxClick}"></input> Modify All</td>
+          </tr>
+          <aura:iteration items="{!v.objectNames}" var="objs">
+            <tr class="objNameRowClass">
+              <td class="permissionSetLi">
+                <input class="pointers slds-button--icon-bare" id="{!objs.key}" value="+" name="{!objs.label}" type="button" onclick="{!c.openFieldsDetails}"/>
+                <span class="objNameSpanClass"> {!objs.pluralLabel} </span>
+              </td>
+              <td><input type="checkbox" checked="{!objs.objPermissions.read}" id="{!objs.key + 'ObjRead'}" value="{!objs.key}" onclick="{!c.individualObjectReadPermissionClick}"></input></td>
+              <td><input type="checkbox" checked="{!objs.objPermissions.create}" id="{!objs.key + 'ObjCreate'}" value="{!objs.key}" onclick="{!c.individualObjectCreatePermissionClick}"></input></td>
+              <td><input type="checkbox" checked="{!objs.objPermissions.edit}" id="{!objs.key + 'ObjEdit'}" value="{!objs.key}" onclick="{!c.individualObjectEditPermissionClick}"></input></td>
+              <td><input type="checkbox" checked="{!objs.objPermissions.deleteData}" id="{!objs.key + 'ObjDelete'}" value="{!objs.key}" onclick="{!c.individualObjectDeletePermissionClick}"></input></td>
+              <td><input type="checkbox" checked="{!objs.objPermissions.viewAll}" id="{!objs.key + 'ObjViewAll'}" value="{!objs.key}" onclick="{!c.individualObjectViewAllPermissionClick}"></input></td>
+              <td><input type="checkbox" checked="{!objs.objPermissions.modifyAll}" id="{!objs.key + 'ObjModifyAll'}" value="{!objs.key}" onclick="{!c.individualObjectModifyAllPermissionClick}"></input></td>
+            </tr>
+
+            <tr>
+              <td colspan="7" id="{!objs.key}" class="objsLiClass">
+                <div id="{!objs.key + 'fieldDiv'}" class="fieldsClass">
+                  <table class='objectFieldTable'>
+                    <tr class='objectFieldTableRows'>
+                      <td class="objectFieldTableRowsFieldLabelData">
+
+                      </td>
+                      <td class="objectFieldTableRowsFieldPermissionsData">
+                        <input type="checkbox" id="{!objs.key + 'readForAllFieldsofanIndividualObj'}" name="{!objs.key}" onclick="{!c.readForAllFieldsofanIndividualObjClick}"> </input> Read
+                      </td>
+                      <td class="objectFieldTableRowsFieldPermissionsData">
+                        <input type="checkbox" id="{!objs.key + 'editForAllFieldsofanIndividualObj'}" name="{!objs.key}" onclick="{!c.editForAllFieldsofanIndividualObjClick}"> </input> Edit
+                      </td>
+                    </tr>
+                    <!-- Need to have iteration here -->
+                    <aura:iteration items="{!objs.fieldDetails}" var="fields">
+                      <tr class='objectFieldTableRows'>
+                        <td class='objectFieldTableRowsFieldLabelData'>
+                          {!fields.fieldLabel}
+                        </td>
+                        <td class='objectFieldTableRowsFieldPermissionsData'>
+                          <input type="checkbox" class="objectFieldTableRowsFieldPermissionsDataCheckBox" name="{!objs.key}" id="{!fields.fieldName + 'indiFieldRead'}" value="{!fields.fieldLabel}" onclick="{!c.readForanIndividualFieldofAnIndividualObjClick}" checked="{!fields.fieldPermissions.fieldRead}">
+                          </input>
+                        </td>
+                        <td class='objectFieldTableRowsFieldPermissionsData'>
+                          <input type="checkbox" class="objectFieldTableRowsFieldPermissionsDataCheckBox" name="{!objs.key}" id="{!fields.fieldName + 'indiFieldEdit'}" value="{!fields.fieldLabel}" onclick="{!c.editForanIndividualFieldofAnIndividualObjClick}" checked="{!fields.fieldPermissions.fieldEdit}">
+                          </input>
+                        </td>
+                      </tr>
+                    </aura:iteration>
+                    <!-- iteration end -->
+                  </table>
+
+                </div>
+              </td>
+            </tr>
+
+          </aura:iteration>
+        </table>
+      </div>
+    </div>
+  </div>
+</aura:component>

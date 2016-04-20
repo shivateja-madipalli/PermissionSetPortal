@@ -1,0 +1,426 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+17:06:47.0 (745290)|HEAP_ALLOCATE|[72]|Bytes:3
+17:06:47.0 (842496)|HEAP_ALLOCATE|[77]|Bytes:152
+17:06:47.0 (864045)|HEAP_ALLOCATE|[342]|Bytes:408
+17:06:47.0 (881990)|HEAP_ALLOCATE|[355]|Bytes:408
+17:06:47.0 (898332)|HEAP_ALLOCATE|[467]|Bytes:48
+17:06:47.5 (5384929)|STATEMENT_EXECUTE|[1]
+17:06:47.5 (5443031)|HEAP_ALLOCATE|[50]|Bytes:5
+17:06:47.5 (5476569)|HEAP_ALLOCATE|[56]|Bytes:5
+17:06:47.5 (5486483)|HEAP_ALLOCATE|[64]|Bytes:7
+17:06:47.5 (5517424)|SYSTEM_MODE_ENTER|false
+17:06:47.5 (5539045)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+17:06:47.5 (5544823)|STATEMENT_EXECUTE|[366]
+17:06:47.5 (5546488)|STATEMENT_EXECUTE|[389]
+17:06:47.5 (5547645)|STATEMENT_EXECUTE|[415]
+17:06:47.5 (5548875)|STATEMENT_EXECUTE|[431]
+17:06:47.5 (5555628)|SYSTEM_MODE_EXIT|false
+17:06:47.5 (5565068)|METHOD_EXIT|[1]|PermissionSetPortalControllers
+17:06:47.5 (5570690)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:18
+17:06:47.5 (5600503)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:1416
+17:06:47.5 (5607664)|SYSTEM_MODE_ENTER|false
+17:06:47.5 (5621675)|VARIABLE_SCOPE_BEGIN|[227]|PSetId|String|false|false
+17:06:47.5 (5658473)|VARIABLE_ASSIGNMENT|[227]|PSetId|"0PS36000000q71PGAQ"
+17:06:47.5 (5665297)|VARIABLE_SCOPE_BEGIN|[227]|allObjectsData|List<shiva15testns.PermissionSetPortalControllers.ObjectClass>|true|false
+17:06:47.5 (5688539)|VARIABLE_ASSIGNMENT|[227]|allObjectsData|{"s":1,"v":"List of size 353 too large to display"}|0x774ca770
+17:06:47.5 (5704768)|HEAP_ALLOCATE|[228]|Bytes:5
+17:06:47.5 (5709208)|STATEMENT_EXECUTE|[227]
+17:06:47.5 (5710574)|STATEMENT_EXECUTE|[228]
+17:06:47.5 (5711718)|STATEMENT_EXECUTE|[228]
+17:06:47.5 (5713130)|STATEMENT_EXECUTE|[234]
+17:06:47.5 (5783361)|VARIABLE_SCOPE_BEGIN|[234]|objectwithPSetPermissionsObj|shiva15testns.PermissionSetPortalControllers.ObjectwithPSetPermissionsClass|true|false
+17:06:47.5 (5794979)|VARIABLE_ASSIGNMENT|[234]|objectwithPSetPermissionsObj|null|
+17:06:47.5 (5797699)|STATEMENT_EXECUTE|[235]
+17:06:47.5 (5804743)|HEAP_ALLOCATE|[235]|Bytes:4
+17:06:47.5 (5857300)|ENTERING_MANAGED_PKG|
+17:06:47.5 (5885384)|VARIABLE_SCOPE_BEGIN|[235]|objectwithPSetPermissionsObjList|List<shiva15testns.PermissionSetPortalControllers.ObjectwithPSetPermissionsClass>|true|false
+17:06:47.5 (5909826)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:06:47.5 (5922797)|VARIABLE_ASSIGNMENT|[235]|objectwithPSetPermissionsObjList|{"s":1,"v":[]}|0xabcb7e4
+17:06:47.5 (5926395)|STATEMENT_EXECUTE|[236]
+17:06:47.5 (5943996)|VARIABLE_SCOPE_BEGIN|[236]|objectClassforObjPermissions|shiva15testns.PermissionSetPortalControllers.ObjectClass|true|false
+17:06:47.5 (5951492)|VARIABLE_ASSIGNMENT|[236]|objectClassforObjPermissions|null|
+17:06:47.5 (5953751)|STATEMENT_EXECUTE|[237]
+17:06:47.5 (5958271)|HEAP_ALLOCATE|[238]|Bytes:253
+17:06:47.5 (5972247)|HEAP_ALLOCATE|[238]|Bytes:4
+17:06:47.5 (5982974)|HEAP_ALLOCATE|[238]|Bytes:7
+17:06:47.5 (6967088)|SOQL_EXECUTE_BEGIN|[238]|Aggregations:0|SELECT ParentId, Parent.Name, Parent.PermissionsTransferAnyLead, SobjectType, PermissionsCreate, PermissionsDelete, PermissionsEdit, PermissionsModifyAllRecords, PermissionsRead, PermissionsViewAllRecords FROM ObjectPermissions WHERE ParentId = :tmpVar1
+17:06:47.5 (34252706)|SOQL_EXECUTE_END|[238]|Rows:2
+17:06:47.5 (34292778)|HEAP_ALLOCATE|[238]|Bytes:12
+17:06:47.5 (34326705)|HEAP_ALLOCATE|[238]|Bytes:596
+17:06:47.5 (34467184)|HEAP_ALLOCATE|[238]|Bytes:12
+17:06:47.5 (34498062)|VARIABLE_SCOPE_BEGIN|[237]|AllPermissionsonObjsofPset|List<ObjectPermissions>|true|false
+17:06:47.5 (34578131)|VARIABLE_ASSIGNMENT|[237]|AllPermissionsonObjsofPset|{"s":1,"v":[{"s":2,"v":{"ParentId":"0PS36000000q71PGAQ","SobjectType":"Account","PermissionsCreate":true,"PermissionsDelete":true,"PermissionsEdit":true,"PermissionsModifyAll (7 more) ...":true,"PermissionsRead":true,"PermissionsViewAllRe (5 more) ...":true,"Id":"1103600000HKWUUAA5","Parent":{"s":3,"v":{"Name":"PermissionSet_Test","PermissionsTransferA (6 more) ...":false,"Id":"0PS36000000q71PGAQ"}}}},{"s":4,"v":{"ParentId":"0PS36000000q71PGAQ","SobjectType":"Asset","PermissionsCreate":false,"PermissionsDelete":true,"PermissionsEdit":true,"PermissionsModifyAll (7 more) ...":true,"PermissionsRead":true,"PermissionsViewAllRe (5 more) ...":true,"Id":"1103600000HKqGyAAL","Parent":{"r":3}}}]}|0x1727135b
+17:06:47.5 (34690760)|ENTERING_MANAGED_PKG|
+17:06:47.5 (34748625)|STATEMENT_EXECUTE|[240]
+17:06:47.5 (34751973)|STATEMENT_EXECUTE|[241]
+17:06:47.5 (35359577)|VARIABLE_SCOPE_BEGIN|[241]|objectPermissionObj|shiva15testns.PermissionSetPortalControllers.ObjectPermissionsClass|true|false
+17:06:47.5 (35371862)|VARIABLE_ASSIGNMENT|[241]|objectPermissionObj|null|
+17:06:47.5 (35389056)|ENTERING_MANAGED_PKG|
+17:06:47.5 (35605943)|HEAP_ALLOCATE|[242]|Bytes:5
+17:06:47.5 (35697159)|HEAP_ALLOCATE|[242]|Bytes:44
+17:06:47.5 (35712877)|VARIABLE_SCOPE_BEGIN|[242]|ObjPer|ObjectPermissions|true|false
+17:06:47.5 (35740196)|VARIABLE_ASSIGNMENT|[242]|ObjPer|{"s":1,"v":{"ParentId":"0PS36000000q71PGAQ","SobjectType":"Account","PermissionsCreate":true,"PermissionsDelete":true,"PermissionsEdit":true,"PermissionsModifyAll (7 more) ...":true,"PermissionsRead":true,"PermissionsViewAllRe (5 more) ...":true,"Id":"1103600000HKWUUAA5","Parent":{"s":2,"v":{"Name":"PermissionSet_Test","PermissionsTransferA (6 more) ...":false,"Id":"0PS36000000q71PGAQ"}}}}|0x64cf957a
+17:06:47.5 (35745956)|STATEMENT_EXECUTE|[242]
+17:06:47.5 (35747793)|STATEMENT_EXECUTE|[243]
+17:06:47.5 (35753122)|HEAP_ALLOCATE|[243]|Bytes:42
+17:06:47.5 (35785601)|ENTERING_MANAGED_PKG|
+17:06:47.5 (35813511)|USER_DEBUG|[243]|DEBUG|Permissions concerened to individual Psets
+17:06:47.5 (35822104)|STATEMENT_EXECUTE|[244]
+17:06:47.5 (35827023)|HEAP_ALLOCATE|[244]|Bytes:24
+17:06:47.5 (35909641)|HEAP_ALLOCATE|[244]|Bytes:42
+17:06:47.5 (35924596)|ENTERING_MANAGED_PKG|
+17:06:47.5 (35938763)|USER_DEBUG|[244]|DEBUG|The PermissionSet Name: PermissionSet_Test
+17:06:47.5 (35945268)|STATEMENT_EXECUTE|[245]
+17:06:47.5 (35949988)|HEAP_ALLOCATE|[245]|Bytes:14
+17:06:47.5 (35974914)|HEAP_ALLOCATE|[245]|Bytes:21
+17:06:47.5 (35987504)|ENTERING_MANAGED_PKG|
+17:06:47.5 (36000112)|USER_DEBUG|[245]|DEBUG|SObject Type: Account
+17:06:47.5 (36007415)|STATEMENT_EXECUTE|[247]
+17:06:47.5 (36016383)|HEAP_ALLOCATE|[247]|Bytes:192
+17:06:47.5 (36023505)|HEAP_ALLOCATE|[247]|Bytes:27
+17:06:47.5 (36050216)|HEAP_ALLOCATE|[247]|Bytes:28
+17:06:47.5 (36150196)|CONSTRUCTOR_ENTRY|[247]|01p36000005Jpvx|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean)
+17:06:47.5 (36198491)|VARIABLE_SCOPE_BEGIN|[445]|this|shiva15testns.PermissionSetPortalControllers.ObjectPermissionsClass|true|false
+17:06:47.5 (36273760)|VARIABLE_ASSIGNMENT|[445]|this|{}|0x7e808b56
+17:06:47.5 (36281168)|VARIABLE_SCOPE_BEGIN|[445]|read|Boolean|false|false
+17:06:47.5 (36286482)|VARIABLE_ASSIGNMENT|[445]|read|true
+17:06:47.5 (36290253)|VARIABLE_SCOPE_BEGIN|[445]|create|Boolean|false|false
+17:06:47.5 (36293346)|VARIABLE_ASSIGNMENT|[445]|create|true
+17:06:47.5 (36296207)|VARIABLE_SCOPE_BEGIN|[445]|edit|Boolean|false|false
+17:06:47.5 (36298937)|VARIABLE_ASSIGNMENT|[445]|edit|true
+17:06:47.5 (36301694)|VARIABLE_SCOPE_BEGIN|[445]|deleteData|Boolean|false|false
+17:06:47.5 (36304830)|VARIABLE_ASSIGNMENT|[445]|deleteData|true
+17:06:47.5 (36307652)|VARIABLE_SCOPE_BEGIN|[445]|vieAll|Boolean|false|false
+17:06:47.5 (36310589)|VARIABLE_ASSIGNMENT|[445]|vieAll|true
+17:06:47.5 (36313226)|VARIABLE_SCOPE_BEGIN|[445]|modifyAll|Boolean|false|false
+17:06:47.5 (36316177)|VARIABLE_ASSIGNMENT|[445]|modifyAll|true
+17:06:47.5 (36320122)|STATEMENT_EXECUTE|[431]
+17:06:47.5 (36321611)|STATEMENT_EXECUTE|[433]
+17:06:47.5 (36323056)|STATEMENT_EXECUTE|[435]
+17:06:47.5 (36324193)|STATEMENT_EXECUTE|[437]
+17:06:47.5 (36325411)|STATEMENT_EXECUTE|[439]
+17:06:47.5 (36326603)|STATEMENT_EXECUTE|[441]
+17:06:47.5 (36327728)|STATEMENT_EXECUTE|[443]
+17:06:47.5 (36336882)|HEAP_ALLOCATE|[447]|Bytes:6
+17:06:47.5 (36373848)|STATEMENT_EXECUTE|[446]
+17:06:47.5 (36376116)|STATEMENT_EXECUTE|[447]
+17:06:47.5 (36468178)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x7e808b56
+17:06:47.5 (36477821)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|true
+17:06:47.5 (36492015)|VARIABLE_ASSIGNMENT|[433]|this.read|true|0x7e808b56
+17:06:47.5 (36499693)|STATEMENT_EXECUTE|[448]
+17:06:47.5 (36559013)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"read":true}|0x7e808b56
+17:06:47.5 (36566857)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|true
+17:06:47.5 (36575194)|VARIABLE_ASSIGNMENT|[435]|this.create|true|0x7e808b56
+17:06:47.5 (36582164)|STATEMENT_EXECUTE|[449]
+17:06:47.5 (36635760)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"create":true,"read":true}|0x7e808b56
+17:06:47.5 (36643678)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|true
+17:06:47.5 (36651824)|VARIABLE_ASSIGNMENT|[437]|this.edit|true|0x7e808b56
+17:06:47.5 (36658504)|STATEMENT_EXECUTE|[450]
+17:06:47.5 (36711025)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"create":true,"edit":true,"read":true}|0x7e808b56
+17:06:47.5 (36719381)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|true
+17:06:47.5 (36727236)|VARIABLE_ASSIGNMENT|[439]|this.deleteData|true|0x7e808b56
+17:06:47.5 (36733932)|STATEMENT_EXECUTE|[451]
+17:06:47.5 (36773182)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"create":true,"deleteData":true,"edit":true,"read":true}|0x7e808b56
+17:06:47.5 (36818946)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"create":true,"deleteData":true,"edit":true,"read":true}|0x7e808b56
+17:06:47.5 (36826480)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|null
+17:06:47.5 (36834092)|VARIABLE_ASSIGNMENT|[441]|this.viewAll|null|0x7e808b56
+17:06:47.5 (36840502)|STATEMENT_EXECUTE|[452]
+17:06:47.5 (36891806)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"create":true,"deleteData":true,"edit":true,"read":true}|0x7e808b56
+17:06:47.5 (36899646)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|true
+17:06:47.5 (36907358)|VARIABLE_ASSIGNMENT|[443]|this.modifyAll|true|0x7e808b56
+17:06:47.5 (36921225)|CONSTRUCTOR_EXIT|[247]|01p36000005Jpvx|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean)
+17:06:47.5 (36940051)|VARIABLE_ASSIGNMENT|[247]|objectPermissionObj|{"create":true,"deleteData":true,"edit":true,"modifyAll":true,"read":true}|0x7e808b56
+17:06:47.5 (36944067)|STATEMENT_EXECUTE|[248]
+17:06:47.5 (36950639)|HEAP_ALLOCATE|[248]|Bytes:128
+17:06:47.5 (36957741)|HEAP_ALLOCATE|[248]|Bytes:15
+17:06:47.5 (36973471)|HEAP_ALLOCATE|[248]|Bytes:16
+17:06:47.5 (37002655)|CONSTRUCTOR_ENTRY|[248]|01p36000005Jpvx|<init>(String,String,String)
+17:06:47.5 (37031732)|VARIABLE_SCOPE_BEGIN|[377]|this|shiva15testns.PermissionSetPortalControllers.ObjectClass|true|false
+17:06:47.5 (37067213)|VARIABLE_ASSIGNMENT|[377]|this|{}|0x884d339
+17:06:47.5 (37072925)|VARIABLE_SCOPE_BEGIN|[377]|lab|String|false|false
+17:06:47.5 (37077290)|VARIABLE_ASSIGNMENT|[377]|lab|null
+17:06:47.5 (37080217)|VARIABLE_SCOPE_BEGIN|[377]|api|String|false|false
+17:06:47.5 (37084661)|VARIABLE_ASSIGNMENT|[377]|api|"Account"
+17:06:47.5 (37087743)|VARIABLE_SCOPE_BEGIN|[377]|key|String|false|false
+17:06:47.5 (37090535)|VARIABLE_ASSIGNMENT|[377]|key|null
+17:06:47.5 (37094011)|STATEMENT_EXECUTE|[366]
+17:06:47.5 (37095525)|STATEMENT_EXECUTE|[369]
+17:06:47.5 (37097063)|STATEMENT_EXECUTE|[371]
+17:06:47.5 (37098413)|STATEMENT_EXECUTE|[373]
+17:06:47.5 (37111579)|STATEMENT_EXECUTE|[378]
+17:06:47.5 (37113495)|STATEMENT_EXECUTE|[379]
+17:06:47.5 (37167651)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x884d339
+17:06:47.5 (37175097)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|null
+17:06:47.5 (37183060)|VARIABLE_ASSIGNMENT|[369]|this.label|null|0x884d339
+17:06:47.5 (37189834)|STATEMENT_EXECUTE|[380]
+17:06:47.5 (37236950)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x884d339
+17:06:47.5 (37250258)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|"Account"
+17:06:47.5 (37259183)|VARIABLE_ASSIGNMENT|[371]|this.objName|"Account"|0x884d339
+17:06:47.5 (37266135)|STATEMENT_EXECUTE|[381]
+17:06:47.5 (37316220)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"objName":"Account"}|0x884d339
+17:06:47.5 (37324037)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|null
+17:06:47.5 (37331597)|VARIABLE_ASSIGNMENT|[373]|this.key|null|0x884d339
+17:06:47.5 (37342508)|CONSTRUCTOR_EXIT|[248]|01p36000005Jpvx|<init>(String,String,String)
+17:06:47.5 (37358170)|VARIABLE_ASSIGNMENT|[248]|objectClassforObjPermissions|{"objName":"Account"}|0x884d339
+17:06:47.5 (37361661)|STATEMENT_EXECUTE|[250]
+17:06:47.5 (37367990)|HEAP_ALLOCATE|[250]|Bytes:164
+17:06:47.5 (37375231)|HEAP_ALLOCATE|[250]|Bytes:15
+17:06:47.5 (37389921)|HEAP_ALLOCATE|[250]|Bytes:16
+17:06:47.5 (37420310)|CONSTRUCTOR_ENTRY|[250]|01p36000005Jpvx|<init>(shiva15testns.PermissionSetPortalControllers.ObjectClass,String,shiva15testns.PermissionSetPortalControllers.ObjectPermissionsClass)
+17:06:47.5 (37448066)|VARIABLE_SCOPE_BEGIN|[423]|this|shiva15testns.PermissionSetPortalControllers.ObjectwithPSetPermissionsClass|true|false
+17:06:47.5 (37483102)|VARIABLE_ASSIGNMENT|[423]|this|{}|0x2ad004aa
+17:06:47.5 (37488326)|VARIABLE_SCOPE_BEGIN|[423]|objectClassObject|shiva15testns.PermissionSetPortalControllers.ObjectClass|true|false
+17:06:47.5 (37502151)|VARIABLE_ASSIGNMENT|[423]|objectClassObject|{"objName":"Account"}|0x884d339
+17:06:47.5 (37506966)|VARIABLE_SCOPE_BEGIN|[423]|permissionSetId|String|false|false
+17:06:47.5 (37511268)|VARIABLE_ASSIGNMENT|[423]|permissionSetId|"PermissionSet_Test"
+17:06:47.5 (37514438)|VARIABLE_SCOPE_BEGIN|[423]|objectPermissionsObj|shiva15testns.PermissionSetPortalControllers.ObjectPermissionsClass|true|false
+17:06:47.5 (37530287)|VARIABLE_ASSIGNMENT|[423]|objectPermissionsObj|{"create":true,"deleteData":true,"edit":true,"modifyAll":true,"read":true}|0x7e808b56
+17:06:47.5 (37535309)|STATEMENT_EXECUTE|[415]
+17:06:47.5 (37536843)|STATEMENT_EXECUTE|[417]
+17:06:47.5 (37538395)|STATEMENT_EXECUTE|[419]
+17:06:47.5 (37539791)|STATEMENT_EXECUTE|[421]
+17:06:47.5 (37552157)|STATEMENT_EXECUTE|[424]
+17:06:47.5 (37554321)|STATEMENT_EXECUTE|[425]
+17:06:47.5 (37621730)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x2ad004aa
+17:06:47.5 (37637049)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"objName":"Account"}|0x884d339
+17:06:47.5 (37645106)|VARIABLE_ASSIGNMENT|[417]|this.objectClassObject|0x884d339|0x2ad004aa
+17:06:47.5 (37652348)|STATEMENT_EXECUTE|[426]
+17:06:47.5 (37702644)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"objectClassObject":"0x884d339"}|0x2ad004aa
+17:06:47.5 (37711500)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|"PermissionSet_Test"
+17:06:47.5 (37720237)|VARIABLE_ASSIGNMENT|[419]|this.permissionSetId|"PermissionSet_Test"|0x2ad004aa
+17:06:47.5 (37727291)|STATEMENT_EXECUTE|[427]
+17:06:47.5 (37779691)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"objectClassObject":"0x884d339","permissionSetId":"PermissionSet_Test"}|0x2ad004aa
+17:06:47.5 (37800353)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"create":true,"deleteData":true,"edit":true,"modifyAll":true,"read":true}|0x7e808b56
+17:06:47.5 (37808724)|VARIABLE_ASSIGNMENT|[421]|this.objectPermissionsObj|0x7e808b56|0x2ad004aa
+17:06:47.5 (37820394)|CONSTRUCTOR_EXIT|[250]|01p36000005Jpvx|<init>(shiva15testns.PermissionSetPortalControllers.ObjectClass,String,shiva15testns.PermissionSetPortalControllers.ObjectPermissionsClass)
+17:06:47.5 (37838895)|VARIABLE_ASSIGNMENT|[250]|objectwithPSetPermissionsObj|{"objectClassObject":"0x884d339","objectPermissionsObj":"0x7e808b56","permissionSetId":"PermissionSet_Test"}|0x2ad004aa
+17:06:47.5 (37842786)|STATEMENT_EXECUTE|[251]
+17:06:47.5 (37859391)|ENTERING_MANAGED_PKG|
+17:06:47.5 (37886093)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:06:47.5 (37904337)|HEAP_ALLOCATE|[242]|Bytes:5
+17:06:47.5 (37928005)|HEAP_ALLOCATE|[242]|Bytes:44
+17:06:47.5 (37937234)|VARIABLE_SCOPE_BEGIN|[242]|ObjPer|ObjectPermissions|true|false
+17:06:47.5 (37963214)|VARIABLE_ASSIGNMENT|[242]|ObjPer|{"s":1,"v":{"ParentId":"0PS36000000q71PGAQ","SobjectType":"Asset","PermissionsCreate":false,"PermissionsDelete":true,"PermissionsEdit":true,"PermissionsModifyAll (7 more) ...":true,"PermissionsRead":true,"PermissionsViewAllRe (5 more) ...":true,"Id":"1103600000HKqGyAAL","Parent":{"s":2,"v":{"Name":"PermissionSet_Test","PermissionsTransferA (6 more) ...":false,"Id":"0PS36000000q71PGAQ"}}}}|0x5e1dd49f
+17:06:47.5 (37968682)|STATEMENT_EXECUTE|[242]
+17:06:47.5 (37970123)|STATEMENT_EXECUTE|[243]
+17:06:47.5 (37982707)|ENTERING_MANAGED_PKG|
+17:06:47.5 (37986794)|USER_DEBUG|[243]|DEBUG|Permissions concerened to individual Psets
+17:06:47.5 (37992760)|STATEMENT_EXECUTE|[244]
+17:06:47.5 (38008030)|HEAP_ALLOCATE|[244]|Bytes:42
+17:06:47.5 (38019720)|ENTERING_MANAGED_PKG|
+17:06:47.5 (38022939)|USER_DEBUG|[244]|DEBUG|The PermissionSet Name: PermissionSet_Test
+17:06:47.5 (38027859)|STATEMENT_EXECUTE|[245]
+17:06:47.5 (38042210)|HEAP_ALLOCATE|[245]|Bytes:19
+17:06:47.5 (38051456)|ENTERING_MANAGED_PKG|
+17:06:47.5 (38054167)|USER_DEBUG|[245]|DEBUG|SObject Type: Asset
+17:06:47.5 (38058809)|STATEMENT_EXECUTE|[247]
+17:06:47.5 (38063093)|HEAP_ALLOCATE|[247]|Bytes:28
+17:06:47.5 (38083075)|CONSTRUCTOR_ENTRY|[247]|01p36000005Jpvx|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean)
+17:06:47.5 (38088656)|VARIABLE_SCOPE_BEGIN|[445]|this|shiva15testns.PermissionSetPortalControllers.ObjectPermissionsClass|true|false
+17:06:47.5 (38107792)|VARIABLE_ASSIGNMENT|[445]|this|{}|0x26fd0bc7
+17:06:47.5 (38110780)|VARIABLE_SCOPE_BEGIN|[445]|read|Boolean|false|false
+17:06:47.5 (38114701)|VARIABLE_ASSIGNMENT|[445]|read|true
+17:06:47.5 (38116492)|VARIABLE_SCOPE_BEGIN|[445]|create|Boolean|false|false
+17:06:47.5 (38119279)|VARIABLE_ASSIGNMENT|[445]|create|false
+17:06:47.5 (38121082)|VARIABLE_SCOPE_BEGIN|[445]|edit|Boolean|false|false
+17:06:47.5 (38123539)|VARIABLE_ASSIGNMENT|[445]|edit|true
+17:06:47.5 (38125115)|VARIABLE_SCOPE_BEGIN|[445]|deleteData|Boolean|false|false
+17:06:47.5 (38127669)|VARIABLE_ASSIGNMENT|[445]|deleteData|true
+17:06:47.5 (38129373)|VARIABLE_SCOPE_BEGIN|[445]|vieAll|Boolean|false|false
+17:06:47.5 (38131792)|VARIABLE_ASSIGNMENT|[445]|vieAll|true
+17:06:47.5 (38133565)|VARIABLE_SCOPE_BEGIN|[445]|modifyAll|Boolean|false|false
+17:06:47.5 (38136079)|VARIABLE_ASSIGNMENT|[445]|modifyAll|true
+17:06:47.5 (38138711)|STATEMENT_EXECUTE|[431]
+17:06:47.5 (38140326)|STATEMENT_EXECUTE|[433]
+17:06:47.5 (38141806)|STATEMENT_EXECUTE|[435]
+17:06:47.5 (38142971)|STATEMENT_EXECUTE|[437]
+17:06:47.5 (38144168)|STATEMENT_EXECUTE|[439]
+17:06:47.5 (38145340)|STATEMENT_EXECUTE|[441]
+17:06:47.5 (38146540)|STATEMENT_EXECUTE|[443]
+17:06:47.5 (38157351)|STATEMENT_EXECUTE|[446]
+17:06:47.5 (38158969)|STATEMENT_EXECUTE|[447]
+17:06:47.5 (38178207)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x26fd0bc7
+17:06:47.5 (38183074)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|true
+17:06:47.5 (38190032)|VARIABLE_ASSIGNMENT|[433]|this.read|true|0x26fd0bc7
+17:06:47.5 (38196003)|STATEMENT_EXECUTE|[448]
+17:06:47.5 (38214860)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"read":true}|0x26fd0bc7
+17:06:47.5 (38219954)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|false
+17:06:47.5 (38225984)|VARIABLE_ASSIGNMENT|[435]|this.create|false|0x26fd0bc7
+17:06:47.5 (38231419)|STATEMENT_EXECUTE|[449]
+17:06:47.5 (38256187)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"create":false,"read":true}|0x26fd0bc7
+17:06:47.5 (38261523)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|true
+17:06:47.5 (38268154)|VARIABLE_ASSIGNMENT|[437]|this.edit|true|0x26fd0bc7
+17:06:47.5 (38273927)|STATEMENT_EXECUTE|[450]
+17:06:47.5 (38294524)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"create":false,"edit":true,"read":true}|0x26fd0bc7
+17:06:47.5 (38299451)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|true
+17:06:47.5 (38305476)|VARIABLE_ASSIGNMENT|[439]|this.deleteData|true|0x26fd0bc7
+17:06:47.5 (38310803)|STATEMENT_EXECUTE|[451]
+17:06:47.5 (38330199)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"create":false,"deleteData":true,"edit":true,"read":true}|0x26fd0bc7
+17:06:47.5 (38354660)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"create":false,"deleteData":true,"edit":true,"read":true}|0x26fd0bc7
+17:06:47.5 (38359534)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|null
+17:06:47.5 (38365582)|VARIABLE_ASSIGNMENT|[441]|this.viewAll|null|0x26fd0bc7
+17:06:47.5 (38370957)|STATEMENT_EXECUTE|[452]
+17:06:47.5 (38390240)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"create":false,"deleteData":true,"edit":true,"read":true}|0x26fd0bc7
+17:06:47.5 (38395256)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|true
+17:06:47.5 (38401260)|VARIABLE_ASSIGNMENT|[443]|this.modifyAll|true|0x26fd0bc7
+17:06:47.5 (38412853)|CONSTRUCTOR_EXIT|[247]|01p36000005Jpvx|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean)
+17:06:47.5 (38430585)|VARIABLE_ASSIGNMENT|[247]|objectPermissionObj|{"create":false,"deleteData":true,"edit":true,"modifyAll":true,"read":true}|0x26fd0bc7
+17:06:47.5 (38434286)|STATEMENT_EXECUTE|[248]
+17:06:47.5 (38438701)|HEAP_ALLOCATE|[248]|Bytes:16
+17:06:47.5 (38452182)|CONSTRUCTOR_ENTRY|[248]|01p36000005Jpvx|<init>(String,String,String)
+17:06:47.5 (38457391)|VARIABLE_SCOPE_BEGIN|[377]|this|shiva15testns.PermissionSetPortalControllers.ObjectClass|true|false
+17:06:47.5 (38470860)|VARIABLE_ASSIGNMENT|[377]|this|{}|0x57f078f4
+17:06:47.5 (38473506)|VARIABLE_SCOPE_BEGIN|[377]|lab|String|false|false
+17:06:47.5 (38476698)|VARIABLE_ASSIGNMENT|[377]|lab|null
+17:06:47.5 (38478480)|VARIABLE_SCOPE_BEGIN|[377]|api|String|false|false
+17:06:47.5 (38482121)|VARIABLE_ASSIGNMENT|[377]|api|"Asset"
+17:06:47.5 (38484092)|VARIABLE_SCOPE_BEGIN|[377]|key|String|false|false
+17:06:47.5 (38486481)|VARIABLE_ASSIGNMENT|[377]|key|null
+17:06:47.5 (38488887)|STATEMENT_EXECUTE|[366]
+17:06:47.5 (38490532)|STATEMENT_EXECUTE|[369]
+17:06:47.5 (38491934)|STATEMENT_EXECUTE|[371]
+17:06:47.5 (38493149)|STATEMENT_EXECUTE|[373]
+17:06:47.5 (38503288)|STATEMENT_EXECUTE|[378]
+17:06:47.5 (38504949)|STATEMENT_EXECUTE|[379]
+17:06:47.5 (38521353)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x57f078f4
+17:06:47.5 (38525829)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|null
+17:06:47.5 (38532544)|VARIABLE_ASSIGNMENT|[369]|this.label|null|0x57f078f4
+17:06:47.5 (38537960)|STATEMENT_EXECUTE|[380]
+17:06:47.5 (38552829)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x57f078f4
+17:06:47.5 (38557832)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|"Asset"
+17:06:47.5 (38564574)|VARIABLE_ASSIGNMENT|[371]|this.objName|"Asset"|0x57f078f4
+17:06:47.5 (38569950)|STATEMENT_EXECUTE|[381]
+17:06:47.5 (38586954)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"objName":"Asset"}|0x57f078f4
+17:06:47.5 (38591564)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|null
+17:06:47.5 (38597468)|VARIABLE_ASSIGNMENT|[373]|this.key|null|0x57f078f4
+17:06:47.5 (38606883)|CONSTRUCTOR_EXIT|[248]|01p36000005Jpvx|<init>(String,String,String)
+17:06:47.5 (38620571)|VARIABLE_ASSIGNMENT|[248]|objectClassforObjPermissions|{"objName":"Asset"}|0x57f078f4
+17:06:47.5 (38623937)|STATEMENT_EXECUTE|[250]
+17:06:47.5 (38628060)|HEAP_ALLOCATE|[250]|Bytes:16
+17:06:47.5 (38645145)|CONSTRUCTOR_ENTRY|[250]|01p36000005Jpvx|<init>(shiva15testns.PermissionSetPortalControllers.ObjectClass,String,shiva15testns.PermissionSetPortalControllers.ObjectPermissionsClass)
+17:06:47.5 (38651171)|VARIABLE_SCOPE_BEGIN|[423]|this|shiva15testns.PermissionSetPortalControllers.ObjectwithPSetPermissionsClass|true|false
+17:06:47.5 (38665731)|VARIABLE_ASSIGNMENT|[423]|this|{}|0x713225ac
+17:06:47.5 (38668487)|VARIABLE_SCOPE_BEGIN|[423]|objectClassObject|shiva15testns.PermissionSetPortalControllers.ObjectClass|true|false
+17:06:47.5 (38680268)|VARIABLE_ASSIGNMENT|[423]|objectClassObject|{"objName":"Asset"}|0x57f078f4
+17:06:47.5 (38682931)|VARIABLE_SCOPE_BEGIN|[423]|permissionSetId|String|false|false
+17:06:47.5 (38686702)|VARIABLE_ASSIGNMENT|[423]|permissionSetId|"PermissionSet_Test"
+17:06:47.5 (38688649)|VARIABLE_SCOPE_BEGIN|[423]|objectPermissionsObj|shiva15testns.PermissionSetPortalControllers.ObjectPermissionsClass|true|false
+17:06:47.5 (38703727)|VARIABLE_ASSIGNMENT|[423]|objectPermissionsObj|{"create":false,"deleteData":true,"edit":true,"modifyAll":true,"read":true}|0x26fd0bc7
+17:06:47.5 (38707644)|STATEMENT_EXECUTE|[415]
+17:06:47.5 (38708933)|STATEMENT_EXECUTE|[417]
+17:06:47.5 (38710345)|STATEMENT_EXECUTE|[419]
+17:06:47.5 (38711525)|STATEMENT_EXECUTE|[421]
+17:06:47.5 (38721577)|STATEMENT_EXECUTE|[424]
+17:06:47.5 (38723196)|STATEMENT_EXECUTE|[425]
+17:06:47.5 (38739070)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x713225ac
+17:06:47.5 (38750378)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"objName":"Asset"}|0x57f078f4
+17:06:47.5 (38756580)|VARIABLE_ASSIGNMENT|[417]|this.objectClassObject|0x57f078f4|0x713225ac
+17:06:47.5 (38762012)|STATEMENT_EXECUTE|[426]
+17:06:47.5 (38778982)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"objectClassObject":"0x57f078f4"}|0x713225ac
+17:06:47.5 (38784098)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|"PermissionSet_Test"
+17:06:47.5 (38791055)|VARIABLE_ASSIGNMENT|[419]|this.permissionSetId|"PermissionSet_Test"|0x713225ac
+17:06:47.5 (38796462)|STATEMENT_EXECUTE|[427]
+17:06:47.5 (38814378)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"objectClassObject":"0x57f078f4","permissionSetId":"PermissionSet_Test"}|0x713225ac
+17:06:47.5 (38830860)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"create":false,"deleteData":true,"edit":true,"modifyAll":true,"read":true}|0x26fd0bc7
+17:06:47.5 (38836852)|VARIABLE_ASSIGNMENT|[421]|this.objectPermissionsObj|0x26fd0bc7|0x713225ac
+17:06:47.5 (38846907)|CONSTRUCTOR_EXIT|[250]|01p36000005Jpvx|<init>(shiva15testns.PermissionSetPortalControllers.ObjectClass,String,shiva15testns.PermissionSetPortalControllers.ObjectPermissionsClass)
+17:06:47.5 (38864877)|VARIABLE_ASSIGNMENT|[250]|objectwithPSetPermissionsObj|{"objectClassObject":"0x57f078f4","objectPermissionsObj":"0x26fd0bc7","permissionSetId":"PermissionSet_Test"}|0x713225ac
+17:06:47.5 (38868429)|STATEMENT_EXECUTE|[251]
+17:06:47.5 (38880092)|ENTERING_MANAGED_PKG|
+17:06:47.5 (38885094)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:06:47.5 (38899628)|HEAP_ALLOCATE|[242]|Bytes:5
+17:06:47.5 (38911708)|VARIABLE_ASSIGNMENT|[242]|ObjPer|null|
+17:06:47.5 (38915443)|STATEMENT_EXECUTE|[253]
+17:06:47.5 (38932158)|METHOD_ENTRY|[253]|01p36000005Jpvx|shiva15testns.PermissionSetPortalControllers.comparingAndManiplatingObject(List<shiva15testns.PermissionSetPortalControllers.ObjectwithPSetPermissionsClass>, List<shiva15testns.PermissionSetPortalControllers.ObjectClass>)
+17:06:47.5 (38953866)|VARIABLE_SCOPE_BEGIN|[271]|objectwithPSetPermissionsList|List<shiva15testns.PermissionSetPortalControllers.ObjectwithPSetPermissionsClass>|true|false
+17:06:47.5 (38988800)|VARIABLE_ASSIGNMENT|[271]|objectwithPSetPermissionsList|{"s":1,"v":[{"objectClassObject":"0x884d339","objectPermissionsObj":"0x7e808b56","permissionSetId":"PermissionSet_Test"},{"objectClassObject":"0x57f078f4","objectPermissionsObj":"0x26fd0bc7","permissionSetId":"PermissionSet_Test"}]}|0xabcb7e4
+17:06:47.5 (38996173)|VARIABLE_SCOPE_BEGIN|[271]|allObjectsData|List<shiva15testns.PermissionSetPortalControllers.ObjectClass>|true|false
+17:06:47.5 (39006082)|VARIABLE_ASSIGNMENT|[271]|allObjectsData|{"s":1,"v":"List of size 353 too large to display"}|0x774ca770
+17:06:47.5 (39017212)|HEAP_ALLOCATE|[274]|Bytes:5
+17:06:47.5 (39021391)|STATEMENT_EXECUTE|[271]
+17:06:47.5 (39022893)|STATEMENT_EXECUTE|[274]
+17:06:47.5 (39024075)|STATEMENT_EXECUTE|[274]
+17:06:47.5 (39025416)|STATEMENT_EXECUTE|[275]
+17:06:47.5 (39028821)|HEAP_ALLOCATE|[275]|Bytes:41
+17:06:47.5 (39043179)|ENTERING_MANAGED_PKG|
+17:06:47.5 (39057942)|USER_DEBUG|[275]|DEBUG|Exec inside comparingAndManiplatingObject
+17:06:47.5 (39064829)|STATEMENT_EXECUTE|[276]
+17:06:47.5 (39072087)|HEAP_ALLOCATE|[276]|Bytes:4
+17:06:47.5 (39084383)|ENTERING_MANAGED_PKG|
+17:06:47.5 (39099319)|VARIABLE_SCOPE_BEGIN|[276]|objectwithPSetPermissionsFinalList|List<shiva15testns.PermissionSetPortalControllers.ObjectwithPSetPermissionsClass>|true|false
+17:06:47.5 (39116045)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:06:47.5 (39125942)|VARIABLE_ASSIGNMENT|[276]|objectwithPSetPermissionsFinalList|{"s":1,"v":[]}|0x2a658f51
+17:06:47.5 (39128962)|STATEMENT_EXECUTE|[280]
+17:06:47.5 (39132364)|VARIABLE_SCOPE_BEGIN|[280]|allObjectsCopy|List<shiva15testns.PermissionSetPortalControllers.ObjectClass>|true|false
+17:06:47.5 (39140843)|VARIABLE_ASSIGNMENT|[280]|allObjectsCopy|{"s":1,"v":"List of size 353 too large to display"}|0x774ca770
+17:06:47.5 (39189432)|ENTERING_MANAGED_PKG|
+17:06:47.5 (39207928)|STATEMENT_EXECUTE|[284]
+17:06:47.5 (39210010)|STATEMENT_EXECUTE|[285]
+17:06:47.5 (39214409)|HEAP_ALLOCATE|[285]|Bytes:27
+17:06:47.5 (39227958)|ENTERING_MANAGED_PKG|
+17:06:47.5 (39244713)|USER_DEBUG|[285]|DEBUG|allObjectsCopy is not empty
+17:06:47.5 (39252084)|STATEMENT_EXECUTE|[287]
+17:06:47.5 (39255785)|VARIABLE_SCOPE_BEGIN|[287]|objectwithPSetPermissionsForFinalList|shiva15testns.PermissionSetPortalControllers.ObjectwithPSetPermissionsClass|true|false
+17:06:47.5 (39266154)|VARIABLE_ASSIGNMENT|[287]|objectwithPSetPermissionsForFinalList|null|
+17:06:47.5 (39269111)|STATEMENT_EXECUTE|[288]
+17:06:47.5 (39275999)|VARIABLE_SCOPE_BEGIN|[288]|i|Integer|false|false
+17:06:47.5 (39280084)|HEAP_ALLOCATE|[288]|Bytes:4
+17:06:47.5 (39286013)|VARIABLE_ASSIGNMENT|[288]|i|0
+17:06:47.5 (39299956)|ENTERING_MANAGED_PKG|
+17:06:47.5 (39316612)|STATEMENT_EXECUTE|[288]
+17:06:47.5 (39318605)|STATEMENT_EXECUTE|[290]
+17:06:47.5 (39322624)|HEAP_ALLOCATE|[290]|Bytes:19
+17:06:47.5 (39335401)|ENTERING_MANAGED_PKG|
+17:06:47.5 (39347209)|USER_DEBUG|[290]|DEBUG|inside 1st for loop
+17:06:47.5 (39353968)|STATEMENT_EXECUTE|[292]
+17:06:47.5 (39357890)|VARIABLE_SCOPE_BEGIN|[292]|j|Integer|false|false
+17:06:47.5 (39361410)|HEAP_ALLOCATE|[292]|Bytes:4
+17:06:47.5 (39367886)|VARIABLE_ASSIGNMENT|[292]|j|0
+17:06:47.5 (39379352)|ENTERING_MANAGED_PKG|
+17:06:47.5 (39393572)|STATEMENT_EXECUTE|[292]
+17:06:47.5 (39395448)|STATEMENT_EXECUTE|[293]
+17:06:47.5 (39399159)|HEAP_ALLOCATE|[293]|Bytes:19
+17:06:47.5 (39411203)|ENTERING_MANAGED_PKG|
+17:06:47.5 (39422371)|USER_DEBUG|[293]|DEBUG|inside 2nd for loop
+17:06:47.5 (46414368)|HEAP_ALLOCATE|[295]|Bytes:4
+17:06:47.5 (48230581)|METHOD_EXIT|[253]|01p36000005Jpvx|shiva15testns.PermissionSetPortalControllers.comparingAndManiplatingObject(List<shiva15testns.PermissionSetPortalControllers.ObjectwithPSetPermissionsClass>, List<shiva15testns.PermissionSetPortalControllers.ObjectClass>)
+17:06:47.5 (48352173)|FATAL_ERROR|System.UnexpectedException: null
+
+External entry point
+Class.shiva15testns.PermissionSetPortalControllers.getObjectPermissionsConcerningPermissionSet: line 253, column 1
+17:06:47.5 (48366869)|FATAL_ERROR|System.UnexpectedException: null
+
+External entry point
+Class.shiva15testns.PermissionSetPortalControllers.getObjectPermissionsConcerningPermissionSet: line 253, column 1
+17:06:47.48 (48377860)|CUMULATIVE_LIMIT_USAGE
+17:06:47.48 (48377860)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:06:47.48 (48377860)|LIMIT_USAGE_FOR_NS|shiva15testns|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:06:47.48 (48377860)|CUMULATIVE_LIMIT_USAGE_END
+
+17:06:47.5 (48451877)|CODE_UNIT_FINISHED|PermissionSetPortalControllers.getObjectPermissionsConcerningPermissionSet

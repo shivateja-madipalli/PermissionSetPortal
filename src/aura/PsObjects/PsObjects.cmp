@@ -1,0 +1,28 @@
+<aura:component implements="force:appHostable" controller="PermissionSetPortalControllers">
+  <aura:handler name="init" value="{!this}" action="{!c.onPsObjectsPageload}" />
+<!-- This is for Permission Set Objects -->
+
+
+<div>
+    <ul class="slds-text-heading--medium PermissionSetUl">
+      <aura:iteration items="{!v.ObjectNames}" var="obj">
+            <li>
+                <!-- <ui:button label="+" aura:id={} press="{!c.openObjDetails}"/>
+                   -->
+
+                  <div class="slds-button slds-button--brand slds-float--left plusIconClass" id="{!obj.Id}" > + </div>
+
+                  <div> {!obj.Name} </div>
+            </li>
+            <li>
+                <!-- <div id="{!item.Id + 'Fields'}">
+                    <!-- <c:PsObjects /> -->
+                </div> -->
+            </li>
+</aura:iteration>
+
+    </ul>
+</div>
+
+
+</aura:component>

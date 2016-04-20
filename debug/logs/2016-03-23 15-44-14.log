@@ -1,0 +1,87 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+15:44:12.0 (892664)|HEAP_ALLOCATE|[72]|Bytes:3
+15:44:12.0 (981075)|HEAP_ALLOCATE|[77]|Bytes:152
+15:44:12.0 (1001319)|HEAP_ALLOCATE|[342]|Bytes:408
+15:44:12.0 (1023048)|HEAP_ALLOCATE|[355]|Bytes:408
+15:44:12.0 (1042662)|HEAP_ALLOCATE|[467]|Bytes:48
+15:44:12.3 (3075209)|STATEMENT_EXECUTE|[1]
+15:44:12.3 (3120309)|HEAP_ALLOCATE|[50]|Bytes:5
+15:44:12.3 (3146943)|HEAP_ALLOCATE|[56]|Bytes:5
+15:44:12.3 (3156749)|HEAP_ALLOCATE|[64]|Bytes:7
+15:44:12.3 (3182699)|SYSTEM_MODE_ENTER|false
+15:44:12.3 (3201934)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+15:44:12.3 (3206826)|STATEMENT_EXECUTE|[279]
+15:44:12.3 (3208806)|STATEMENT_EXECUTE|[298]
+15:44:12.3 (3210030)|STATEMENT_EXECUTE|[323]
+15:44:12.3 (3211167)|STATEMENT_EXECUTE|[339]
+15:44:12.3 (3216129)|SYSTEM_MODE_EXIT|false
+15:44:12.3 (3229218)|METHOD_EXIT|[1]|PermissionSetPortalControllers
+15:44:12.3 (3235063)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:21
+15:44:12.3 (3240088)|SYSTEM_MODE_ENTER|false
+15:44:12.3 (3249543)|VARIABLE_SCOPE_BEGIN|[186]|PSetId|String|false|false
+15:44:12.3 (3275951)|VARIABLE_ASSIGNMENT|[186]|PSetId|"permissionSetNamesdd (1 more) ..."
+15:44:12.3 (3291409)|HEAP_ALLOCATE|[187]|Bytes:5
+15:44:12.3 (3295909)|STATEMENT_EXECUTE|[186]
+15:44:12.3 (3297538)|STATEMENT_EXECUTE|[187]
+15:44:12.3 (3382322)|VARIABLE_SCOPE_BEGIN|[187]|objectwithPSetPermissionsObj|shiva15testns.PermissionSetPortalControllers.ObjectwithPSetPermissionsClass|true|false
+15:44:12.3 (3393508)|VARIABLE_ASSIGNMENT|[187]|objectwithPSetPermissionsObj|null|
+15:44:12.3 (3396272)|STATEMENT_EXECUTE|[188]
+15:44:12.3 (3403701)|HEAP_ALLOCATE|[188]|Bytes:4
+15:44:12.3 (3474909)|ENTERING_MANAGED_PKG|
+15:44:12.3 (3504506)|VARIABLE_SCOPE_BEGIN|[188]|objectwithPSetPermissionsObjList|List<shiva15testns.PermissionSetPortalControllers.ObjectwithPSetPermissionsClass>|true|false
+15:44:12.3 (3538180)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:44:12.3 (3554933)|VARIABLE_ASSIGNMENT|[188]|objectwithPSetPermissionsObjList|{"s":1,"v":[]}|0xfa03538
+15:44:12.3 (3558635)|STATEMENT_EXECUTE|[189]
+15:44:12.3 (3622088)|VARIABLE_SCOPE_BEGIN|[189]|objectClassforObjPermissions|shiva15testns.PermissionSetPortalControllers.ObjectClass|true|false
+15:44:12.3 (3631209)|VARIABLE_ASSIGNMENT|[189]|objectClassforObjPermissions|null|
+15:44:12.3 (3633873)|STATEMENT_EXECUTE|[190]
+15:44:12.3 (3638402)|HEAP_ALLOCATE|[191]|Bytes:253
+15:44:12.3 (3650456)|HEAP_ALLOCATE|[191]|Bytes:4
+15:44:12.3 (3661239)|HEAP_ALLOCATE|[191]|Bytes:7
+15:44:12.3 (5114191)|SOQL_EXECUTE_BEGIN|[191]|Aggregations:0|SELECT ParentId, Parent.Name, Parent.PermissionsTransferAnyLead, SobjectType, PermissionsCreate, PermissionsDelete, PermissionsEdit, PermissionsModifyAllRecords, PermissionsRead, PermissionsViewAllRecords FROM ObjectPermissions WHERE ParentId = :tmpVar1
+15:44:12.3 (24396825)|SOQL_EXECUTE_END|[191]|Rows:0
+15:44:12.3 (24422126)|HEAP_ALLOCATE|[191]|Bytes:4
+15:44:12.3 (24433454)|HEAP_ALLOCATE|[191]|Bytes:0
+15:44:12.3 (24500701)|HEAP_ALLOCATE|[191]|Bytes:4
+15:44:12.3 (24512516)|VARIABLE_SCOPE_BEGIN|[190]|AllPermissionsonObjsofPset|List<ObjectPermissions>|true|false
+15:44:12.3 (24529416)|VARIABLE_ASSIGNMENT|[190]|AllPermissionsonObjsofPset|{"s":1,"v":[]}|0x604d2d6c
+15:44:12.3 (24581703)|ENTERING_MANAGED_PKG|
+15:44:12.3 (24612288)|STATEMENT_EXECUTE|[209]
+15:44:12.3 (24614714)|STATEMENT_EXECUTE|[210]
+15:44:12.3 (24619260)|HEAP_ALLOCATE|[210]|Bytes:45
+15:44:12.3 (24644706)|ENTERING_MANAGED_PKG|
+15:44:12.3 (24670810)|USER_DEBUG|[210]|DEBUG|No Permissions concerened to individual Psets
+15:44:12.3 (24678370)|STATEMENT_EXECUTE|[211]
+15:44:12.3 (24691888)|SYSTEM_MODE_EXIT|false
+15:44:12.24 (24741834)|CUMULATIVE_LIMIT_USAGE
+15:44:12.24 (24741834)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:44:12.24 (24741834)|LIMIT_USAGE_FOR_NS|shiva15testns|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:44:12.24 (24741834)|CUMULATIVE_LIMIT_USAGE_END
+
+15:44:12.3 (24787192)|CODE_UNIT_FINISHED|PermissionSetPortalControllers.getObjectPermissionsConcerningPermissionSet

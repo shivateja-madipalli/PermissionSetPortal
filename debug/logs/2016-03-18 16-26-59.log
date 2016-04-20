@@ -1,0 +1,51 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+16:26:57.0 (584686)|HEAP_ALLOCATE|[72]|Bytes:3
+16:26:57.0 (684144)|HEAP_ALLOCATE|[77]|Bytes:152
+16:26:57.0 (704683)|HEAP_ALLOCATE|[342]|Bytes:408
+16:26:57.0 (724249)|HEAP_ALLOCATE|[355]|Bytes:408
+16:26:57.0 (742727)|HEAP_ALLOCATE|[467]|Bytes:48
+16:26:57.2 (2371024)|STATEMENT_EXECUTE|[1]
+16:26:57.2 (2418260)|HEAP_ALLOCATE|[50]|Bytes:5
+16:26:57.2 (2444477)|HEAP_ALLOCATE|[56]|Bytes:5
+16:26:57.2 (2453585)|HEAP_ALLOCATE|[64]|Bytes:7
+16:26:57.2 (2483359)|SYSTEM_MODE_ENTER|false
+16:26:57.2 (2504017)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+16:26:57.2 (2513203)|SYSTEM_MODE_EXIT|false
+16:26:57.2 (2527202)|METHOD_EXIT|[1]|PermissionSetPortalControllers
+16:26:57.2 (2532520)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:9
+16:26:57.2 (2541223)|SYSTEM_MODE_ENTER|false
+16:26:57.2 (2553044)|VARIABLE_SCOPE_BEGIN|[63]|objectName|String|false|false
+16:26:57.2 (2578699)|VARIABLE_ASSIGNMENT|[63]|objectName|"orderfeed"
+16:26:57.2 (2594203)|HEAP_ALLOCATE|[65]|Bytes:5
+16:26:57.2 (2598503)|STATEMENT_EXECUTE|[63]
+16:26:57.2 (2600282)|STATEMENT_EXECUTE|[65]
+16:26:57.2 (2607450)|HEAP_ALLOCATE|[65]|Bytes:4
+16:26:57.2 (2629436)|ENTERING_MANAGED_PKG|
+16:26:57.2 (2659627)|VARIABLE_SCOPE_BEGIN|[65]|individiaulObjFields|List<String>|true|false
+16:26:57.2 (2696820)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:26:57.2 (2718732)|VARIABLE_ASSIGNMENT|[65]|individiaulObjFields|{"s":1,"v":[]}|0x7c62336e
+16:26:57.2 (2786078)|HEAP_ALLOCATE|[66]|Bytes:41
+16:26:57.2 (2872839)|FATAL_ERROR|System.NullPointerException: Attempt to de-reference a null object
+
+Class.shiva15testns.PermissionSetPortalControllers.getAllFields: line 66, column 1
+16:26:57.2 (2885048)|FATAL_ERROR|System.NullPointerException: Attempt to de-reference a null object
+
+Class.shiva15testns.PermissionSetPortalControllers.getAllFields: line 66, column 1
+16:26:57.2 (2894333)|CUMULATIVE_LIMIT_USAGE
+16:26:57.2 (2894333)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+16:26:57.2 (2894333)|CUMULATIVE_LIMIT_USAGE_END
+
+16:26:57.2 (2951295)|CODE_UNIT_FINISHED|PermissionSetPortalControllers.getAllFields

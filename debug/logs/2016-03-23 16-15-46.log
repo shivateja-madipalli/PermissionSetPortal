@@ -1,0 +1,106 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+16:15:44.0 (69835)|EXECUTION_STARTED
+16:15:44.0 (104711)|CODE_UNIT_STARTED|[EXTERNAL]|01p36000005Jpvx|PermissionSetPortalControllers.getObjectPermissionsConcerningPermissionSet
+16:15:44.0 (283983)|VARIABLE_SCOPE_BEGIN|[4]|PermissionSetPortalControllers.AllPermissionSets|List<PermissionSet>|true|true
+16:15:44.0 (302890)|VARIABLE_SCOPE_BEGIN|[5]|PermissionSetPortalControllers.allObjectsOfOrg|List<shiva15testns.PermissionSetPortalControllers.ObjectClass>|true|true
+16:15:44.0 (316999)|VARIABLE_SCOPE_BEGIN|[6]|PermissionSetPortalControllers.inputField|String|false|true
+16:15:44.0 (430456)|HEAP_ALLOCATE|[72]|Bytes:3
+16:15:44.0 (457167)|HEAP_ALLOCATE|[77]|Bytes:152
+16:15:44.0 (469574)|HEAP_ALLOCATE|[342]|Bytes:408
+16:15:44.0 (487251)|HEAP_ALLOCATE|[355]|Bytes:408
+16:15:44.0 (504566)|HEAP_ALLOCATE|[467]|Bytes:48
+16:15:44.0 (532657)|HEAP_ALLOCATE|[139]|Bytes:6
+16:15:44.0 (552088)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:84
+16:15:44.0 (557243)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:88
+16:15:44.0 (560780)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:23
+16:15:44.0 (563615)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:87
+16:15:44.0 (578397)|METHOD_ENTRY|[1]|01p36000005Jpvx|PermissionSetPortalControllers.PermissionSetPortalControllers()
+16:15:44.0 (583094)|STATEMENT_EXECUTE|[1]
+16:15:44.0 (588525)|STATEMENT_EXECUTE|[1]
+16:15:44.0 (622598)|HEAP_ALLOCATE|[50]|Bytes:5
+16:15:44.0 (642568)|HEAP_ALLOCATE|[56]|Bytes:5
+16:15:44.0 (651355)|HEAP_ALLOCATE|[64]|Bytes:7
+16:15:44.0 (669543)|SYSTEM_MODE_ENTER|false
+16:15:44.0 (684996)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+16:15:44.0 (689607)|STATEMENT_EXECUTE|[348]
+16:15:44.0 (691408)|STATEMENT_EXECUTE|[371]
+16:15:44.0 (692581)|STATEMENT_EXECUTE|[397]
+16:15:44.0 (693772)|STATEMENT_EXECUTE|[413]
+16:15:44.0 (697488)|SYSTEM_MODE_EXIT|false
+16:15:44.0 (707867)|METHOD_EXIT|[1]|PermissionSetPortalControllers
+16:15:44.0 (731102)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:1416
+16:15:44.0 (737602)|SYSTEM_MODE_ENTER|false
+16:15:44.0 (748163)|VARIABLE_SCOPE_BEGIN|[227]|PSetId|String|false|false
+16:15:44.0 (775974)|VARIABLE_ASSIGNMENT|[227]|PSetId|null
+16:15:44.0 (781758)|VARIABLE_SCOPE_BEGIN|[227]|allObjectsData|List<shiva15testns.PermissionSetPortalControllers.ObjectClass>|true|false
+16:15:44.0 (803709)|VARIABLE_ASSIGNMENT|[227]|allObjectsData|{"s":1,"v":"List of size 353 too large to display"}|0x65d5a6ec
+16:15:44.0 (817992)|HEAP_ALLOCATE|[228]|Bytes:5
+16:15:44.0 (822161)|STATEMENT_EXECUTE|[227]
+16:15:44.0 (823645)|STATEMENT_EXECUTE|[228]
+16:15:44.0 (824934)|STATEMENT_EXECUTE|[228]
+16:15:44.0 (826070)|STATEMENT_EXECUTE|[229]
+16:15:44.0 (841378)|VARIABLE_ASSIGNMENT|[229]|PermissionSetPortalControllers.allObjectsOfOrg|{"s":1,"v":"List of size 353 too large to display"}|0x65d5a6ec
+16:15:44.0 (850406)|STATEMENT_EXECUTE|[230]
+16:15:44.0 (951017)|VARIABLE_SCOPE_BEGIN|[230]|objectwithPSetPermissionsObj|shiva15testns.PermissionSetPortalControllers.ObjectwithPSetPermissionsClass|true|false
+16:15:44.0 (961555)|VARIABLE_ASSIGNMENT|[230]|objectwithPSetPermissionsObj|null|
+16:15:44.0 (964227)|STATEMENT_EXECUTE|[231]
+16:15:44.0 (969952)|HEAP_ALLOCATE|[231]|Bytes:4
+16:15:44.0 (1042147)|ENTERING_MANAGED_PKG|
+16:15:44.0 (1073257)|VARIABLE_SCOPE_BEGIN|[231]|objectwithPSetPermissionsObjList|List<shiva15testns.PermissionSetPortalControllers.ObjectwithPSetPermissionsClass>|true|false
+16:15:44.0 (1095864)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:15:44.0 (1107913)|VARIABLE_ASSIGNMENT|[231]|objectwithPSetPermissionsObjList|{"s":1,"v":[]}|0x5a23a285
+16:15:44.0 (1111516)|STATEMENT_EXECUTE|[232]
+16:15:44.0 (1132011)|VARIABLE_SCOPE_BEGIN|[232]|objectClassforObjPermissions|shiva15testns.PermissionSetPortalControllers.ObjectClass|true|false
+16:15:44.0 (1139339)|VARIABLE_ASSIGNMENT|[232]|objectClassforObjPermissions|null|
+16:15:44.0 (1141514)|STATEMENT_EXECUTE|[233]
+16:15:44.0 (1146118)|HEAP_ALLOCATE|[234]|Bytes:253
+16:15:44.0 (1154674)|HEAP_ALLOCATE|[234]|Bytes:4
+16:15:44.0 (1163921)|HEAP_ALLOCATE|[234]|Bytes:7
+16:15:44.0 (2042960)|SOQL_EXECUTE_BEGIN|[234]|Aggregations:0|SELECT ParentId, Parent.Name, Parent.PermissionsTransferAnyLead, SobjectType, PermissionsCreate, PermissionsDelete, PermissionsEdit, PermissionsModifyAllRecords, PermissionsRead, PermissionsViewAllRecords FROM ObjectPermissions WHERE ParentId = :tmpVar1
+16:15:44.0 (8225861)|SOQL_EXECUTE_END|[234]|Rows:0
+16:15:44.0 (8242972)|HEAP_ALLOCATE|[234]|Bytes:4
+16:15:44.0 (8252750)|HEAP_ALLOCATE|[234]|Bytes:0
+16:15:44.0 (8313909)|HEAP_ALLOCATE|[234]|Bytes:4
+16:15:44.0 (8326294)|VARIABLE_SCOPE_BEGIN|[233]|AllPermissionsonObjsofPset|List<ObjectPermissions>|true|false
+16:15:44.0 (8346164)|VARIABLE_ASSIGNMENT|[233]|AllPermissionsonObjsofPset|{"s":1,"v":[]}|0x16aff335
+16:15:44.0 (8398898)|ENTERING_MANAGED_PKG|
+16:15:44.0 (8431202)|STATEMENT_EXECUTE|[252]
+16:15:44.0 (8433787)|STATEMENT_EXECUTE|[253]
+16:15:44.0 (8438829)|HEAP_ALLOCATE|[253]|Bytes:45
+16:15:44.0 (8463697)|ENTERING_MANAGED_PKG|
+16:15:44.0 (8490287)|USER_DEBUG|[253]|DEBUG|No Permissions concerened to individual Psets
+16:15:44.0 (8497430)|STATEMENT_EXECUTE|[254]
+16:15:44.0 (8508779)|SYSTEM_MODE_EXIT|false
+16:15:44.8 (8553521)|CUMULATIVE_LIMIT_USAGE
+16:15:44.8 (8553521)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+16:15:44.8 (8553521)|LIMIT_USAGE_FOR_NS|shiva15testns|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+16:15:44.8 (8553521)|CUMULATIVE_LIMIT_USAGE_END
+
+16:15:44.0 (8602796)|CODE_UNIT_FINISHED|PermissionSetPortalControllers.getObjectPermissionsConcerningPermissionSet
+16:15:44.0 (10769506)|EXECUTION_FINISHED
