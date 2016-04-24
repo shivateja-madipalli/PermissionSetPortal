@@ -7,6 +7,17 @@
 		this.assigningValueToAInput(component);
 	},
 
+	pageRenderingCompleted : function(component, event) {
+		// $(':input').attr('readonly','readonly');
+	},
+
+	showSpinnerHelperClass : function(component, event) {
+		var spinner = component.find('spinner');
+        var evt = spinner.get("e.toggle");
+        evt.setParams({ isVisible : true });
+        evt.fire();
+	},
+
 	assigningValueToAInput: function(cmp) {
 		// var i = $('#permissionSetLi > : input');
 		// i.val('@');
@@ -71,7 +82,7 @@
 		return allPSetDetails;
 	},
 
-	permissionSetNameSelected : function(component,event){
+	permissionSetNameSelected : function(component,event) {
 		var selectedVal = $('#'+event.srcElement.id).val();
 		if(selectedVal === "NothingSelected") {
 			this.swapEditCloneButtonsDisability(true);
@@ -83,6 +94,7 @@
 			this.swapObjectDivVisibility(true);
 			this.swapPsDetailsDivVisibility(true,selectedVal);
 			this.getObjectPermissionsFromServer(component,event);
+			this.disablingEverything();
 		}
 	},
 
@@ -142,6 +154,7 @@
 				// ////console.log("response deleteData : " + response.getReturnValue()[0].objPermissions.deleteData);
 
 				component.set("v.objectNames", response.getReturnValue());
+
 				//console.log("Check this:" + response.getReturnValue());
 
 				var objectDetailsWithPermissionsasJSON = JSON.stringify(response.getReturnValue());
@@ -183,6 +196,9 @@
 		// }
 	},
 
+
+	//############ this.disablingObjectLevelPermissions(response.getReturnValue());
+
 	checkIfDataHasRequiredString : function(Data, stringToSearch){
 
 		if(Data.search(stringToSearch) == -1) {
@@ -220,27 +236,13 @@
 	//
 	// },
 
-	// objectSelected: function(cmp,event) {
-	// 	if($('#'+event.srcElement.id).val() == '+') {
-	// 		//console.log("inside object +");
-	// 		this.contactServerForFields();
-	// 		// $('#'+event.srcElement.id).val('-');
-	// 		$('#'+event.srcElement.id + 'fieldDiv').show('slow');
-	// 	}
-	// 	else {
-	// 		//console.log("inside object -");
-	// 		$('#'+event.srcElement.id).val('+');
-	// 		$('#'+event.srcElement.id + 'fieldDiv').slideUp('slow');
-	// 	}
-	// },
-
-
 	objectSelected: function(cmp,event) {
 		if($('#'+event.srcElement.id).val() == '+') {
 			//console.log("inside object +");
 			this.contactServerForFields(cmp, event);
 			$('#'+event.srcElement.id).val('-');
 			$('#'+event.srcElement.id + 'fieldDiv').show('slow');
+			this.disablingFieldLevelPermissions();
 		}
 		else {
 			//console.log("inside object -");
@@ -250,17 +252,14 @@
 	},
 
 	contactServerForFields: function(component, event) {
-		//creating a DS for storing Key - Obj pair
-		var keyFieldPair = new Array();
-
-		////console.log("Obj Key: " + event.srcElement.id);
 
 		//get global stored objs data
 		var allObjDataForStoringFieldData = component.get("{!v.allObjectDetails}");
 		var action = component.get("c.getAllFieldData");
 		action.setParams({ selectedObject : event.srcElement.id , selectedPSet : $('#permissionSetNamesddl').val() });
 		////console.log("Calling getAllFieldData from contactServerForFields");
-		action.setCallback(this, function(response) {
+		// new Promise(function(resolve, reject) {
+			action.setCallback(this, function(response) {
 			var state = response.getState();
 			if (component.isValid() && state === "SUCCESS") {
 				//////console.log("result from contactServerForFields: " + response.getReturnValue());
@@ -292,11 +291,13 @@
 									var fieldPermissionsConcerningObjnPSet = this.createFieldPermissionsClass(allObjectData[i].fieldDetails[fieldCount].fieldPermissions.fieldPermissionsId, allObjectData[i].fieldDetails[fieldCount].fieldPermissions.fieldRead, allObjectData[i].fieldDetails[fieldCount].fieldPermissions.fieldEdit);
 									var fieldDetailsObj = this.createFieldDetailsClass(allObjectData[i].fieldDetails[fieldCount].fieldName, allObjectData[i].fieldDetails[fieldCount].fieldLabel, fieldPermissionsConcerningObjnPSet);
 									fieldDetails.push(fieldDetailsObj);
+									$('#' + allObjectData[i].fieldDetails[fieldCount].fieldName + 'indiFieldRead').removeAttr('disabled');
 								}
 								allObjDataForStoringFieldData[i].fieldDetails = fieldDetails;
 								//component.set("v.allObjectDetails", this.addFieldDetailsToListofObjs(component,response.getReturnValue(), event.srcElement.id, $('#permissionSetNamesddl').val()));
 								////console.log("After adding Field Details to the global variable: " + component.get("v.allObjectDetails"));
 								component.set("v.objectNames",allObjectData);
+
 								break;
 							}
 							else {
@@ -315,6 +316,13 @@
 			//console.log("This is here");
 		});
 		$A.enqueueAction(action);
+	// }).then({
+	// 	// console.log("Promise successful");
+	// });
+	// .catch({
+	// 	console.log("Promise failed");
+	// });
+		//this.disablingFieldLevelPermissions(allObjectData[i].key, allObjectData[i].fieldDetails[fieldCount].fieldName);
 	},
 
 	// getFieldPermissionsFromServer : function(component, event) {
@@ -356,6 +364,13 @@
 
 	opennCloseEditPermissionsonIndividualObjectsandFields : function(cmp, event) {
 		this.swapPlusandMinusButton('PointerForEditPermissionsonIndividualObjectsandFields','editPermissionsonIndividualObjectsandFields');
+		//change the expand object button value
+		var allObjsDataForChangingExpandBtnValue = cmp.get("{!v.objectNames}");
+		console.log("length: " + allObjsDataForChangingExpandBtnValue.length);
+		for(var objClass = 0;objClass < allObjsDataForChangingExpandBtnValue.length; objClass++) {
+			$('#' + allObjsDataForChangingExpandBtnValue[objClass].key).val('+');
+			this.disablingObjectLevelPermissions(allObjsDataForChangingExpandBtnValue[objClass].key);
+		}
 	},
 
 	//common methods
@@ -371,6 +386,93 @@
 			$('#'+ displayElementName).slideUp('slow');
 			$('#'+ elementNameForPointer).val('+');
 			return '-';
+		}
+	},
+
+	//NOTE: Enabling and Disabling Input type="text box" & Input type="check box"
+
+	methodToDisableEveryInputHelperCall : function(component, event) {
+		console.log("Testing whether this will be called");
+		// var pageload_count = component.get("{!v.global_toStorePageLoad_Time}");
+		// if(pageload_count == null) {
+		// 	console.log("Disabling everything and it is null");
+		// 	component.set("v.global_toStorePageLoad_Time", "firstTime");
+		// }
+		// else {
+		// 		console.log("Disabling everything and it is not null");
+		// 		this.disablingEverything();
+		// }
+
+		var spinner = component.find('spinner');
+        var evt = spinner.get("e.toggle");
+        evt.setParams({ isVisible : false });
+        evt.fire();
+	},
+
+	disablingEverything : function() {
+		//testing DIV Edittable False
+		// $(':input').attr('readonly','readonly');
+		$(':input').attr('disabled', 'disabled');
+		$("input:checkbox").attr('disabled', 'disabled');
+		$('#permissionSetEditBtn').removeAttr('disabled');
+		$('#permissionSetCloneBtn').removeAttr('disabled');
+		$('#permissionSetCreateNewBtn').removeAttr('disabled');
+		$('#permissionSetSaveBtn').removeAttr('disabled');
+		$('#permissionSetSaveBtn').removeAttr('disabled');
+		$('#PointerForEditPermissionsonIndividualObjectsandFields').removeAttr('disabled');
+		$('#PointerForEditPermissionsonAllFieldsofAllObjs').removeAttr('disabled');
+		$('#permissionSetNamesddl').removeAttr('disabled');
+
+	},
+
+	enablingEverything : function() {
+		$(':input').removeAttr('disabled');
+	},
+
+	disablingObjectLevelPermissions : function(objKey) {
+		console.log("exec in in disablingObjectLevelPermissions");
+		//for(var objs = 0; objs < AllObjsData.length; objs++) {
+			//console.log("exec in in disablingObjectLevelPermissions for loop");
+			$('#' + objKey + 'ObjRead').attr('disabled', 'disabled');
+			$('#' + objKey + 'ObjCreate').attr('disabled', 'disabled');
+			$('#' + objKey + 'ObjEdit').attr('disabled', 'disabled');
+			$('#' + objKey + 'ObjDelete').attr('disabled', 'disabled');
+			$('#' + objKey + 'ObjViewAll').attr('disabled', 'disabled');
+			$('#' + objKey + 'ObjModifyAll').attr('disabled', 'disabled');
+		//}
+	},
+
+	enablingObjectLevelPermissions : function(objKey) {
+		// for(var objs = 0; objs < AllObjsData.length; objs++) {
+			$('#' + objKey + 'ObjRead').removeAttr('disabled');
+			$('#' + objKey + 'ObjCreate').removeAttr('disabled');
+			$('#' + objKey + 'ObjEdit').removeAttr('disabled');
+			$('#' + objKey + 'ObjDelete').removeAttr('disabled');
+			$('#' + objKey + 'ObjViewAll').removeAttr('disabled');
+			$('#' + objKey + 'ObjModifyAll').removeAttr('disabled');
+		// }
+	},
+
+	// disablingFieldLevelPermissions : function(objKey, fieldName) {
+	// 	$('#' + objKey + 'readForAllFieldsofanIndividualObj').attr('disabled', 'disabled');
+	// 	$('#' + objKey + 'editForAllFieldsofanIndividualObj').attr('disabled', 'disabled');
+	// 	// for(var fieldData = 0;fieldData < fieldDetailsConcerningSingleObject.length; fieldData++) {
+	// 		console.log("inside disablingFieldLevelPermissions : " + fieldName + 'indiFieldRead');
+	// 		$('#' +fieldName + 'indiFieldRead').attr('disabled', 'disabled');
+	// 		$('#' +fieldName + 'indiFieldEdit').attr('disabled', 'disabled');
+	// 	// }
+	// },
+
+	disablingFieldLevelPermissions : function() {
+		console.log("I need to learn promises");
+	},
+
+	enablingFieldLevelPermissions : function(objKey, fieldDetailsConcerningSingleObject) {
+		$('#' + objKey + 'readForAllFieldsofanIndividualObj').removeAttr('disabled');
+		$('#' + objKey + 'editForAllFieldsofanIndividualObj').removeAttr('disabled');
+		for(var fieldData = 0;fieldData < fieldDetailsConcerningSingleObject.length; fieldData++) {
+			$('#' +fieldDetailsConcerningSingleObject[fieldData].fieldName + 'indiFieldRead').removeAttr('disabled');
+			$('#' +fieldDetailsConcerningSingleObject[fieldData].fieldName + 'indiFieldEdit').removeAttr('disabled');
 		}
 	},
 
@@ -689,92 +791,90 @@
 
 	//NOTE: Below two methods are related to Advanced Permissions on All Fields of All objects
 
-	readForAllFieldsOfAllObjsOnClickHelperCall : function(cmp, event) {
-		// read for all fields of all objects
-		var allObjectsData = cmp.get("{!v.objectNames}");
-		//loop through it and make every read of all the (objs) fields TRUE
-
-		for(var i=0; i<allObjectsData.length; i++) {
-			if(allObjectsData[i].fieldDetails != null) {
-				var individualObjFieldsDataasJsonString = JSON.stringify(allObjectsData[i].fieldDetails);
-				// console.log("Field Details as String : " + individualObjFieldsDataasJsonString);
-				var parsedJsonData;
-				if($('#readForAllFieldsOfAllObjs').is(':checked')) {
-					// console.log("readForAllFieldsOfAllObjs is checked true");
-					parsedJsonData = JSON.parse(this.matchPatternandReplace(individualObjFieldsDataasJsonString, '"fieldRead":false', '"fieldRead":true'));
-					// console.log("field details after parsing back : " + JSON.stringify(parsedJsonData));
-					$('#' + allObjectsData[i].key + 'readForAllFieldsofanIndividualObj').prop('checked', true);
-				}
-				else {
-					parsedJsonData = JSON.parse(this.matchPatternandReplace(individualObjFieldsDataasJsonString, '"fieldRead":true', '"fieldRead":false'));
-					parsedJsonData = JSON.parse(this.matchPatternandReplace(JSON.stringify(parsedJsonData), '"fieldEdit":true', '"fieldEdit":false'));
-					$('#' + allObjectsData[i].key + 'readForAllFieldsofanIndividualObj').prop('checked', false);
-					$('#' + allObjectsData[i].key + 'editForAllFieldsofanIndividualObj').prop('checked', false);
-				}
-				allObjectsData[i].fieldDetails = parsedJsonData;
-			}
-		}
-		cmp.set("v.objectNames", allObjectsData);
-		//id="{!objs.key + 'readForAllFieldsofanIndividualObj'}"
-	},
-
-	editForAllFieldsOfAllObjsOnClickHelperCall : function(cmp, event) {
-		// edit for all fields of all objects
-		var allObjectsData = cmp.get("{!v.objectNames}");
-		//loop through it and make every read of all the (objs) fields TRUE
-
-		for(var i=0; i< allObjectsData.length; i++) {
-			if(allObjectsData[i].fieldDetails != null) {
-				var individualObjFieldsDataasJsonString = JSON.stringify(allObjectsData[i].fieldDetails);
-				var parsedJsonData;
-				if($('#editForAllFieldsOfAllObjs').is(':checked')) {
-					parsedJsonData = JSON.parse(this.matchPatternandReplace(individualObjFieldsDataasJsonString, '"fieldEdit":false', '"fieldEdit":true'));
-					$('#' + allObjectsData[i].key + 'editForAllFieldsofanIndividualObj').prop('checked', true);
-					parsedJsonData = JSON.parse(this.matchPatternandReplace(JSON.stringify(parsedJsonData), '"fieldRead":false', '"fieldRead":true'));
-					$('#' + allObjectsData[i].key + 'readForAllFieldsofanIndividualObj').prop('checked', true);
-				}
-				else {
-					parsedJsonData = JSON.parse(this.matchPatternandReplace(individualObjFieldsDataasJsonString, '"fieldEdit":true', '"fieldEdit":false'));
-					$('#' + allObjectsData[i].key + 'editForAllFieldsofanIndividualObj').prop('checked', false);
-				}
-				allObjectsData[i].fieldDetails = parsedJsonData;
-			}
-		}
-		cmp.set("v.objectNames", allObjectsData);
-	},
-
-	matchPatternandReplace : function(dataString, searchString, replacementString){
-		//dataString.split(searchString).join(replacementString);
-		// dataString.replace(searchString, replacementString);
-		// new RegExp(search, 'g')
-		dataString = dataString.replace(new RegExp(searchString, 'g'), replacementString);
-		return dataString;
-	},
+	// readForAllFieldsOfAllObjsOnClickHelperCall : function(cmp, event) {
+	// 	// read for all fields of all objects
+	// 	var allObjectsData = cmp.get("{!v.objectNames}");
+	// 	//loop through it and make every read of all the (objs) fields TRUE
+	//
+	// 	for(var i=0; i<allObjectsData.length; i++) {
+	// 		if(allObjectsData[i].fieldDetails != null) {
+	// 			var individualObjFieldsDataasJsonString = JSON.stringify(allObjectsData[i].fieldDetails);
+	// 			// console.log("Field Details as String : " + individualObjFieldsDataasJsonString);
+	// 			var parsedJsonData;
+	// 			if($('#readForAllFieldsOfAllObjs').is(':checked')) {
+	// 				// console.log("readForAllFieldsOfAllObjs is checked true");
+	// 				parsedJsonData = JSON.parse(this.matchPatternandReplace(individualObjFieldsDataasJsonString, '"fieldRead":false', '"fieldRead":true'));
+	// 				// console.log("field details after parsing back : " + JSON.stringify(parsedJsonData));
+	// 				$('#' + allObjectsData[i].key + 'readForAllFieldsofanIndividualObj').prop('checked', true);
+	// 			}
+	// 			else {
+	// 				parsedJsonData = JSON.parse(this.matchPatternandReplace(individualObjFieldsDataasJsonString, '"fieldRead":true', '"fieldRead":false'));
+	// 				parsedJsonData = JSON.parse(this.matchPatternandReplace(JSON.stringify(parsedJsonData), '"fieldEdit":true', '"fieldEdit":false'));
+	// 				$('#' + allObjectsData[i].key + 'readForAllFieldsofanIndividualObj').prop('checked', false);
+	// 				$('#' + allObjectsData[i].key + 'editForAllFieldsofanIndividualObj').prop('checked', false);
+	// 			}
+	// 			allObjectsData[i].fieldDetails = parsedJsonData;
+	// 		}
+	// 	}
+	// 	cmp.set("v.objectNames", allObjectsData);
+	// 	//id="{!objs.key + 'readForAllFieldsofanIndividualObj'}"
+	// },
+	//
+	// editForAllFieldsOfAllObjsOnClickHelperCall : function(cmp, event) {
+	// 	// edit for all fields of all objects
+	// 	var allObjectsData = cmp.get("{!v.objectNames}");
+	// 	//loop through it and make every read of all the (objs) fields TRUE
+	//
+	// 	for(var i=0; i< allObjectsData.length; i++) {
+	// 		if(allObjectsData[i].fieldDetails != null) {
+	// 			var individualObjFieldsDataasJsonString = JSON.stringify(allObjectsData[i].fieldDetails);
+	// 			var parsedJsonData;
+	// 			if($('#editForAllFieldsOfAllObjs').is(':checked')) {
+	// 				parsedJsonData = JSON.parse(this.matchPatternandReplace(individualObjFieldsDataasJsonString, '"fieldEdit":false', '"fieldEdit":true'));
+	// 				$('#' + allObjectsData[i].key + 'editForAllFieldsofanIndividualObj').prop('checked', true);
+	// 				parsedJsonData = JSON.parse(this.matchPatternandReplace(JSON.stringify(parsedJsonData), '"fieldRead":false', '"fieldRead":true'));
+	// 				$('#' + allObjectsData[i].key + 'readForAllFieldsofanIndividualObj').prop('checked', true);
+	// 			}
+	// 			else {
+	// 				parsedJsonData = JSON.parse(this.matchPatternandReplace(individualObjFieldsDataasJsonString, '"fieldEdit":true', '"fieldEdit":false'));
+	// 				$('#' + allObjectsData[i].key + 'editForAllFieldsofanIndividualObj').prop('checked', false);
+	// 			}
+	// 			allObjectsData[i].fieldDetails = parsedJsonData;
+	// 		}
+	// 	}
+	// 	cmp.set("v.objectNames", allObjectsData);
+	// },
+	//
+	// matchPatternandReplace : function(dataString, searchString, replacementString){
+	// 	//dataString.split(searchString).join(replacementString);
+	// 	// dataString.replace(searchString, replacementString);
+	// 	// new RegExp(search, 'g')
+	// 	dataString = dataString.replace(new RegExp(searchString, 'g'), replacementString);
+	// 	return dataString;
+	// },
 
 	//NOTE: METHODS to SAVE FIELD Level Changes
 
 	readForAllFieldsofanIndividualObjClickHelperCall : function(cmp,event) {
-		//console.log("### inside READ & id of the checked CheckBox: " + event.srcElement.id);
 		try{
 			this.updateChangesinObjorFieldPermissions(cmp,$('#permissionSetNamesddl').val(), 'Field', event.srcElement.name, 'Allqwerty');
 			var allObjDataForFieldsData = cmp.get("{!v.objectNames}");
 			if($('#' + event.srcElement.id).is(':checked')) {
-				//make it true
+				console.log("Val is checked TRUE");
 				var allObjDataForFieldsDataAfterAllChanges = this.implementCheckboxManipulationforAllFields(allObjDataForFieldsData, event.srcElement.name, 'read', true);
 				//console.log("All Objects Data after changes in Field Permissions @ READ: " + allObjDataForFieldsDataAfterAllChanges);
 				cmp.set("v.objectNames", allObjDataForFieldsDataAfterAllChanges);
 				cmp.set("v.changedAllObjectDetails", allObjDataForFieldsDataAfterAllChanges);
 			}
 			else {
-				//check if edit is true?
-				$('#' + event.srcElement.id).prop('checked', true);
-				if(!($('#editForAllFieldsofanIndividualObj').is(':checked'))) {
-					//make it false only when edit is false
-					$('#' + event.srcElement.id).prop('checked', false);
+					console.log("Val is checked FALSE");
 					var allObjDataForFieldsDataAfterAllChanges = this.implementCheckboxManipulationforAllFields(allObjDataForFieldsData, event.srcElement.name, 'read', false);
+					var allObjDataForFieldsDataAfterAllChanges = this.implementCheckboxManipulationforAllFields(allObjDataForFieldsDataAfterAllChanges, event.srcElement.name, 'edit', false);
+					// $('#' + event.srcElement.id + 'readForAllFieldsofanIndividualObj').prop('checked', false);
+					$('#' + event.srcElement.name + 'editForAllFieldsofanIndividualObj').prop('checked', false);
+
 					cmp.set("v.objectNames", allObjDataForFieldsDataAfterAllChanges);
 					cmp.set("v.changedAllObjectDetails", allObjDataForFieldsDataAfterAllChanges);
-				}
 			}
 		}
 		catch(error){
@@ -788,20 +888,17 @@
 			this.updateChangesinObjorFieldPermissions(cmp,$('#permissionSetNamesddl').val(), 'Field', event.srcElement.name, 'Allqwerty');
 			var allObjDataForFieldsData = cmp.get("{!v.objectNames}");
 			if($('#' + event.srcElement.id).is(':checked')) {
-				//make it true
-				//console.log("Obj Key value at Field All Edit checkbox: " + event.srcElement.name);
-				//console.log("For All edit is checked true");
 				var allObjDataForFieldsDataAfterAllChanges = this.implementCheckboxManipulationforAllFields(allObjDataForFieldsData, event.srcElement.name, 'edit', true);
-				//console.log("All Objects Data after changes in Field Permissions @ EDIT: " + allObjDataForFieldsDataAfterAllChanges);
+				var allObjDataForFieldsDataAfterAllChanges = this.implementCheckboxManipulationforAllFields(allObjDataForFieldsDataAfterAllChanges, event.srcElement.name, 'read', true);
 				cmp.set("v.objectNames", allObjDataForFieldsDataAfterAllChanges);
 				cmp.set("v.changedAllObjectDetails", allObjDataForFieldsDataAfterAllChanges);
 				$('#' + event.srcElement.name + 'readForAllFieldsofanIndividualObj').prop('checked', true);
 			}
 			else {
-				//console.log("For All edit is checked false");
 				var allObjDataForFieldsDataAfterAllChanges = this.implementCheckboxManipulationforAllFields(allObjDataForFieldsData, event.srcElement.name, 'edit', false);
 				cmp.set("v.objectNames", allObjDataForFieldsDataAfterAllChanges);
 				cmp.set("v.changedAllObjectDetails", allObjDataForFieldsDataAfterAllChanges);
+				// $('#' + event.srcElement.name + 'editForAllFieldsofanIndividualObj').prop('checked', false);
 			}
 		}
 		catch(error){
@@ -852,15 +949,15 @@
 
 					for(var j=0;j<allObjDataForFieldsData[i].fieldDetails.length;j++) {
 
-						if(readOredit == 'read' && trueOrfalse){
+						if(readOredit == 'read' && trueOrfalse) {
 							allObjDataForFieldsData[i].fieldDetails[j].fieldPermissions.fieldRead = true;
 						}
-						else if(readOredit == 'read' && (!trueOrfalse)){
+						else if(readOredit == 'read' && (!trueOrfalse)) {
 							allObjDataForFieldsData[i].fieldDetails[j].fieldPermissions.fieldRead = false;
 						}
 						else if(readOredit == 'edit' && trueOrfalse) {
 							allObjDataForFieldsData[i].fieldDetails[j].fieldPermissions.fieldEdit = true;
-							allObjDataForFieldsData[i].fieldDetails[j].fieldPermissions.fieldRead = true;
+							// allObjDataForFieldsData[i].fieldDetails[j].fieldPermissions.fieldRead = true;
 						}
 						else if(readOredit == 'edit' && (!trueOrfalse)) {
 							allObjDataForFieldsData[i].fieldDetails[j].fieldPermissions.fieldEdit = false;
@@ -994,7 +1091,6 @@
 	},
 
 
-
 	addObjDetailsToListofObjs : function(objDetailsFromServer, pSetId){
 		try {
 			//NOTE:Add all the object details here
@@ -1017,8 +1113,9 @@
 				// create Obj Details Object
 				allObjDetails.push(this.createObjDetailsClass(objDetailsFromServer[i].pluralLabel, objDetailsFromServer[i].label, objDetailsFromServer[i].name, objDetailsFromServer[i].key, pSetId, objPermissionsAsObject, null));
 
+				// changing the open Object Details symbol to '+'
 
-			}
+				}
 
 
 			return allObjDetails;
@@ -1218,7 +1315,6 @@
 		}
 		cmp.set("v.text", requiredChangedObject);
 	},
-
 
 	// NOTE: This is for updating the Changes Object Data
 

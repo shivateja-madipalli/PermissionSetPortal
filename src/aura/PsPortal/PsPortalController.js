@@ -5,6 +5,10 @@
 			helper.loadPermissionSetOptions(component);
 		},
 
+		doneRendering : function(component, event, helper) {
+			helper.pageRenderingCompleted(component, event);
+		},
+
 		permissionSetNamesddlChange : function(component, event, helper) {
 			helper.permissionSetNameSelected(component,event);
 		},
@@ -126,5 +130,13 @@
 
 		editForAllFieldsOfAllObjsOnClick : function(component, event, helper) {
 				helper.editForAllFieldsOfAllObjsOnClickHelperCall(component, event);
+		},
+
+		methodToDisableEveryInput: function(component, event, helper) {
+			helper.methodToDisableEveryInputHelperCall(component, event);
+		},
+
+		showSpinner : function(component, event, helper) {
+			helper.showSpinnerHelperClass(component, event);
 		}
 })

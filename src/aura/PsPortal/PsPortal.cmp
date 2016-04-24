@@ -1,5 +1,8 @@
 <aura:component implements="force:appHostable" controller="PermissionSetPortalControllers">
   <aura:handler name="init" value="{!this}" action="{!c.onPageload}" />
+  <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+  <aura:handler event="aura:doneRendering" action="{!c.doneRendering}"/>
+  <aura:handler event="aura:doneWaiting" action="{!c.methodToDisableEveryInput}"/>
   <ltng:require styles="/resource/slds100/assets/styles/salesforce-lightning-design-system.min.css"/>
   <ltng:require scripts="/resource/1458034652000/shiva15testns__jquery"/>
   <ltng:require styles="/resource/bootstrap"/>
@@ -10,6 +13,9 @@
   <aura:attribute name="changedAllObjectDetails" type="Object"></aura:attribute>
   <aura:attribute name="text" type="Object"> </aura:attribute>
   <aura:attribute name="changedRecordedObj" type="Object"> </aura:attribute>
+  <aura:attribute name="global_toStorePageLoad_Time" type="Object"> </aura:attribute>
+
+  <center><ui:spinner aura:id="spinner"/></center>
 
   <div>
     <div id="permissionSetOptions">
@@ -97,7 +103,7 @@
           <aura:iteration items="{!v.objectNames}" var="objs">
             <tr class="objNameRowClass">
               <td class="permissionSetLi">
-                <input class="pointers slds-button--icon-bare" id="{!objs.key}" value="+" name="{!objs.label}" type="button" onclick="{!c.openFieldsDetails}"/>
+                <input class="pointers slds-button--icon-bare" id="{!objs.key}" name="{!objs.label}" type="button" onclick="{!c.openFieldsDetails}"/>
                 <span class="objNameSpanClass"> {!objs.pluralLabel} </span>
               </td>
               <td><input type="checkbox" checked="{!objs.objPermissions.read}" id="{!objs.key + 'ObjRead'}" value="{!objs.key}" onclick="{!c.individualObjectReadPermissionClick}"></input></td>
@@ -109,7 +115,7 @@
             </tr>
 
             <tr>
-              <td colspan="7" id="{!objs.key}" class="objsLiClass">
+              <td colspan="7" class="objsLiClass">
                 <div id="{!objs.key + 'fieldDiv'}" class="fieldsClass">
                   <table class='objectFieldTable'>
                     <tr class='objectFieldTableRows'>
@@ -141,7 +147,6 @@
                     </aura:iteration>
                     <!-- iteration end -->
                   </table>
-
                 </div>
               </td>
             </tr>
