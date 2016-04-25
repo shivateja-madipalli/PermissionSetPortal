@@ -98,8 +98,11 @@
 		}
 	},
 
+	//NOTE: Permission Set Edit Server call
 	permissionSetEditServerCall: function(){
-		////console.log("Edit click");
+		console.log("Edit click");
+		this.enablingObjectLevelPermissions();
+		this.enablingEverything();
 	},
 
 	permissionSetCloneServerCall: function(){
@@ -193,9 +196,7 @@
 			}
 		});
 		$A.enqueueAction(action);
-		// }
 	},
-
 
 	//############ this.disablingObjectLevelPermissions(response.getReturnValue());
 
@@ -242,7 +243,7 @@
 			this.contactServerForFields(cmp, event);
 			$('#'+event.srcElement.id).val('-');
 			$('#'+event.srcElement.id + 'fieldDiv').show('slow');
-			this.disablingFieldLevelPermissions();
+			//this.disablingFieldLevelPermissions();
 		}
 		else {
 			//console.log("inside object -");
@@ -257,8 +258,6 @@
 		var allObjDataForStoringFieldData = component.get("{!v.allObjectDetails}");
 		var action = component.get("c.getAllFieldData");
 		action.setParams({ selectedObject : event.srcElement.id , selectedPSet : $('#permissionSetNamesddl').val() });
-		////console.log("Calling getAllFieldData from contactServerForFields");
-		// new Promise(function(resolve, reject) {
 			action.setCallback(this, function(response) {
 			var state = response.getState();
 			if (component.isValid() && state === "SUCCESS") {
@@ -316,12 +315,6 @@
 			//console.log("This is here");
 		});
 		$A.enqueueAction(action);
-	// }).then({
-	// 	// console.log("Promise successful");
-	// });
-	// .catch({
-	// 	console.log("Promise failed");
-	// });
 		//this.disablingFieldLevelPermissions(allObjectData[i].key, allObjectData[i].fieldDetails[fieldCount].fieldName);
 	},
 
@@ -410,8 +403,6 @@
 	},
 
 	disablingEverything : function() {
-		//testing DIV Edittable False
-		// $(':input').attr('readonly','readonly');
 		$(':input').attr('disabled', 'disabled');
 		$("input:checkbox").attr('disabled', 'disabled');
 		$('#permissionSetEditBtn').removeAttr('disabled');
@@ -430,41 +421,34 @@
 	},
 
 	disablingObjectLevelPermissions : function(objKey) {
-		console.log("exec in in disablingObjectLevelPermissions");
-		//for(var objs = 0; objs < AllObjsData.length; objs++) {
-			//console.log("exec in in disablingObjectLevelPermissions for loop");
+
 			$('#' + objKey + 'ObjRead').attr('disabled', 'disabled');
 			$('#' + objKey + 'ObjCreate').attr('disabled', 'disabled');
 			$('#' + objKey + 'ObjEdit').attr('disabled', 'disabled');
 			$('#' + objKey + 'ObjDelete').attr('disabled', 'disabled');
 			$('#' + objKey + 'ObjViewAll').attr('disabled', 'disabled');
 			$('#' + objKey + 'ObjModifyAll').attr('disabled', 'disabled');
-		//}
 	},
 
 	enablingObjectLevelPermissions : function(objKey) {
-		// for(var objs = 0; objs < AllObjsData.length; objs++) {
+
 			$('#' + objKey + 'ObjRead').removeAttr('disabled');
 			$('#' + objKey + 'ObjCreate').removeAttr('disabled');
 			$('#' + objKey + 'ObjEdit').removeAttr('disabled');
 			$('#' + objKey + 'ObjDelete').removeAttr('disabled');
 			$('#' + objKey + 'ObjViewAll').removeAttr('disabled');
 			$('#' + objKey + 'ObjModifyAll').removeAttr('disabled');
-		// }
+
 	},
 
-	// disablingFieldLevelPermissions : function(objKey, fieldName) {
-	// 	$('#' + objKey + 'readForAllFieldsofanIndividualObj').attr('disabled', 'disabled');
-	// 	$('#' + objKey + 'editForAllFieldsofanIndividualObj').attr('disabled', 'disabled');
-	// 	// for(var fieldData = 0;fieldData < fieldDetailsConcerningSingleObject.length; fieldData++) {
-	// 		console.log("inside disablingFieldLevelPermissions : " + fieldName + 'indiFieldRead');
-	// 		$('#' +fieldName + 'indiFieldRead').attr('disabled', 'disabled');
-	// 		$('#' +fieldName + 'indiFieldEdit').attr('disabled', 'disabled');
-	// 	// }
-	// },
-
-	disablingFieldLevelPermissions : function() {
-		console.log("I need to learn promises");
+	disablingFieldLevelPermissions : function(objKey, fieldName) {
+		// $('#' + objKey + 'readForAllFieldsofanIndividualObj').attr('disabled', 'disabled');
+		// $('#' + objKey + 'editForAllFieldsofanIndividualObj').attr('disabled', 'disabled');
+		// // for(var fieldData = 0;fieldData < fieldDetailsConcerningSingleObject.length; fieldData++) {
+		// 	console.log("inside disablingFieldLevelPermissions : " + fieldName + 'indiFieldRead');
+		// 	$('#' +fieldName + 'indiFieldRead').attr('disabled', 'disabled');
+		// 	$('#' +fieldName + 'indiFieldEdit').attr('disabled', 'disabled');
+		// // }
 	},
 
 	enablingFieldLevelPermissions : function(objKey, fieldDetailsConcerningSingleObject) {
@@ -530,20 +514,22 @@
 
 	handleAllIndividualObjPermissionsCheckBox : function(allObjsDataForHandlingIndiObjPermissions, selectedPermissionObjKey, typeOfPermission, trueOrfalse) {
 
-		//////console.log("inside handleAllIndividualObjPermissionsCheckBox: " + allObjsDataForHandlingIndiObjPermissions);
 		for(var objCount = 0; objCount<allObjsDataForHandlingIndiObjPermissions.length ; objCount++){
-			//////console.log("inside for loop of handleAllIndividualObjPermissionsCheckBox: " + allObjsDataForHandlingIndiObjPermissions[objCount].key);
 			if(allObjsDataForHandlingIndiObjPermissions[objCount].key == selectedPermissionObjKey) {
-				//////console.log("inside if condition of obj key comparision");
 				if(typeOfPermission == "read") {
-
 					if(trueOrfalse) {
 						allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.read = true;
 					}
 					else {
-						if((allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.create == false) && (allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.edit == false) && (allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.deleteData == false) && (allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.viewAll == false) && (allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.modifyAll == false)) {
+						//if((allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.create == false) && (allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.edit == false) && (allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.deleteData == false) && (allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.viewAll == false) && (allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.modifyAll == false)) {
+							console.log("inside read false");
 							allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.read = false;
-						}
+							allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.create = false;
+							allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.edit = false;
+							allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.deleteData = false;
+							allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.viewAll = false;
+							allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.modifyAll = false;
+						//}
 					}
 				}
 				else if(typeOfPermission == "create") {
@@ -552,6 +538,7 @@
 						allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.read = true;
 					}
 					else {
+						console.log("inside create false");
 						allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.create = false;
 					}
 				}
@@ -561,9 +548,12 @@
 						allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.read = true;
 					}
 					else {
-						if((allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.deleteData == false) && (allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.modifyAll == false)) {
+						//if((allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.deleteData == false) && (allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.modifyAll == false)) {
+						console.log("inside edit false");
 							allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.edit = false;
-						}
+							allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.deleteData = false;
+							allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.modifyAll = false;
+						//}
 					}
 				}
 				else if(typeOfPermission == "deleteData") {
@@ -573,9 +563,11 @@
 						allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.read = true;
 					}
 					else {
-						if((allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.modifyAll == false)) {
+						//if((allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.modifyAll == false)) {
+							console.log("inside delete false");
 							allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.deleteData = false;
-						}
+							allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.modifyAll = false;
+						//}
 
 					}
 				}
@@ -585,9 +577,11 @@
 						allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.read = true;
 					}
 					else {
-						if((allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.modifyAll == false)) {
+						//if((allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.modifyAll == false)) {
+							console.log("inside view false");
 							allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.viewAll = false;
-						}
+							allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.modifyAll = false;
+						//}
 					}
 				}
 				else if(typeOfPermission == "modifyAll") {
@@ -602,6 +596,7 @@
 					}
 					else {
 						//////console.log("inside modifyAll on indi obj trueOrfalse, " + trueOrfalse);
+						console.log("inside modify false");
 						allObjsDataForHandlingIndiObjPermissions[objCount].objPermissions.modifyAll = false;
 					}
 				}
@@ -627,26 +622,36 @@
 			}
 		}
 		else {
-			if($('#createforAllObjsChkBox').is(':checked')) {
-				$('#readforAllObjsChkBox').prop('checked',true);
-			}
-			else if($('#editforAllObjsChkBox').is(':checked') ) {
-				$('#readforAllObjsChkBox').prop('checked',true);
-			}
-			else if($('#deleteforAllObjsChkBox').is(':checked')){
-				$('#readforAllObjsChkBox').prop('checked',true);
-			}
-			else if($('#viewAllforAllObjsChkBox').is(':checked')) {
-				$('#readforAllObjsChkBox').prop('checked',true);
-			}
-			else if($('#modifyAllforAllObjsChkBox').is(':checked')) {
-				$('#readforAllObjsChkBox').prop('checked',true);
-			}
-			else {
+			// if($('#createforAllObjsChkBox').is(':checked')) {
+			// 	$('#readforAllObjsChkBox').prop('checked',true);
+			// }
+			// else if($('#editforAllObjsChkBox').is(':checked') ) {
+			// 	$('#readforAllObjsChkBox').prop('checked',true);
+			// }
+			// else if($('#deleteforAllObjsChkBox').is(':checked')){
+			// 	$('#readforAllObjsChkBox').prop('checked',true);
+			// }
+			// else if($('#viewAllforAllObjsChkBox').is(':checked')) {
+			// 	$('#readforAllObjsChkBox').prop('checked',true);
+			// }
+			// else if($('#modifyAllforAllObjsChkBox').is(':checked')) {
+			// 	$('#readforAllObjsChkBox').prop('checked',true);
+			// }
+			// else {
 				for(var i=0;i<allObjects.length;i++) {
 					allObjects[i].objPermissions.read = false;
+					allObjects[i].objPermissions.create = false;
+					allObjects[i].objPermissions.edit = false;
+					allObjects[i].objPermissions.deleteData = false;
+					allObjects[i].objPermissions.viewAll = false;
+					allObjects[i].objPermissions.modifyAll = false;
 				}
-			}
+				$('#createforAllObjsChkBox').prop('checked',false);
+				$('#editforAllObjsChkBox').prop('checked',false);
+				$('#deleteforAllObjsChkBox').prop('checked',false);
+				$('#viewAllforAllObjsChkBox').prop('checked',false);
+				$('#modifyAllforAllObjsChkBox').prop('checked',false);
+			// }
 		}
 		cmp.set("v.objectNames",allObjects);
 		cmp.set("v.changedAllObjectDetails", allObjects);
@@ -683,21 +688,25 @@
 			for(var i=0;i<allObjects.length;i++) {
 				allObjects[i].objPermissions.edit = true;
 				allObjects[i].objPermissions.read = true;
-				$('#readforAllObjsChkBox').prop('checked',true);
 			}
+			$('#readforAllObjsChkBox').prop('checked',true);
 		}
 		else {
-			if($('#deleteforAllObjsChkBox').is(':checked')) {
-				$('#editforAllObjsChkBox').prop('checked',true);
-			}
-			else if($('#modifyAllforAllObjsChkBox').is(':checked')) {
-				$('#editforAllObjsChkBox').prop('checked',true);
-			}
-			else {
+			// if($('#deleteforAllObjsChkBox').is(':checked')) {
+			// 	$('#editforAllObjsChkBox').prop('checked',true);
+			// }
+			// else if($('#modifyAllforAllObjsChkBox').is(':checked')) {
+			// 	$('#editforAllObjsChkBox').prop('checked',true);
+			// }
+			// else {
 				for(var i=0;i<allObjects.length;i++) {
 					allObjects[i].objPermissions.edit = false;
+					allObjects[i].objPermissions.deleteData = false;
+					allObjects[i].objPermissions.modifyAll = false;
 				}
-			}
+				$('#modifyAllforAllObjsChkBox').prop('checked',false);
+				$('#deleteforAllObjsChkBox').prop('checked',false);
+			//}
 		}
 		cmp.set("v.objectNames",allObjects);
 		cmp.set("v.changedAllObjectDetails", allObjects);
@@ -714,19 +723,21 @@
 				allObjects[i].objPermissions.deleteData = true;
 				allObjects[i].objPermissions.read = true;
 				allObjects[i].objPermissions.edit = true;
-				$('#readforAllObjsChkBox').prop('checked',true);
-				$('#editforAllObjsChkBox').prop('checked',true);
 			}
+			$('#readforAllObjsChkBox').prop('checked',true);
+			$('#editforAllObjsChkBox').prop('checked',true);
 		}
 		else {
-			if($('#modifyAllforAllObjsChkBox').is(':checked')) {
-				$('#deleteforAllObjsChkBox').prop('checked',true);
-			}
-			else {
+			// if($('#modifyAllforAllObjsChkBox').is(':checked')) {
+			// 	$('#deleteforAllObjsChkBox').prop('checked',true);
+			// }
+			// else {
 				for(var i=0;i<allObjects.length;i++) {
 					allObjects[i].objPermissions.deleteData = false;
+					allObjects[i].objPermissions.modifyAll = false;
 				}
-			}
+				$('#modifyAllforAllObjsChkBox').prop('checked',false);
+			// }
 		}
 		cmp.set("v.objectNames",allObjects);
 		cmp.set("v.changedAllObjectDetails", allObjects);
@@ -742,18 +753,20 @@
 			for(var i=0;i<allObjects.length;i++) {
 				allObjects[i].objPermissions.viewAll = true;
 				allObjects[i].objPermissions.read = true;
-				$('#readforAllObjsChkBox').prop('checked',true);
 			}
+			$('#readforAllObjsChkBox').prop('checked',true);
 		}
 		else {
-			if($('#modifyAllforAllObjsChkBox').is(':checked')) {
-				$('#viewAllforAllObjsChkBox').prop('checked',true);
-			}
-			else {
+			// if($('#modifyAllforAllObjsChkBox').is(':checked')) {
+			// 	$('#viewAllforAllObjsChkBox').prop('checked',true);
+			// }
+			// else {
 				for(var i=0;i<allObjects.length;i++) {
 					allObjects[i].objPermissions.viewAll = false;
+					allObjects[i].objPermissions.modifyAll = false;
 				}
-			}
+				$('#modifyAllforAllObjsChkBox').prop('checked',false);
+			//}
 		}
 		cmp.set("v.objectNames",allObjects);
 		cmp.set("v.changedAllObjectDetails", allObjects);
@@ -772,11 +785,11 @@
 				allObjects[i].objPermissions.edit = true;
 				allObjects[i].objPermissions.deleteData = true;
 				allObjects[i].objPermissions.viewAll = true;
-				$('#readforAllObjsChkBox').prop('checked',true);
-				$('#editforAllObjsChkBox').prop('checked',true);
-				$('#deleteforAllObjsChkBox').prop('checked',true);
-				$('#viewAllforAllObjsChkBox').prop('checked',true);
 			}
+			$('#readforAllObjsChkBox').prop('checked',true);
+			$('#editforAllObjsChkBox').prop('checked',true);
+			$('#deleteforAllObjsChkBox').prop('checked',true);
+			$('#viewAllforAllObjsChkBox').prop('checked',true);
 		}
 		else {
 			for(var i=0;i<allObjects.length;i++) {

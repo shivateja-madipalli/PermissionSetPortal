@@ -161,7 +161,8 @@ public with sharing class PermissionSetPortalControllers {
         List<PermissionSetClass> permissionSetsLst = new List<PermissionSetClass>();
         for(PermissionSet PSetName : AllPermissionSets) {
           if(!(PSetName.label).startsWith('00e')) {
-            pSetObj = new PermissionSetClass(PSetName.label, PSetName.Name, String.valueOf(PSetName.Id), PSetName.Description, PSetName.NamespacePrefix, String.valueOf(PSetName.UserLicenseId), String.valueOf(PSetName.CreatedDate));
+            UserLicense ulicense = [SELECT Id, Name FROM UserLicense WHERE Id =:PSetName.UserLicenseId];
+            pSetObj = new PermissionSetClass(PSetName.label, PSetName.Name, String.valueOf(PSetName.Id), PSetName.Description, PSetName.NamespacePrefix, ulicense.Name, String.valueOf(PSetName.CreatedDate));
             permissionSetsLst.add(pSetObj);
             //System.debug(Logginglevel.ERROR, 'The PermissionSet Name: ' + PSetName);
           }
