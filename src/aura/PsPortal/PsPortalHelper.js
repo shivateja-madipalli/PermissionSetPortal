@@ -105,6 +105,7 @@
 		this.enablingEverything();
 	},
 
+	//NOTE: This method is to be implemented in version#2
 	permissionSetCloneServerCall: function(){
 		////console.log("Clone click");
 	},
@@ -803,7 +804,7 @@
 	},
 
 	//NOTE: Below two methods are related to Advanced Permissions on All Fields of All objects
-
+	//NOTE: This method is to be implemented in version#2
 	// readForAllFieldsOfAllObjsOnClickHelperCall : function(cmp, event) {
 	// 	// read for all fields of all objects
 	// 	var allObjectsData = cmp.get("{!v.objectNames}");
