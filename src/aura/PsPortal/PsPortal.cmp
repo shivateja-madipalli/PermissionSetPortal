@@ -14,6 +14,9 @@
   <aura:attribute name="text" type="Object"> </aura:attribute>
   <aura:attribute name="changedRecordedObj" type="Object"> </aura:attribute>
   <aura:attribute name="global_toStorePageLoad_Time" type="Object"> </aura:attribute>
+  <aura:attribute name="checkIf_edit_isClicked" type="Object"> </aura:attribute>
+  <aura:attribute name="checkIf_created_isClicked" type="Object"> </aura:attribute>
+  <aura:attribute name="create_New_PSet_Object" type="Object"> </aura:attribute>
 
   <center><ui:spinner aura:id="spinner"/></center>
 
@@ -30,6 +33,7 @@
       <div>
         <button type="button" class="slds-button slds-button--neutral slds-not-selected createNewBtnClass" id="permissionSetCreateNewBtn" onclick="{!c.permissionSetCreateNewClick}">Create New</button>
         <button type="button" class="slds-button slds-button--neutral slds-not-selected createNewBtnClass" id="permissionSetSaveBtn" onclick="{!c.permissionSetSaveChanges}">Save</button>
+        <button type="button" class="slds-button slds-button--neutral slds-not-selected createNewBtnClass" id="permissionSetClearBtn" onclick="{!c.permissionSetClearChanges}">Clear</button>
       </div>
       <div>
         <label id="successorErrorMessageLabel"> </label>
@@ -46,7 +50,7 @@
                   <input type="Text" id="{!pSetData.id + 'psDetailsName'}" name="{!pSetData.id}" class="psDetailsInputTagClass" value="{!pSetData.label}" onchange="{!c.pSetNameChange}"> </input>
                 </td>
                 <td>
-                  <label for= "{!pSetData.id + 'UserLicense'}" class="psDetailsInputLabelClass">User License: </label>
+                  <label for= "{!pSetData.id + 'UserLicense'}" class="psDetailsInputLabelClass" >User License: </label>
                   <label id= "{!pSetData.id + 'UserLicense'}" class="psDetailsInputLabelClass">{!pSetData.userLicenseId} </label>
                 </td>
               </tr>
@@ -72,7 +76,36 @@
 
         </aura:iteration>
 
-
+      </div>
+      <div id="creating_new_permissionSet_Details" class="individualPermissionSetDetailsClass">
+          <table class="psDetailsTableClass">
+            <tr>
+              <td>
+                <label for= "creating_pSetName" class="psDetailsInputLabelClass">Name: </label>
+                <input type="Text" id="creating_pSetName" class="psDetailsInputTagClass" onchange="{!c.creating_pSetNameChange}"> </input>
+              </td>
+              <td>
+                <label for= "creating_userLicense" class="psDetailsInputLabelClass" >User License: </label>
+                <select id="creating_userLicenseddl" onchange="{!c.creating_userLicenseddlChange}">
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for= "creating_pSetAPIName" class="psDetailsInputLabelClass">API Name: </label>
+                <input type="Text" id="creating_pSetAPIName" class="psDetailsInputTagClass" onchange="{!c.creating_pSetAPINameChange}"> </input>
+              </td>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for= "creating_pSetDescription" class="psDetailsInputLabelClass">Description: </label>
+                <textarea id="creating_pSetDescription" maxLength = "5000" cols="0" rows="7" class="psDetailsTextAreaClass" onchange="{!c.creating_pSetDescriptionChange}"> </textarea>
+              </td>
+              <td> </td>
+            </tr>
+          </table>
       </div>
 
       <input class="pointers slds-button--icon-bare specificPointerClass" id="PointerForEditPermissionsonAllFieldsofAllObjs" value="+" type="button" onclick="{!c.opennCloseEditPermissionsonAllFieldsofAllObjs}"/>
@@ -80,8 +113,8 @@
       <div id="editPermissionsonAllFieldsofAllObjs" class="displayNullAnyDivWithThisClass editPermissionsonAllFieldsofAllObjsClass">
 
         <ul id="editPermissionsonAllFieldsofAllObjsList" class="editPermissionsonAllFieldsofAllObjsListClass">
-          <li><input type="checkbox" id="readForAllFieldsOfAllObjs" class="editPermissionsonAllFieldsofAllObjsListLi" onclick="{!c.readForAllFieldsOfAllObjsOnClick}"></input> <span> READ for ALL Fields of ALL Objects </span> </li>
-          <li><input type="checkbox" id="editForAllFieldsOfAllObjs" class="editPermissionsonAllFieldsofAllObjsListLi" onclick="{!c.editForAllFieldsOfAllObjsOnClick}"></input> <span> EDIT for ALL Fields of ALL Objects </span> </li>
+          <li><input type="checkbox" id="readForAllFieldsOfAllObjs" class="editPermissionsonAllFieldsofAllObjsListLi" onclick="{!c.readForAllFieldsOfAllObjsOnClick}" disabled="disabled"></input> <span> READ for ALL Fields of ALL Objects </span> </li>
+          <li><input type="checkbox" id="editForAllFieldsOfAllObjs" class="editPermissionsonAllFieldsofAllObjsListLi" onclick="{!c.editForAllFieldsOfAllObjsOnClick}" disabled="disabled"></input> <span> EDIT for ALL Fields of ALL Objects </span> </li>
         </ul>
       </div>
 
@@ -150,8 +183,8 @@
                 </div>
               </td>
             </tr>
-
           </aura:iteration>
+
         </table>
       </div>
     </div>

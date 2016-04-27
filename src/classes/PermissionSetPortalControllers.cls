@@ -161,16 +161,17 @@ public with sharing class PermissionSetPortalControllers {
         List<PermissionSetClass> permissionSetsLst = new List<PermissionSetClass>();
         for(PermissionSet PSetName : AllPermissionSets) {
           if(!(PSetName.label).startsWith('00e')) {
-            UserLicense ulicense = [SELECT Id, Name FROM UserLicense WHERE Id =:PSetName.UserLicenseId];
-            pSetObj = new PermissionSetClass(PSetName.label, PSetName.Name, String.valueOf(PSetName.Id), PSetName.Description, PSetName.NamespacePrefix, ulicense.Name, String.valueOf(PSetName.CreatedDate));
+            //UserLicense ulicense = [SELECT Id, Name FROM UserLicense WHERE Id =:PSetName.UserLicenseId];
+            //pSetObj = new PermissionSetClass(PSetName.label, PSetName.Name, String.valueOf(PSetName.Id), PSetName.Description, PSetName.NamespacePrefix, ulicense.Name, String.valueOf(PSetName.CreatedDate));
+            pSetObj = new PermissionSetClass(PSetName.label, PSetName.Name, String.valueOf(PSetName.Id), PSetName.Description, PSetName.NamespacePrefix, null, String.valueOf(PSetName.CreatedDate));
             permissionSetsLst.add(pSetObj);
-            //System.debug(Logginglevel.ERROR, 'The PermissionSet Name: ' + PSetName);
+            System.debug(Logginglevel.ERROR, 'The PermissionSet Name: ' + PSetName);
           }
         }
         return permissionSetsLst;
       }
       else {
-        //System.debug('No Permission Sets found');
+        System.debug('No Permission Sets found');
         return null;
       }
     }
@@ -184,6 +185,19 @@ public with sharing class PermissionSetPortalControllers {
     }
   }
 
+  @AuraEnabled
+  public static List<UserLicense> getAllUserLicenses() {
+    try{
+      List<UserLicense> user_License_List = [SELECT Id, Name FROM UserLicense];
+      return user_License_List;
+    }
+    catch(Exception e) {
+      System.debug('The following DML exception has occurred in getAllUserLicenses: ' + e.getMessage());
+      return null;
+    }
+  }
+
+  @AuraEnabled
   public static List<ObjectDetailsClass> getAllObjects() {
     try{
       Map<String, Schema.SObjectType> allObjectsofOrgFromGlobalDescribe = Schema.getGlobalDescribe();
@@ -223,6 +237,7 @@ public with sharing class PermissionSetPortalControllers {
 
         //implementing sorting
         allObjectsOfOrg = sortObjectNames(objAPINamesList, allObjectsOfOrg);
+        System.debug('All Object Details: ' + allObjectsOfOrg);
         return allObjectsOfOrg;
 
       }
@@ -411,20 +426,19 @@ public with sharing class PermissionSetPortalControllers {
 
   //get All Fields data with Permissions Concerning Single Obj n PSet
   @AuraEnabled
-  public static List<FieldDetailsClass> getAllFieldData(String selectedObject, String selectedPSet) {
+  //public static List<FieldDetailsClass> get_IndividualObj_AllFieldData(String selectedObject, String selectedPSet) {
+  public static List<FieldDetailsClass> get_IndividualObj_AllFieldData(String selectedObject) {
     try{
       List<FieldDetailsClass> listOfFieldsForSorting = new List<FieldDetailsClass>();
       Map <String, Schema.SObjectType> schemaMap = Schema.getGlobalDescribe();
+      System.debug('schemaMap in get_IndividualObj_AllFieldData: ' + schemaMap);
       List<FieldDetailsClass> individualObjectAllFieldsList = new List<FieldDetailsClass>();
       FieldDetailsClass fieldClassObj;
-      //Map <String, Schema.SObjectType> schemaMap = Schema.getGlobalDescribe();
 
-
-
-      if(!schemaMap.isEmpty()){
-
+      if(!schemaMap.isEmpty()) {
+        System.debug('schemaMap in get_IndividualObj_AllFieldData is not empty and the selectedObject: ' + selectedObject);
         Map <String, Schema.SObjectField> IndividiaulfieldMap = schemaMap.get(selectedObject).getDescribe().fields.getMap();
-
+        System.debug('IndividiaulfieldMap in get_IndividualObj_AllFieldData: ' + IndividiaulfieldMap);
         if(!IndividiaulfieldMap.isEmpty()) {
 
           Set<String> systemFields = addSystemLevelFields();
@@ -432,20 +446,21 @@ public with sharing class PermissionSetPortalControllers {
           for(String sfield : schemaMap.get(selectedObject).getDescribe().fields.getMap().keySet()) {
 
             if(IndividiaulfieldMap.get(sfield).getDescribe().isPermissionable()) {
-              String labelOfField = IndividiaulfieldMap.get(sfield).getDescribe().getLabel();
+
               //this is like accessing every field
 
               if(!systemFields.contains(sfield)) {
 
                 DescribeSObjectResult sObjResult = schemaMap.get(selectedObject).getDescribe();
                 if((selectedObject == 'account' && !(accountField.contains(sfield))) || (selectedObject == 'contact' && !(contactsField.contains(sfield))) || (sObjResult.isCustom())) {
+                  String labelOfField = IndividiaulfieldMap.get(sfield).getDescribe().getLabel();
                   System.debug('this is the wanted Field Name ### sfield: ' + sfield + '### label: ' + labelOfField + ' ## name: ' + IndividiaulfieldMap.get(sfield).getDescribe().getName() + '## localname: ' + IndividiaulfieldMap.get(sfield).getDescribe().getLocalName());
                   fieldClassObj = new FieldDetailsClass(sfield, labelOfField, null);
                   individualObjectAllFieldsList.add(fieldClassObj);
                   listOfFieldsForSorting.add(fieldClassObj);
                 }
                 else {
-                  System.debug('unwanted in either account or contact ### sfield:' + sfield + '### label: ' + labelOfField + ' ## name: ' + IndividiaulfieldMap.get(sfield).getDescribe().getName() + '## localname: ' + IndividiaulfieldMap.get(sfield).getDescribe().getLocalName());
+                  System.debug('unwanted in either account or contact ### sfield:' + sfield + '### label: ' + IndividiaulfieldMap.get(sfield).getDescribe().getLabel() + ' ## name: ' + IndividiaulfieldMap.get(sfield).getDescribe().getName() + '## localname: ' + IndividiaulfieldMap.get(sfield).getDescribe().getLocalName());
                 }
                 // if(selectedObject == 'contact' && !(contactsField.contains(sfield))) {
                 //   System.debug('this is the wanted Field Name### sfield: ' + sfield + '### label: ' + labelOfField + ' ## name: ' + IndividiaulfieldMap.get(sfield).getDescribe().getName() + '## localname: ' + IndividiaulfieldMap.get(sfield).getDescribe().getLocalName());
@@ -468,17 +483,18 @@ public with sharing class PermissionSetPortalControllers {
           }
           // sorting the field labels
           individualObjectAllFieldsList = sortTheFieldLabels(individualObjectAllFieldsList);
-          return  getFieldPermissions(selectedPSet, selectedObject, individualObjectAllFieldsList);
+          //return  getFieldPermissions(selectedPSet, selectedObject, individualObjectAllFieldsList);
+          return individualObjectAllFieldsList;
         }
       }
       return null;
     }
     catch(DmlException e) {
-      System.debug('The following DML exception has occurred in getAllFields: ' + e.getMessage());
+      System.debug('The following DML exception has occurred in getAllFieldDataWithPermissions: ' + e.getMessage());
       return null;
     }
     catch(Exception e) {
-      System.debug('The following exception has occurred in getAllFields: ' + e.getMessage());
+      System.debug('The following exception has occurred in getAllFieldDataWithPermissions: ' + e.getMessage());
       return null;
     }
   }
@@ -514,9 +530,12 @@ public with sharing class PermissionSetPortalControllers {
   //NOTE: This method is capable of retrieving Field permissions in a given Permission Set + Object Name
   //This is called when an object is expanded (+ is clicked) and all the fields are loaded
 
-  // @AuraEnabled
-  public static List<FieldDetailsClass> getFieldPermissions(String pSetId, String objName, List<FieldDetailsClass> individualObjectAllFieldsListAsInput){
-
+   @AuraEnabled
+   //getAllFieldDataWithPermissions(String selectedObject, String selectedPSet) {
+  //public static List<FieldDetailsClass> getFieldPermissions(String pSetId, String objName, List<FieldDetailsClass> individualObjectAllFieldsListAsInput){
+  public static List<FieldDetailsClass> getAllFieldDataWithPermissions(String objName, String pSetId) {
+    System.debug('objName in getAllFieldDataWithPermissions: ' + objName);
+    List<FieldDetailsClass> individualObjectAllFieldsListAsInput = get_IndividualObj_AllFieldData(objName);
     List<FieldPermissions> FieldPermissionsList =
     [SELECT Id, Field, Parent.Name, ParentId, SobjectType, PermissionsEdit, PermissionsRead FROM FieldPermissions WHERE ParentId = :pSetId AND SobjectType = :objName];
 
@@ -682,6 +701,22 @@ public with sharing class PermissionSetPortalControllers {
   }
 
   //save Permission Set Details to salesforce
+  @AuraEnabled
+  public static Boolean createNewPermissionSet(String pSet_label, String pSet_name, String pSet_UserLicenseId, String pSet_Description) {
+    try{
+      PermissionSet pSetObj = new PermissionSet();
+      pSetObj.label = pSet_label;
+      pSetObj.name = pSet_name;
+      pSetObj.UserLicenseId = pSet_UserLicenseId;
+      pSetObj.description = pSet_Description;
+      INSERT pSetObj;
+      return true;
+    }
+    catch(Exception e){
+      System.debug('The following exception has occurred in savePSetDetails: ' + e.getTypeName() +' : ' + e.getMessage() + ' -- ' + e.getCause());
+      return false;
+    }
+  }
 
   public static Boolean savePSetDetails(List<PermissionSetClass> allPSets, String changedPSetId) {
     try{

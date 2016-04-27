@@ -14,7 +14,7 @@
 		},
 
 		permissionSetEditClick: function(component, event, helper) {
-				helper.permissionSetEditServerCall();
+				helper.permissionSetEditServerCall(component, event);
 		},
 
 		permissionSetCloneClick: function(component, event, helper) {
@@ -22,11 +22,11 @@
 		},
 
 		permissionSetCreateNewClick: function(component, event, helper) {
-				helper.permissionSetCreateNewServerCall();
+				helper.permissionSetCreateNewServerCall(component, event);
 		},
 
 		openFieldsDetails : function(component, event, helper) {
-				helper.objectSelected(component, event);
+				helper.openFieldsDetailsHelperCall(component, event);
 		},
 
 		opennCloseEditPermissionsonAllObjs : function(component, event, helper){
@@ -38,7 +38,7 @@
 		},
 
 		opennCloseEditPermissionsonIndividualObjectsandFields : function(component, event, helper){
-				helper.opennCloseEditPermissionsonIndividualObjectsandFields(component, event);
+				helper.opennCloseEditPermissionsonIndividualObjectsandFieldsHelperCall(component, event);
 		},
 
 
@@ -138,5 +138,27 @@
 
 		showSpinner : function(component, event, helper) {
 			helper.showSpinnerHelperClass(component, event);
+		},
+
+		permissionSetClearChanges : function(component, event, helper) {
+			helper.permissionSetClearChangesHelperCall(component, event);
+		},
+
+
+		creating_pSetNameChange: function(component, event, helper) {
+			helper.creating_pSetNameChangeHelperCall(component, event);
+		},
+
+		creating_userLicenseddlChange: function(component, event, helper) {
+			helper.creating_userLicenseddlChangeHelperCall(component, event);
+		},
+
+		creating_pSetAPINameChange : function(component, event, helper) {
+			helper.creating_pSetAPINameChangeHelperCall(component, event);
+		},
+
+		creating_pSetDescriptionChange : function(component, event, helper) {
+			helper.creating_pSetDescriptionChangeHelperCall(component, event);
 		}
+
 })
