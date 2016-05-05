@@ -10,7 +10,7 @@
 		},
 
 		permissionSetNamesddlChange : function(component, event, helper) {
-			helper.permissionSetNameSelected(component,event);
+			helper.permissionSetNamesddlChangeHelperCall(component,event);
 		},
 
 		permissionSetEditClick: function(component, event, helper) {

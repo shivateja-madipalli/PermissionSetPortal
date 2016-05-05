@@ -27,16 +27,17 @@
 	clearAllAttributes : function(cmp) {
 		console.log('clearAllAttributes is called');
 		var permissionSetNamesDataSetasInput_as_value = cmp.get("{!v.permissionSetNamesDataSetasInput}");
-		if(permissionSetNamesDataSetasInput_as_value != undefined){
-				cmp.set("v.permissionSetNamesDataSetasInput", "");
+		if(permissionSetNamesDataSetasInput_as_value != undefined) {
+			cmp.set("v.pSet_Values_for_comparisions", permissionSetNamesDataSetasInput_as_value);
+			cmp.set("v.permissionSetNamesDataSetasInput", "");
 		}
 		var allPsDetails_as_value = cmp.get("{!v.allPsDetails}");
 		if(allPsDetails_as_value != undefined) {
-				cmp.set("v.allPsDetails", "");
+			cmp.set("v.allPsDetails", "");
 		}
 		var changedAllObjectDetails_as_value = cmp.get("{!v.changedAllObjectDetails}");
 		if(changedAllObjectDetails_as_value != undefined) {
-				cmp.set("v.changedAllObjectDetails", "");
+			cmp.set("v.changedAllObjectDetails", "");
 		}
 
 		//cmp.set("v.allObjectDetails", "");
@@ -76,10 +77,16 @@
 		fragment.appendChild(opt);
 		console.log('Everything is fine here 3');
 		for(var i=0;i<permissionSetNamesDataSetasInput.length;i++) {
+
 			opt = document.createElement('option');
 			opt.innerHTML = permissionSetNamesDataSetasInput[i].label;
 			opt.value = permissionSetNamesDataSetasInput[i].id;
 			fragment.appendChild(opt);
+		}
+		var permissionsSet_Select = $('#permissionSetNamesddl');
+		var length = permissionsSet_Select.children('option').length;
+		if(length > 0 ) {
+			permissionsSet_Select.empty();
 		}
 
 		$('#permissionSetNamesddl').append(fragment);
@@ -94,7 +101,7 @@
 		return allPSetDetails;
 	},
 
-	permissionSetNameSelected : function(component,event) {
+	permissionSetNamesddlChangeHelperCall : function(component,event) {
 		var selectedVal = $('#'+event.srcElement.id).val();
 		if(selectedVal === "NothingSelected") {
 			this.swapVisibilityOfButtons(true);
@@ -136,17 +143,19 @@
 		}
 	},
 
-	swapPsDetailsDivVisibility: function(option,individualPSetId){
-		if(option){
+	swapPsDetailsDivVisibility: function(option,individualPSetId) {
+		if(option) {
 			$('#PermissionSetDetailsDiv').children().hide();
-			//////console.log("showing PSet Details Div: " + individualPSetId);
+			console.log("showing PSet Details Div: " + individualPSetId);
+			console.log('In swapPsDetailsDivVisibility: '+$('#'+individualPSetId+'IndividualDiv'));
+			$('#PermissionSetDetailsDiv').show();
 			$('#'+individualPSetId+'IndividualDiv').show('slow');
 		}
 		else {
 			$('#PermissionSetDetailsDiv').children().hide();
-			//////console.log("hiding PSet Details Div: " + individualPSetId);
+			console.log("hiding PSet Details Div: " + individualPSetId);
+			$('#PermissionSetDetailsDiv').hide();
 			$('#'+individualPSetId+'IndividualDiv').slideUp('slow');
-
 		}
 	},
 
@@ -177,35 +186,35 @@
 				//console.log("Check this:" + response.getReturnValue());
 
 				var objectDetailsWithPermissionsasJSON = JSON.stringify(response.getReturnValue());
-				console.log("objectDetailsWithPermissionsasJSON : " + objectDetailsWithPermissionsasJSON);
+				// console.log("objectDetailsWithPermissionsasJSON : " + objectDetailsWithPermissionsasJSON);
 
 				// if(this.checkIfDataHasRequiredString(objectDetailsWithPermissionsasJSON, '"objPermissions":')) {
-					if(!this.checkIfDataHasRequiredString(objectDetailsWithPermissionsasJSON, '"read":false')){
-						// make all read true
-						console.log('Inside READ');
-						$('#readforAllObjsChkBox').prop('checked',true);
-					}
-					if(!this.checkIfDataHasRequiredString(objectDetailsWithPermissionsasJSON, '"viewAll":false')){
-						// make all viewAll true
-						console.log('Inside VIEWALL');
-						$('#viewAllforAllObjsChkBox').prop('checked',true);
-					}
-					if(!this.checkIfDataHasRequiredString(objectDetailsWithPermissionsasJSON, '"modifyAll":false')){
-						// make all modifyAll true
-						$('#modifyAllforAllObjsChkBox').prop('checked',true);
-					}
-					if(!this.checkIfDataHasRequiredString(objectDetailsWithPermissionsasJSON, '"edit":false')){
-						// make all edit true
-						$('#editforAllObjsChkBox').prop('checked',true);
-					}
-					if(!this.checkIfDataHasRequiredString(objectDetailsWithPermissionsasJSON, '"deleteData":false')){
-						// make all deleteData true
-						$('#deleteforAllObjsChkBox').prop('checked',true);
-					}
-					if(!this.checkIfDataHasRequiredString(objectDetailsWithPermissionsasJSON, '"create":false')){
-						// make all create true
-						$('#createforAllObjsChkBox').prop('checked',true);
-					}
+				if(!this.checkIfDataHasRequiredString(objectDetailsWithPermissionsasJSON, '"read":false')){
+					// make all read true
+					// console.log('Inside READ');
+					$('#readforAllObjsChkBox').prop('checked',true);
+				}
+				if(!this.checkIfDataHasRequiredString(objectDetailsWithPermissionsasJSON, '"viewAll":false')){
+					// make all viewAll true
+					// console.log('Inside VIEWALL');
+					$('#viewAllforAllObjsChkBox').prop('checked',true);
+				}
+				if(!this.checkIfDataHasRequiredString(objectDetailsWithPermissionsasJSON, '"modifyAll":false')){
+					// make all modifyAll true
+					$('#modifyAllforAllObjsChkBox').prop('checked',true);
+				}
+				if(!this.checkIfDataHasRequiredString(objectDetailsWithPermissionsasJSON, '"edit":false')){
+					// make all edit true
+					$('#editforAllObjsChkBox').prop('checked',true);
+				}
+				if(!this.checkIfDataHasRequiredString(objectDetailsWithPermissionsasJSON, '"deleteData":false')){
+					// make all deleteData true
+					$('#deleteforAllObjsChkBox').prop('checked',true);
+				}
+				if(!this.checkIfDataHasRequiredString(objectDetailsWithPermissionsasJSON, '"create":false')){
+					// make all create true
+					$('#createforAllObjsChkBox').prop('checked',true);
+				}
 				// }
 				//component.set("v.allObjectDetails", "");
 				//var x = this.addObjDetailsToListofObjs(response.getReturnValue(), $('#'+event.srcElement.id).val());
@@ -311,7 +320,7 @@
 			cmp.set("v.allObjectDetails", "");
 		}
 		if(objectNames_as_Val != undefined) {
-				cmp.set("v.objectNames", "");
+			cmp.set("v.objectNames", "");
 		}
 	},
 
@@ -339,6 +348,13 @@
 			opt.value = userLicenseDataAsInput[i].Id;
 			fragment.appendChild(opt);
 		}
+
+		var userLicense_Select = $('#creating_userLicenseddl');
+		var length = userLicense_Select.children('option').length;
+		if(length > 0 ) {
+			userLicense_Select.empty();
+		}
+
 		$('#creating_userLicenseddl').append(fragment);
 	},
 
@@ -359,7 +375,7 @@
 		action.setCallback(this, function(response) {
 			var state = response.getState();
 			if (component.isValid() && state === "SUCCESS") {
-				console.log('state: success in load_all_objects_forCreateNew and result: ' + JSON.stringify(response.getReturnValue()));
+				// console.log('state: success in load_all_objects_forCreateNew and result: ' + JSON.stringify(response.getReturnValue()));
 				component.set("v.objectNames", response.getReturnValue());
 				component.set("v.allObjectDetails", "");
 				component.set("v.allObjectDetails", this.addObjDetailsToListofObjs(response.getReturnValue(), null));
@@ -385,14 +401,14 @@
 						for(var i=0;i<allObjectData.length;i++) {
 							if(allObjectData[i].key == event.srcElement.id) {
 								if(allObjectData[i].fieldDetails == null) {
-									console.log('inside allObjectData[i].fieldDetails is null');
+									console.log('inside allObjectData[i].fieldDetails is null and value is : ' + JSON.stringify(response.getReturnValue()));
 									allObjectData[i].fieldDetails = response.getReturnValue();
-									var fieldDetails = [];
-									for(var fieldCount = 0;fieldCount<allObjectData[i].fieldDetails.length; fieldCount++) {
-										var fieldPermissionsConcerningObjnPSet = this.createFieldPermissionsClass(null, false, false);
-										var fieldDetailsObj = this.createFieldDetailsClass(allObjectData[i].fieldDetails[fieldCount].fieldName, allObjectData[i].fieldDetails[fieldCount].fieldLabel, fieldPermissionsConcerningObjnPSet);
-										fieldDetails.push(fieldDetailsObj);
-									}
+									// var fieldDetails = [];
+									// for(var fieldCount = 0;fieldCount<allObjectData[i].fieldDetails.length; fieldCount++) {
+									// 	var fieldPermissionsConcerningObjnPSet = this.createFieldPermissionsClass(null, false, false);
+									// 	var fieldDetailsObj = this.createFieldDetailsClass(allObjectData[i].fieldDetails[fieldCount].fieldName, allObjectData[i].fieldDetails[fieldCount].fieldLabel, fieldPermissionsConcerningObjnPSet);
+									// 	fieldDetails.push(fieldDetailsObj);
+									// }
 									//allObjDataForStoringFieldData[i].fieldDetails = fieldDetails;
 									component.set("v.objectNames",allObjectData);
 									break;
@@ -432,6 +448,7 @@
 
 		if(returnVal == false) {
 			console.log('return val in Name change is false: ' + returnVal);
+			$('#'+event.srcElement.id).focus();
 			$('#successorErrorMessageLabel').css('color', 'red');
 			$('#successorErrorMessageLabel').html("There's an error");
 		}
@@ -471,6 +488,7 @@
 		// if(this.checkIf_create_New_PSet_Object_isEmpty(component)) {
 		if(returnVal == false) {
 			console.log('return val in API NAME change is false: ' + returnVal);
+			$('#'+event.srcElement.id).focus();
 			$('#successorErrorMessageLabel').css('color', 'red');
 			$('#successorErrorMessageLabel').html("There's an error");
 		}
@@ -511,9 +529,13 @@
 
 		// console.log(test);
 		////createAPermissionSetDetailsClass : function(label, pSetName, pSetId, pSetDescription, pSetNameSpacePrefix, pSetULicense, pSetCreatedDate) {
-		var permissionsSetNames = JSON.stringify(component.get("{!v.permissionSetNamesDataSetasInput}"));
+		var permissionsSetNames = JSON.stringify(component.get("{!v.pSet_Values_for_comparisions}"));
+
+		// console.log('permissionsSetNames.toLowerCase(): ' + permissionsSetNames.toLowerCase());
+		// console.log('pSet_API_Name.toLowerCase() : ' + pSet_API_Name.toLowerCase());
 
 		if (pSet_API_Name != null && permissionsSetNames.toLowerCase().indexOf(pSet_API_Name.toLowerCase()) == -1) {
+			console.log('check true whether pSet name already exists');
 			var returnVal = this.checkForPatterns(pSet_API_Name);
 			if(!returnVal) {
 				return false;
@@ -523,19 +545,25 @@
 			}
 			else {
 				return false;
+
 			}
 		}
-		else if(pSet_Label != null && permissionsSetNames.toLowerCase().indexOf(pSet_Label.toLowerCase()) == -1) {
+		else if(pSet_Label != null && permissionsSetNames.toLowerCase().indexOf('"' + pSet_Label.toLowerCase() + '"') == -1) {
 			var returnVal = this.checkForPatterns(pSet_Label);
+			console.log('returnVal is : ' + returnVal);
 			if(!returnVal) {
 				console.log('value return false at !returnVal');
 				return false;
 			}
-			if(permissionsSetNames.toLowerCase().indexOf(returnVal.toLowerCase()) == -1) {
+			console.log('returnVal.toLowerCase(): ' + returnVal.toLowerCase());
+			console.log('permissionsSetNames.toLowerCase(): ' + permissionsSetNames.toLowerCase());
+			console.log('permissionsSetNames.toLowerCase().indexOf(\b + returnVal.toLowerCase() + ): ' + permissionsSetNames.toLowerCase().indexOf('"' + returnVal.toLowerCase() + '"'));
+
+			if(permissionsSetNames.toLowerCase().indexOf('"' + returnVal.toLowerCase() + '"') == -1) {
 				return returnVal;
 			}
 			else {
-				console.log('value return false at permissionsSetNames.toLowerCase().indexOf(returnVal.toLowerCase()) == -1');
+				console.log('value return false at permissionsSetNames.toLowerCase().index(returnVal.toLowerCase()) != -1');
 				return false;
 			}
 		}
@@ -576,28 +604,32 @@
 	//END
 
 	permissionSetClearChangesHelperCall : function() {
-
+		//clear click
+		$('#mainDivForAllSubDivs').slideUp('slow');
+		$('#creating_new_permissionSet_Details').slideUp('slow');
+		$('#PermissionSetDetailsDiv').show();
+		this.enable_pSet_dropDownList_n_editBtn();
 	},
 
 	openFieldsDetailsHelperCall: function(cmp,event) {
 		var createNew_isClicked = cmp.get("{!v.checkIf_created_isClicked}");
 
-			if($('#'+event.srcElement.id).val() == '+') {
-				if(createNew_isClicked == null) {
-					this.contactServerForFields_withPermissions(cmp, event);
-				}
-				else {
-					this.load_allFields_of_Individual_Object(cmp, event);
-				}
-				$('#'+event.srcElement.id).val('-');
-				$('#'+event.srcElement.id + 'fieldDiv').show('slow');
-				//this.disablingFieldLevelPermissions();
+		if($('#'+event.srcElement.id).val() == '+') {
+			if(createNew_isClicked == null) {
+				this.contactServerForFields_withPermissions(cmp, event);
 			}
 			else {
-				//console.log("inside object -");
-				$('#'+event.srcElement.id).val('+');
-				$('#'+event.srcElement.id + 'fieldDiv').slideUp('slow');
+				this.load_allFields_of_Individual_Object(cmp, event);
 			}
+			$('#'+event.srcElement.id).val('-');
+			$('#'+event.srcElement.id + 'fieldDiv').show('slow');
+			//this.disablingFieldLevelPermissions();
+		}
+		else {
+			//console.log("inside object -");
+			$('#'+event.srcElement.id).val('+');
+			$('#'+event.srcElement.id + 'fieldDiv').slideUp('slow');
+		}
 	},
 
 	contactServerForFields_withPermissions: function(component, event) {
@@ -1283,23 +1315,23 @@
 			//console.log("### inside EDIT & id of the checked CheckBox: " + event.srcElement.id);
 			var createNew_isClicked = cmp.get("{!v.checkIf_created_isClicked}");
 			if(createNew_isClicked == null) {
-				console.log('inside create New  is null');
+				// console.log('inside create New  is null');
 				this.updateChangesinObjorFieldPermissions(cmp,$('#permissionSetNamesddl').val(), 'Field', event.srcElement.name, 'Allqwerty');
 			}
 			else {
-				console.log('inside create New  is NOT null');
+				// console.log('inside create New  is NOT null');
 				this.updateChangesinObjorFieldPermissions(cmp, null, 'Field', event.srcElement.name, 'Allqwerty');
 			}
 			var allObjDataForFieldsData = cmp.get("{!v.objectNames}");
 			if($('#' + event.srcElement.id).is(':checked')) {
-				console.log('inside checked is true 1');
+				// console.log('allObjDataForFieldsDataAfterAllChanges########: ' +JSON.stringify(allObjDataForFieldsData));
 				var allObjDataForFieldsDataAfterAllChanges = this.implementCheckboxManipulationforAllFields(allObjDataForFieldsData, event.srcElement.name, 'edit', true);
+				// console.log('allObjDataForFieldsDataAfterAllChanges value after edit : ' + allObjDataForFieldsDataAfterAllChanges);
 				var allObjDataForFieldsDataAfterAllChanges = this.implementCheckboxManipulationforAllFields(allObjDataForFieldsDataAfterAllChanges, event.srcElement.name, 'read', true);
-				console.log('allObjDataForFieldsDataAfterAllChanges : ' + JSON.stringify(allObjDataForFieldsDataAfterAllChanges));
+				// console.log('allObjDataForFieldsDataAfterAllChanges value after read : ' + JSON.stringify(allObjDataForFieldsDataAfterAllChanges));
 				cmp.set("v.objectNames", allObjDataForFieldsDataAfterAllChanges);
 				cmp.set("v.changedAllObjectDetails", allObjDataForFieldsDataAfterAllChanges);
 				$('#' + event.srcElement.name + 'readForAllFieldsofanIndividualObj').prop('checked', true);
-				console.log('inside checked is true 2');
 			}
 			else {
 				var allObjDataForFieldsDataAfterAllChanges = this.implementCheckboxManipulationforAllFields(allObjDataForFieldsData, event.srcElement.name, 'edit', false);
@@ -1356,35 +1388,34 @@
 		try{
 			//THIS isn't working, check stuff here
 			//ERROR ERROR ERROR
-			console.log("allObjDataForFieldsData: "+ JSON.stringify(allObjDataForFieldsData));
 			console.log("objectkey: "+ objectkey);
 			console.log("readOredit: "+ readOredit);
 			console.log("trueOrfalse: "+ trueOrfalse);
 
 			for(var i = 0; i < allObjDataForFieldsData.length; i++) {
-				console.log('one');
+				// console.log('one');
 				if(allObjDataForFieldsData[i].key == objectkey) {
-					console.log('two');
+					// console.log('two');
 
 					//this.updateChangesinObjorFieldPermissions(cmp, $('#permissionSetNamesddl').val() ,'Field', event.srcElement.name, event.srcElement.value);
 
 					for(var j=0;j<allObjDataForFieldsData[i].fieldDetails.length;j++) {
-						console.log('three');
+						// console.log('three');
 						if(readOredit == 'read' && trueOrfalse) {
-							console.log('four');
+							// console.log('four');
 							allObjDataForFieldsData[i].fieldDetails[j].fieldPermissions.fieldRead = true;
 						}
 						else if(readOredit == 'read' && (!trueOrfalse)) {
-							console.log('five');
+							// console.log('five');
 							allObjDataForFieldsData[i].fieldDetails[j].fieldPermissions.fieldRead = false;
 						}
 						else if(readOredit == 'edit' && trueOrfalse) {
-							console.log('six');
+							// console.log('six');
 							allObjDataForFieldsData[i].fieldDetails[j].fieldPermissions.fieldEdit = true;
 							// allObjDataForFieldsData[i].fieldDetails[j].fieldPermissions.fieldRead = true;
 						}
 						else if(readOredit == 'edit' && (!trueOrfalse)) {
-							console.log('seven');
+							// console.log('seven');
 							allObjDataForFieldsData[i].fieldDetails[j].fieldPermissions.fieldEdit = false;
 						}
 					}
@@ -1552,6 +1583,7 @@
 
 
 	//NOTE: Save function forever
+
 	pSetChangesSave : function(cmp, event) {
 		//testing pSetDescriptionChangeHelperCall
 		try {
@@ -1624,7 +1656,6 @@
 				}
 			}
 			else {
-
 				var label = $('#creating_pSetName').val();
 				console.log("label: " + label);
 				var apiName = $('#creating_pSetAPIName').val();
@@ -1642,16 +1673,16 @@
 						var action = cmp.get("c.create_New_PermissionSet_and_SaveConcerned_Obj_Field_Permissions");
 						var newly_created_PSet = this.createAPermissionSetDetailsClass(label, apiName, "", description, "", selectedUserLicense, "");
 						var changedRecordedObj =  cmp.get("{!v.changedRecordedObj}");
-						if(changedRecordedObj == undefined) { //Object.keys(changedRecordedObj).length === 0) {
+						if(changedRecordedObj == undefined) {
 							console.log('changedRecordedObj is undefined : ' + changedRecordedObj);
-							changedRecordedObj = null;
+							changedRecordedObj = undefined;
 						}
 						console.log('changedRecordedObj is NOT undefined: ');
 
 						var objFieldData = cmp.get("{!v.changedAllObjectDetails}");
-						if(objFieldData == undefined) {	//Object.keys(objFieldData).length === 0) {
+						if(objFieldData == undefined) {
 							console.log('objFieldData is undefined: ' + objFieldData);
-							objFieldData = null;
+							objFieldData = undefined;
 						}
 						console.log('objFieldData is not undefined: ');
 
@@ -1668,6 +1699,16 @@
 								$('#successorErrorMessageLabel').css('color', 'green');
 								$('#successorErrorMessageLabel').html("New Permission Set Created!");
 								console.log("its a success");
+								this.contactServertoGetPermissionSet(cmp);
+								setTimeout(function() {
+									// hide things concerned to create new
+									$('#mainDivForAllSubDivs').hide('slow');
+									this.callBack_for_hiding_clearing_Data
+									//enabling permissionSetNamesddl
+									$('#permissionSetNamesddl').removeAttr('disabled');
+									//clear success message
+									$('#successorErrorMessageLabel').html("");
+								}, 2000, cmp);
 							}
 							else if(!response.getReturnValue()) {
 								$('#successorErrorMessageLabel').css('color', 'red');
@@ -1688,15 +1729,20 @@
 					}
 				}
 				else {
+					$('#creating_userLicenseddl').focus();
 					$('#successorErrorMessageLabel').css('color', 'red');
 					$('#successorErrorMessageLabel').html("Select a User License");
 				}
-
 			}
 		}
 		catch(error) {
 			////console.log("error at pSetChangesSave: " + error);
 		}
+	},
+
+	callBack_for_hiding_clearing_Data : function(component, event) {
+		this.clearAllAttributes(component);
+		this.empty_extra_attributes(component);
 	},
 
 	//NOTE: PermissionSet Details Elements on change helper Events

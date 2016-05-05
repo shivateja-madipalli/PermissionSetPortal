@@ -1,0 +1,420 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+14:08:17.0 (769885)|HEAP_ALLOCATE|[72]|Bytes:3
+14:08:17.0 (858523)|HEAP_ALLOCATE|[77]|Bytes:152
+14:08:17.0 (892949)|HEAP_ALLOCATE|[342]|Bytes:408
+14:08:17.0 (928306)|HEAP_ALLOCATE|[355]|Bytes:408
+14:08:17.0 (949862)|HEAP_ALLOCATE|[467]|Bytes:48
+14:08:17.3 (3690380)|STATEMENT_EXECUTE|[1]
+14:08:17.3 (3742460)|HEAP_ALLOCATE|[50]|Bytes:5
+14:08:17.3 (3765611)|HEAP_ALLOCATE|[56]|Bytes:5
+14:08:17.3 (3775597)|HEAP_ALLOCATE|[64]|Bytes:7
+14:08:17.3 (3803036)|SYSTEM_MODE_ENTER|false
+14:08:17.3 (3817322)|HEAP_ALLOCATE|[9]|Bytes:5
+14:08:17.3 (3821608)|STATEMENT_EXECUTE|[9]
+14:08:17.3 (3859074)|HEAP_ALLOCATE|[9]|Bytes:4
+14:08:17.3 (3882646)|ENTERING_MANAGED_PKG|
+14:08:17.3 (4003003)|VARIABLE_ASSIGNMENT|[9]|PermissionSetPortalControllers.contactsField|{"s":1,"v":[]}|0x1f408951
+14:08:17.3 (4010436)|STATEMENT_EXECUTE|[10]
+14:08:17.3 (4016076)|HEAP_ALLOCATE|[10]|Bytes:4
+14:08:17.3 (4030076)|ENTERING_MANAGED_PKG|
+14:08:17.3 (4065637)|VARIABLE_ASSIGNMENT|[10]|PermissionSetPortalControllers.accountField|{"s":1,"v":[]}|0x1d12f1a5
+14:08:17.3 (4069682)|STATEMENT_EXECUTE|[1056]
+14:08:17.3 (4071773)|STATEMENT_EXECUTE|[1085]
+14:08:17.3 (4073173)|STATEMENT_EXECUTE|[1113]
+14:08:17.3 (4074253)|STATEMENT_EXECUTE|[1142]
+14:08:17.3 (4075307)|STATEMENT_EXECUTE|[1158]
+14:08:17.3 (4076366)|STATEMENT_EXECUTE|[1175]
+14:08:17.3 (4077377)|STATEMENT_EXECUTE|[1186]
+14:08:17.3 (4078331)|STATEMENT_EXECUTE|[1191]
+14:08:17.3 (4084524)|SYSTEM_MODE_EXIT|false
+14:08:17.3 (4097595)|METHOD_EXIT|[1]|PermissionSetPortalControllers
+14:08:17.3 (4104389)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:141
+14:08:17.3 (4107353)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:2330
+14:08:17.3 (4112595)|SYSTEM_MODE_ENTER|false
+14:08:17.3 (4123457)|VARIABLE_SCOPE_BEGIN|[601]|changesRecordedObj|String|false|false
+14:08:17.3 (4137576)|VARIABLE_ASSIGNMENT|[601]|changesRecordedObj|"{\"PermissionSetId\":\" (121 more) ..."
+14:08:17.3 (4141590)|VARIABLE_SCOPE_BEGIN|[601]|changedPSetData|String|false|false
+14:08:17.3 (4147392)|VARIABLE_ASSIGNMENT|[601]|changedPSetData|"[{\"label\":\"Permissio (2310 more) ..."
+14:08:17.3 (4150732)|VARIABLE_SCOPE_BEGIN|[601]|changedObjData|String|false|false
+14:08:17.3 (4154710)|VARIABLE_ASSIGNMENT|[601]|changedObjData|null
+14:08:17.3 (4168483)|HEAP_ALLOCATE|[602]|Bytes:5
+14:08:17.3 (4172498)|STATEMENT_EXECUTE|[601]
+14:08:17.3 (4173842)|STATEMENT_EXECUTE|[602]
+14:08:17.3 (4174815)|STATEMENT_EXECUTE|[602]
+14:08:17.3 (4176094)|STATEMENT_EXECUTE|[603]
+14:08:17.3 (4181204)|VARIABLE_SCOPE_BEGIN|[603]|checkChangesInPSetDetails|Boolean|false|false
+14:08:17.3 (4184761)|HEAP_ALLOCATE|[603]|Bytes:5
+14:08:17.3 (4190196)|VARIABLE_ASSIGNMENT|[603]|checkChangesInPSetDetails|false
+14:08:17.3 (4192195)|STATEMENT_EXECUTE|[604]
+14:08:17.3 (4194732)|VARIABLE_SCOPE_BEGIN|[604]|checkChangesInSavingObjDetails|Boolean|false|false
+14:08:17.3 (4197845)|HEAP_ALLOCATE|[604]|Bytes:5
+14:08:17.3 (4201655)|VARIABLE_ASSIGNMENT|[604]|checkChangesInSavingObjDetails|false
+14:08:17.3 (4203521)|STATEMENT_EXECUTE|[605]
+14:08:17.3 (4205799)|VARIABLE_SCOPE_BEGIN|[605]|checkChangesInSavingFieldDetails|Boolean|false|false
+14:08:17.3 (4208595)|HEAP_ALLOCATE|[605]|Bytes:5
+14:08:17.3 (4212457)|VARIABLE_ASSIGNMENT|[605]|checkChangesInSavingFieldDetails|false
+14:08:17.3 (4214443)|STATEMENT_EXECUTE|[607]
+14:08:17.3 (4217843)|HEAP_ALLOCATE|[607]|Bytes:37
+14:08:17.3 (4248180)|ENTERING_MANAGED_PKG|
+14:08:17.3 (4271919)|USER_DEBUG|[607]|DEBUG|Its inside the savePSetDetailsChanges
+14:08:17.3 (4280574)|STATEMENT_EXECUTE|[608]
+14:08:17.3 (4284782)|HEAP_ALLOCATE|[608]|Bytes:22
+14:08:17.3 (4296460)|HEAP_ALLOCATE|[608]|Bytes:163
+14:08:17.3 (4307956)|ENTERING_MANAGED_PKG|
+14:08:17.3 (4318613)|USER_DEBUG|[608]|DEBUG|changes Recorded Obj: {"PermissionSetId":"0PS360000017ld5GAA","changesinPermissionSetDetails":true,"changesinObjPermissions":null,"changesinFieldPermissions":null}
+14:08:17.3 (4325323)|STATEMENT_EXECUTE|[609]
+14:08:17.3 (4329592)|HEAP_ALLOCATE|[609]|Bytes:19
+14:08:17.3 (4336757)|HEAP_ALLOCATE|[609]|Bytes:2349
+14:08:17.3 (4346601)|ENTERING_MANAGED_PKG|
+14:08:17.3 (4356027)|USER_DEBUG|[609]|DEBUG|changed PSet Data: [{"label":"PermissionSet_Test","id":"0PS36000000q71PGAQ","description":"This is for testing Description","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce","createdDate":"2016-03-20 15:41:12"},{"label":"Final_Test","id":"0PS360000017KxHGAU","description":"Descp","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce","createdDate":"2016-05-03 17:16:41"},{"label":"Final_Test_1","id":"0PS360000017LExGAM","description":"Descp","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce","createdDate":"2016-05-03 17:43:23"},{"label":"Final_Test_2","id":"0PS360000017LF2GAM","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce","createdDate":"2016-05-03 17:44:15"},{"label":"Final_Test_3","id":"0PS360000017LFMGA2","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce","createdDate":"2016-05-03 17:45:07"},{"label":"Permission_Set_Creation_Testing_1","id":"0PS360000017j41GAA","description":"Permission Set Creating Testing Description","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce","createdDate":"2016-05-04 12:46:39"},{"label":"Final_Test_4","id":"0PS360000017jAjGAI","description":"Fina Test 4 Descp","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce","createdDate":"2016-05-04 12:48:51"},{"label":"Final_Test_5","id":"0PS360000017jDxGAI","description":"Final Test Descp","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce","createdDate":"2016-05-04 12:49:51"},{"label":"Final_Test_6","id":"0PS360000017l7SGAQ","description":"Descp","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce","createdDate":"2016-05-04 13:47:01"},{"label":"Fina_Test_7","id":"0PS360000017lD2GAI","description":"Descp","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce","createdDate":"2016-05-04 13:48:49"},{"label":"Final_Test_8","id":"0PS360000017lcDGAQ","description":"Descp","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce","createdDate":"2016-05-04 13:55:13"},{"label":"Final_Test_9","id":"0PS360000017lcNGAQ","description":"Decp","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce","createdDate":"2016-05-04 13:55:54"},{"label":"Final_Test_13","apiName":"Final_Test_13","id":"0PS360000017ld5GAA","description":"Descp","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce","createdDate":"2016-05-04 13:56:29"}]
+14:08:17.3 (4371494)|STATEMENT_EXECUTE|[610]
+14:08:17.3 (4375891)|HEAP_ALLOCATE|[610]|Bytes:18
+14:08:17.3 (4382066)|HEAP_ALLOCATE|[610]|Bytes:22
+14:08:17.3 (4391861)|ENTERING_MANAGED_PKG|
+14:08:17.3 (4401731)|USER_DEBUG|[610]|DEBUG|changed Obj Data: null
+14:08:17.3 (4407158)|STATEMENT_EXECUTE|[612]
+14:08:17.3 (4411917)|VARIABLE_SCOPE_BEGIN|[612]|newPSetObj|List<shiva15testns.PermissionSetPortalControllers.PermissionSetClass>|true|false
+14:08:17.3 (4419102)|VARIABLE_ASSIGNMENT|[612]|newPSetObj|null|
+14:08:17.3 (4421047)|STATEMENT_EXECUTE|[613]
+14:08:17.3 (4423436)|VARIABLE_SCOPE_BEGIN|[613]|newObjDetailsObj|List<shiva15testns.PermissionSetPortalControllers.ObjectDetailsClass>|true|false
+14:08:17.3 (4427948)|VARIABLE_ASSIGNMENT|[613]|newObjDetailsObj|null|
+14:08:17.3 (4446267)|ENTERING_MANAGED_PKG|
+14:08:17.3 (4472790)|STATEMENT_EXECUTE|[616]
+14:08:17.3 (4475014)|STATEMENT_EXECUTE|[618]
+14:08:17.3 (4479256)|HEAP_ALLOCATE|[618]|Bytes:27
+14:08:17.3 (4491978)|ENTERING_MANAGED_PKG|
+14:08:17.3 (4502744)|USER_DEBUG|[618]|DEBUG|changedPSetData is not null
+14:08:17.3 (4508864)|STATEMENT_EXECUTE|[619]
+14:08:17.3 (4512786)|HEAP_ALLOCATE|[619]|Bytes:97
+14:08:17.3 (4603254)|HEAP_ALLOCATE|[619]|Bytes:24
+14:08:17.3 (4617986)|SYSTEM_METHOD_ENTRY|[1]|Type.Type()
+14:08:17.3 (4620904)|STATEMENT_EXECUTE|[1]
+14:08:17.3 (4629872)|SYSTEM_METHOD_EXIT|[1]|Type
+14:08:17.3 (4635665)|HEAP_ALLOCATE|[619]|Bytes:8
+14:08:17.3 (4659996)|HEAP_ALLOCATE|[619]|Bytes:8
+14:08:17.3 (4664882)|VARIABLE_SCOPE_BEGIN|[4]|this|System.Type|true|false
+14:08:17.3 (4695992)|VARIABLE_ASSIGNMENT|[4]|this|{}|0x686b7cd5
+14:08:17.3 (4700545)|VARIABLE_SCOPE_BEGIN|[4]|apextype|java:common.apex.runtime.ApexObjectType|true|false
+14:08:17.3 (4848234)|VARIABLE_ASSIGNMENT|[4]|apextype|"List\u003Cshiva15testns.PermissionSetPortalControllers.PermissionSetClass\u003E"|0x293cba54
+14:08:17.3 (4917706)|HEAP_ALLOCATE|[619]|Bytes:8
+14:08:17.3 (4965934)|HEAP_ALLOCATE|[619]|Bytes:18
+14:08:17.3 (4979500)|SYSTEM_METHOD_ENTRY|[1]|JSON.JSON()
+14:08:17.3 (4982041)|STATEMENT_EXECUTE|[1]
+14:08:17.3 (4990310)|SYSTEM_METHOD_EXIT|[1]|JSON
+14:08:17.3 (5004867)|METHOD_ENTRY|[619]||System.JSON.deserialize(String, System.Type)
+14:08:17.3 (7118171)|METHOD_EXIT|[619]||System.JSON.deserialize(String, System.Type)
+14:08:17.3 (7153360)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:56
+14:08:17.3 (7169017)|VARIABLE_ASSIGNMENT|[619]|newPSetObj|{"s":1,"v":"List of size 13 too large to display"}|0x4f5c763
+14:08:17.3 (7188736)|ENTERING_MANAGED_PKG|
+14:08:17.3 (7214698)|STATEMENT_EXECUTE|[621]
+14:08:17.3 (7227757)|ENTERING_MANAGED_PKG|
+14:08:17.3 (7247557)|STATEMENT_EXECUTE|[627]
+14:08:17.3 (7249848)|STATEMENT_EXECUTE|[629]
+14:08:17.3 (7254045)|HEAP_ALLOCATE|[629]|Bytes:30
+14:08:17.3 (7267759)|ENTERING_MANAGED_PKG|
+14:08:17.3 (7280683)|USER_DEBUG|[629]|DEBUG|changesRecordedObj is NOT null
+14:08:17.3 (7287280)|STATEMENT_EXECUTE|[630]
+14:08:17.3 (7291282)|HEAP_ALLOCATE|[630]|Bytes:68
+14:08:17.3 (7563194)|HEAP_ALLOCATE|[630]|Bytes:8
+14:08:17.3 (7570293)|HEAP_ALLOCATE|[630]|Bytes:8
+14:08:17.3 (7573986)|VARIABLE_SCOPE_BEGIN|[4]|this|System.Type|true|false
+14:08:17.3 (7592382)|VARIABLE_ASSIGNMENT|[4]|this|{}|0x65a70882
+14:08:17.3 (7596151)|VARIABLE_SCOPE_BEGIN|[4]|apextype|java:common.apex.runtime.ApexObjectType|true|false
+14:08:17.3 (7655686)|VARIABLE_ASSIGNMENT|[4]|apextype|"shiva15testns.PermissionSetPortalControllers.ChangesrecordedfromUser"|0x4f43058a
+14:08:17.3 (7691416)|HEAP_ALLOCATE|[630]|Bytes:8
+14:08:17.3 (7703639)|METHOD_ENTRY|[630]||System.JSON.deserialize(String, System.Type)
+14:08:17.3 (8187002)|METHOD_EXIT|[630]||System.JSON.deserialize(String, System.Type)
+14:08:17.3 (8196930)|VARIABLE_SCOPE_BEGIN|[630]|ChangesrecordedfromUserObj|shiva15testns.PermissionSetPortalControllers.ChangesrecordedfromUser|true|false
+14:08:17.3 (8224190)|VARIABLE_ASSIGNMENT|[630]|ChangesrecordedfromUserObj|{"changesinPermissionS (9 more) ...":true,"permissionSetId":"0PS360000017ld5GAA"}|0x822592b
+14:08:17.3 (8228452)|STATEMENT_EXECUTE|[631]
+14:08:17.3 (8232579)|HEAP_ALLOCATE|[631]|Bytes:28
+14:08:17.3 (8256511)|ENTERING_MANAGED_PKG|
+14:08:17.3 (8313397)|HEAP_ALLOCATE|[631]|Bytes:158
+14:08:17.3 (8330783)|HEAP_ALLOCATE|[631]|Bytes:186
+14:08:17.3 (8346783)|ENTERING_MANAGED_PKG|
+14:08:17.3 (8353278)|USER_DEBUG|[631]|DEBUG|ChangesrecordedfromUserObj: ChangesrecordedfromUser:[changesinFieldPermissions=null, changesinObjPermissions=null, changesinPermissionSetDetails=true, permissionSetId=0PS360000017ld5GAA]
+14:08:17.3 (8377264)|ENTERING_MANAGED_PKG|
+14:08:17.3 (8401073)|STATEMENT_EXECUTE|[633]
+14:08:17.3 (8403357)|STATEMENT_EXECUTE|[634]
+14:08:17.3 (8407757)|HEAP_ALLOCATE|[634]|Bytes:54
+14:08:17.3 (8420683)|ENTERING_MANAGED_PKG|
+14:08:17.3 (8433114)|USER_DEBUG|[634]|DEBUG|ChangesrecordedfromUserObj.permissionSetId is NOT null
+14:08:17.3 (8442777)|STATEMENT_EXECUTE|[635]
+14:08:17.3 (8444456)|STATEMENT_EXECUTE|[636]
+14:08:17.3 (8447975)|HEAP_ALLOCATE|[636]|Bytes:30
+14:08:17.3 (8458750)|ENTERING_MANAGED_PKG|
+14:08:17.3 (8473799)|USER_DEBUG|[636]|DEBUG|Inside Permissions Set Changes
+14:08:17.3 (8480100)|STATEMENT_EXECUTE|[637]
+14:08:17.3 (8498799)|METHOD_ENTRY|[637]|01p36000005Jpvx|shiva15testns.PermissionSetPortalControllers.savePSetDetails(List<shiva15testns.PermissionSetPortalControllers.PermissionSetClass>, String)
+14:08:17.3 (8515402)|VARIABLE_SCOPE_BEGIN|[816]|allPSets|List<shiva15testns.PermissionSetPortalControllers.PermissionSetClass>|true|false
+14:08:17.3 (8528728)|VARIABLE_ASSIGNMENT|[816]|allPSets|{"s":1,"v":"List of size 13 too large to display"}|0x4f5c763
+14:08:17.3 (8532797)|VARIABLE_SCOPE_BEGIN|[816]|changedPSetId|String|false|false
+14:08:17.3 (8537165)|VARIABLE_ASSIGNMENT|[816]|changedPSetId|"0PS360000017ld5GAA"
+14:08:17.3 (8549992)|HEAP_ALLOCATE|[817]|Bytes:5
+14:08:17.3 (8553913)|STATEMENT_EXECUTE|[816]
+14:08:17.3 (8555180)|STATEMENT_EXECUTE|[817]
+14:08:17.3 (8556164)|STATEMENT_EXECUTE|[817]
+14:08:17.3 (8557298)|STATEMENT_EXECUTE|[818]
+14:08:17.3 (8560961)|VARIABLE_SCOPE_BEGIN|[818]|returnVal|Boolean|false|false
+14:08:17.3 (8564381)|HEAP_ALLOCATE|[818]|Bytes:5
+14:08:17.3 (8569313)|VARIABLE_ASSIGNMENT|[818]|returnVal|false
+14:08:17.3 (8585798)|ENTERING_MANAGED_PKG|
+14:08:17.3 (8730386)|HEAP_ALLOCATE|[819]|Bytes:5
+14:08:17.3 (8744636)|HEAP_ALLOCATE|[819]|Bytes:32
+14:08:17.3 (8751604)|VARIABLE_SCOPE_BEGIN|[819]|pSetObj|shiva15testns.PermissionSetPortalControllers.PermissionSetClass|true|false
+14:08:17.3 (8784441)|VARIABLE_ASSIGNMENT|[819]|pSetObj|{"createdDate":"2016-03-20 15:41:12","description":"This is for testing  (11 more) ...","id":"0PS36000000q71PGAQ","label":"PermissionSet_Test","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x727c68f1
+14:08:17.3 (8788923)|STATEMENT_EXECUTE|[819]
+14:08:17.3 (8852598)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"createdDate":"2016-03-20 15:41:12","description":"This is for testing  (11 more) ...","id":"0PS36000000q71PGAQ","label":"PermissionSet_Test","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x727c68f1
+14:08:17.3 (8894899)|STATEMENT_EXECUTE|[820]
+14:08:17.3 (8913015)|HEAP_ALLOCATE|[819]|Bytes:5
+14:08:17.3 (8930432)|HEAP_ALLOCATE|[819]|Bytes:32
+14:08:17.3 (8941363)|VARIABLE_SCOPE_BEGIN|[819]|pSetObj|shiva15testns.PermissionSetPortalControllers.PermissionSetClass|true|false
+14:08:17.3 (8980146)|VARIABLE_ASSIGNMENT|[819]|pSetObj|{"createdDate":"2016-05-03 17:16:41","description":"Descp","id":"0PS360000017KxHGAU","label":"Final_Test","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x3318a697
+14:08:17.3 (8985683)|STATEMENT_EXECUTE|[819]
+14:08:17.3 (9025225)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"createdDate":"2016-05-03 17:16:41","description":"Descp","id":"0PS360000017KxHGAU","label":"Final_Test","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x3318a697
+14:08:17.3 (9049105)|STATEMENT_EXECUTE|[820]
+14:08:17.3 (9063965)|HEAP_ALLOCATE|[819]|Bytes:5
+14:08:17.3 (9079027)|HEAP_ALLOCATE|[819]|Bytes:32
+14:08:17.3 (9087594)|VARIABLE_SCOPE_BEGIN|[819]|pSetObj|shiva15testns.PermissionSetPortalControllers.PermissionSetClass|true|false
+14:08:17.3 (9127890)|VARIABLE_ASSIGNMENT|[819]|pSetObj|{"createdDate":"2016-05-03 17:43:23","description":"Descp","id":"0PS360000017LExGAM","label":"Final_Test_1","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x22b26be5
+14:08:17.3 (9134005)|STATEMENT_EXECUTE|[819]
+14:08:17.3 (9182274)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"createdDate":"2016-05-03 17:43:23","description":"Descp","id":"0PS360000017LExGAM","label":"Final_Test_1","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x22b26be5
+14:08:17.3 (9203892)|STATEMENT_EXECUTE|[820]
+14:08:17.3 (9216183)|HEAP_ALLOCATE|[819]|Bytes:5
+14:08:17.3 (9228498)|HEAP_ALLOCATE|[819]|Bytes:32
+14:08:17.3 (9234578)|VARIABLE_SCOPE_BEGIN|[819]|pSetObj|shiva15testns.PermissionSetPortalControllers.PermissionSetClass|true|false
+14:08:17.3 (9260494)|VARIABLE_ASSIGNMENT|[819]|pSetObj|{"createdDate":"2016-05-03 17:44:15","id":"0PS360000017LF2GAM","label":"Final_Test_2","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x74a956b5
+14:08:17.3 (9264559)|STATEMENT_EXECUTE|[819]
+14:08:17.3 (9289413)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"createdDate":"2016-05-03 17:44:15","id":"0PS360000017LF2GAM","label":"Final_Test_2","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x74a956b5
+14:08:17.3 (9306082)|STATEMENT_EXECUTE|[820]
+14:08:17.3 (9317015)|HEAP_ALLOCATE|[819]|Bytes:5
+14:08:17.3 (9325784)|HEAP_ALLOCATE|[819]|Bytes:32
+14:08:17.3 (9331113)|VARIABLE_SCOPE_BEGIN|[819]|pSetObj|shiva15testns.PermissionSetPortalControllers.PermissionSetClass|true|false
+14:08:17.3 (9353832)|VARIABLE_ASSIGNMENT|[819]|pSetObj|{"createdDate":"2016-05-03 17:45:07","id":"0PS360000017LFMGA2","label":"Final_Test_3","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x6673cac7
+14:08:17.3 (9357547)|STATEMENT_EXECUTE|[819]
+14:08:17.3 (9381163)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"createdDate":"2016-05-03 17:45:07","id":"0PS360000017LFMGA2","label":"Final_Test_3","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x6673cac7
+14:08:17.3 (9397092)|STATEMENT_EXECUTE|[820]
+14:08:17.3 (9407506)|HEAP_ALLOCATE|[819]|Bytes:5
+14:08:17.3 (9415947)|HEAP_ALLOCATE|[819]|Bytes:32
+14:08:17.3 (9421373)|VARIABLE_SCOPE_BEGIN|[819]|pSetObj|shiva15testns.PermissionSetPortalControllers.PermissionSetClass|true|false
+14:08:17.3 (9446693)|VARIABLE_ASSIGNMENT|[819]|pSetObj|{"createdDate":"2016-05-04 12:46:39","description":"Permission Set Creat (23 more) ...","id":"0PS360000017j41GAA","label":"Permission_Set_Creat (13 more) ...","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x1029f480
+14:08:17.3 (9450438)|STATEMENT_EXECUTE|[819]
+14:08:17.3 (9475298)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"createdDate":"2016-05-04 12:46:39","description":"Permission Set Creat (23 more) ...","id":"0PS360000017j41GAA","label":"Permission_Set_Creat (13 more) ...","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x1029f480
+14:08:17.3 (9491454)|STATEMENT_EXECUTE|[820]
+14:08:17.3 (9501734)|HEAP_ALLOCATE|[819]|Bytes:5
+14:08:17.3 (9510403)|HEAP_ALLOCATE|[819]|Bytes:32
+14:08:17.3 (9515814)|VARIABLE_SCOPE_BEGIN|[819]|pSetObj|shiva15testns.PermissionSetPortalControllers.PermissionSetClass|true|false
+14:08:17.3 (9539183)|VARIABLE_ASSIGNMENT|[819]|pSetObj|{"createdDate":"2016-05-04 12:48:51","description":"Fina Test 4 Descp","id":"0PS360000017jAjGAI","label":"Final_Test_4","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x21755823
+14:08:17.3 (9542840)|STATEMENT_EXECUTE|[819]
+14:08:17.3 (9573719)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"createdDate":"2016-05-04 12:48:51","description":"Fina Test 4 Descp","id":"0PS360000017jAjGAI","label":"Final_Test_4","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x21755823
+14:08:17.3 (9590831)|STATEMENT_EXECUTE|[820]
+14:08:17.3 (9601503)|HEAP_ALLOCATE|[819]|Bytes:5
+14:08:17.3 (9610425)|HEAP_ALLOCATE|[819]|Bytes:32
+14:08:17.3 (9615861)|VARIABLE_SCOPE_BEGIN|[819]|pSetObj|shiva15testns.PermissionSetPortalControllers.PermissionSetClass|true|false
+14:08:17.3 (9642953)|VARIABLE_ASSIGNMENT|[819]|pSetObj|{"createdDate":"2016-05-04 12:49:51","description":"Final Test Descp","id":"0PS360000017jDxGAI","label":"Final_Test_5","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x1f57ae46
+14:08:17.3 (9647269)|STATEMENT_EXECUTE|[819]
+14:08:17.3 (9672368)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"createdDate":"2016-05-04 12:49:51","description":"Final Test Descp","id":"0PS360000017jDxGAI","label":"Final_Test_5","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x1f57ae46
+14:08:17.3 (9688472)|STATEMENT_EXECUTE|[820]
+14:08:17.3 (9699048)|HEAP_ALLOCATE|[819]|Bytes:5
+14:08:17.3 (9707830)|HEAP_ALLOCATE|[819]|Bytes:32
+14:08:17.3 (9713344)|VARIABLE_SCOPE_BEGIN|[819]|pSetObj|shiva15testns.PermissionSetPortalControllers.PermissionSetClass|true|false
+14:08:17.3 (9736555)|VARIABLE_ASSIGNMENT|[819]|pSetObj|{"createdDate":"2016-05-04 13:47:01","description":"Descp","id":"0PS360000017l7SGAQ","label":"Final_Test_6","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x678a6a99
+14:08:17.3 (9740222)|STATEMENT_EXECUTE|[819]
+14:08:17.3 (9764210)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"createdDate":"2016-05-04 13:47:01","description":"Descp","id":"0PS360000017l7SGAQ","label":"Final_Test_6","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x678a6a99
+14:08:17.3 (9780154)|STATEMENT_EXECUTE|[820]
+14:08:17.3 (9790491)|HEAP_ALLOCATE|[819]|Bytes:5
+14:08:17.3 (9799071)|HEAP_ALLOCATE|[819]|Bytes:32
+14:08:17.3 (9804354)|VARIABLE_SCOPE_BEGIN|[819]|pSetObj|shiva15testns.PermissionSetPortalControllers.PermissionSetClass|true|false
+14:08:17.3 (9827066)|VARIABLE_ASSIGNMENT|[819]|pSetObj|{"createdDate":"2016-05-04 13:48:49","description":"Descp","id":"0PS360000017lD2GAI","label":"Fina_Test_7","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x38581f1c
+14:08:17.3 (9830869)|STATEMENT_EXECUTE|[819]
+14:08:17.3 (9854494)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"createdDate":"2016-05-04 13:48:49","description":"Descp","id":"0PS360000017lD2GAI","label":"Fina_Test_7","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x38581f1c
+14:08:17.3 (9870401)|STATEMENT_EXECUTE|[820]
+14:08:17.3 (9880603)|HEAP_ALLOCATE|[819]|Bytes:5
+14:08:17.3 (9889093)|HEAP_ALLOCATE|[819]|Bytes:32
+14:08:17.3 (9894468)|VARIABLE_SCOPE_BEGIN|[819]|pSetObj|shiva15testns.PermissionSetPortalControllers.PermissionSetClass|true|false
+14:08:17.3 (9917200)|VARIABLE_ASSIGNMENT|[819]|pSetObj|{"createdDate":"2016-05-04 13:55:13","description":"Descp","id":"0PS360000017lcDGAQ","label":"Final_Test_8","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x33e7ec74
+14:08:17.3 (9920634)|STATEMENT_EXECUTE|[819]
+14:08:17.3 (9944691)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"createdDate":"2016-05-04 13:55:13","description":"Descp","id":"0PS360000017lcDGAQ","label":"Final_Test_8","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x33e7ec74
+14:08:17.3 (9961154)|STATEMENT_EXECUTE|[820]
+14:08:17.3 (9971394)|HEAP_ALLOCATE|[819]|Bytes:5
+14:08:17.3 (9979749)|HEAP_ALLOCATE|[819]|Bytes:32
+14:08:17.3 (9985089)|VARIABLE_SCOPE_BEGIN|[819]|pSetObj|shiva15testns.PermissionSetPortalControllers.PermissionSetClass|true|false
+14:08:17.3 (10007775)|VARIABLE_ASSIGNMENT|[819]|pSetObj|{"createdDate":"2016-05-04 13:55:54","description":"Decp","id":"0PS360000017lcNGAQ","label":"Final_Test_9","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x11e051d0
+14:08:17.3 (10012254)|STATEMENT_EXECUTE|[819]
+14:08:17.3 (10036057)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"createdDate":"2016-05-04 13:55:54","description":"Decp","id":"0PS360000017lcNGAQ","label":"Final_Test_9","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x11e051d0
+14:08:17.3 (10052041)|STATEMENT_EXECUTE|[820]
+14:08:17.3 (10062492)|HEAP_ALLOCATE|[819]|Bytes:5
+14:08:17.3 (10071324)|HEAP_ALLOCATE|[819]|Bytes:32
+14:08:17.3 (10076677)|VARIABLE_SCOPE_BEGIN|[819]|pSetObj|shiva15testns.PermissionSetPortalControllers.PermissionSetClass|true|false
+14:08:17.3 (10100743)|VARIABLE_ASSIGNMENT|[819]|pSetObj|{"apiName":"Final_Test_13","createdDate":"2016-05-04 13:56:29","description":"Descp","id":"0PS360000017ld5GAA","label":"Final_Test_13","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x250a2fd7
+14:08:17.3 (10104642)|STATEMENT_EXECUTE|[819]
+14:08:17.3 (10128865)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"apiName":"Final_Test_13","createdDate":"2016-05-04 13:56:29","description":"Descp","id":"0PS360000017ld5GAA","label":"Final_Test_13","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x250a2fd7
+14:08:17.3 (10146193)|STATEMENT_EXECUTE|[820]
+14:08:17.3 (10147922)|STATEMENT_EXECUTE|[821]
+14:08:17.3 (10172326)|HEAP_ALLOCATE|[821]|Bytes:4
+14:08:17.3 (10292836)|HEAP_ALLOCATE|[821]|Bytes:4
+14:08:17.3 (11278693)|VARIABLE_ASSIGNMENT|[821]|this.Id|"0PS360000017ld5GAA"|0x6f399d92
+14:08:17.3 (11306417)|VARIABLE_SCOPE_BEGIN|[821]|pSetObjforUpsert|PermissionSet|true|false
+14:08:17.3 (11322936)|VARIABLE_ASSIGNMENT|[821]|pSetObjforUpsert|{"Id":"0PS360000017ld5GAA"}|0x6f399d92
+14:08:17.3 (11326269)|STATEMENT_EXECUTE|[822]
+14:08:17.3 (11380135)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"apiName":"Final_Test_13","createdDate":"2016-05-04 13:56:29","description":"Descp","id":"0PS360000017ld5GAA","label":"Final_Test_13","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x250a2fd7
+14:08:17.3 (11463836)|VARIABLE_ASSIGNMENT|[822]|this.Description|"Descp"|0x6f399d92
+14:08:17.3 (11468034)|STATEMENT_EXECUTE|[823]
+14:08:17.3 (11517611)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"apiName":"Final_Test_13","createdDate":"2016-05-04 13:56:29","description":"Descp","id":"0PS360000017ld5GAA","label":"Final_Test_13","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x250a2fd7
+14:08:17.3 (11584903)|VARIABLE_ASSIGNMENT|[823]|this.Label|"Final_Test_13"|0x6f399d92
+14:08:17.3 (11589370)|STATEMENT_EXECUTE|[824]
+14:08:17.3 (11640284)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"apiName":"Final_Test_13","createdDate":"2016-05-04 13:56:29","description":"Descp","id":"0PS360000017ld5GAA","label":"Final_Test_13","namespacePrefix":"shiva15testns","userLicenseId":"Salesforce"}|0x250a2fd7
+14:08:17.3 (11697657)|VARIABLE_ASSIGNMENT|[824]|this.Name|"Final_Test_13"|0x6f399d92
+14:08:17.3 (11701722)|STATEMENT_EXECUTE|[825]
+14:08:17.3 (11747847)|HEAP_ALLOCATE|[825]|Bytes:8
+14:08:17.3 (11770024)|DML_BEGIN|[825]|Op:Upsert|Type:PermissionSet|Rows:1
+14:08:17.3 (11809768)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:08:17.3 (196588891)|DML_END|[825]
+14:08:17.3 (196622261)|STATEMENT_EXECUTE|[826]
+14:08:17.3 (196635443)|HEAP_ALLOCATE|[826]|Bytes:5
+14:08:17.3 (196651617)|VARIABLE_ASSIGNMENT|[826]|returnVal|true
+14:08:17.3 (196656940)|STATEMENT_EXECUTE|[827]
+14:08:17.3 (196668227)|VARIABLE_ASSIGNMENT|[819]|pSetObj|null|
+14:08:17.3 (196673366)|STATEMENT_EXECUTE|[830]
+14:08:17.3 (196679542)|HEAP_ALLOCATE|[830]|Bytes:5
+14:08:17.3 (196697917)|METHOD_EXIT|[637]|01p36000005Jpvx|shiva15testns.PermissionSetPortalControllers.savePSetDetails(List<shiva15testns.PermissionSetPortalControllers.PermissionSetClass>, String)
+14:08:17.3 (196708933)|HEAP_ALLOCATE|[637]|Bytes:5
+14:08:17.3 (196719904)|VARIABLE_ASSIGNMENT|[637]|checkChangesInPSetDetails|true
+14:08:17.3 (196724596)|STATEMENT_EXECUTE|[638]
+14:08:17.3 (196732368)|HEAP_ALLOCATE|[638]|Bytes:30
+14:08:17.3 (196764417)|ENTERING_MANAGED_PKG|
+14:08:17.3 (196796434)|USER_DEBUG|[638]|DEBUG|check whether is this called 0
+14:08:17.3 (196809759)|STATEMENT_EXECUTE|[644]
+14:08:17.3 (196842696)|METHOD_ENTRY|[644]|01p36000005Jpvx|shiva15testns.PermissionSetPortalControllers.object_ChangesSave(shiva15testns.PermissionSetPortalControllers.ChangesrecordedfromUser, List<shiva15testns.PermissionSetPortalControllers.ObjectDetailsClass>, String)
+14:08:17.3 (196875920)|VARIABLE_SCOPE_BEGIN|[693]|changesrecordedfromUserObj|shiva15testns.PermissionSetPortalControllers.ChangesrecordedfromUser|true|false
+14:08:17.3 (196916759)|VARIABLE_ASSIGNMENT|[693]|changesrecordedfromUserObj|{"changesinPermissionS (9 more) ...":true,"permissionSetId":"0PS360000017ld5GAA"}|0x822592b
+14:08:17.3 (196926893)|VARIABLE_SCOPE_BEGIN|[693]|newObjDetailsObj|List<shiva15testns.PermissionSetPortalControllers.ObjectDetailsClass>|true|false
+14:08:17.3 (196934891)|VARIABLE_ASSIGNMENT|[693]|newObjDetailsObj|null|
+14:08:17.3 (196940269)|VARIABLE_SCOPE_BEGIN|[693]|pSetId|String|false|false
+14:08:17.3 (196946035)|VARIABLE_ASSIGNMENT|[693]|pSetId|null
+14:08:17.3 (196958561)|HEAP_ALLOCATE|[694]|Bytes:5
+14:08:17.3 (196965631)|STATEMENT_EXECUTE|[693]
+14:08:17.3 (196968156)|STATEMENT_EXECUTE|[694]
+14:08:17.3 (196969986)|STATEMENT_EXECUTE|[694]
+14:08:17.3 (196971992)|STATEMENT_EXECUTE|[695]
+14:08:17.3 (196978600)|VARIABLE_SCOPE_BEGIN|[695]|checkChangesInSavingObjDetails|Boolean|false|false
+14:08:17.3 (196986341)|HEAP_ALLOCATE|[695]|Bytes:5
+14:08:17.3 (196996993)|VARIABLE_ASSIGNMENT|[695]|checkChangesInSavingObjDetails|false
+14:08:17.3 (197094095)|HEAP_ALLOCATE|[696]|Bytes:41
+14:08:17.3 (197155619)|VARIABLE_SCOPE_BEGIN|[706]|e|Exception|true|false
+14:08:17.3 (197271152)|VARIABLE_ASSIGNMENT|[706]|e|"common.apex.runtime.impl.ExecutionException: Attempt to de-reference a null object"|0x5d77cb99
+14:08:17.3 (197278486)|STATEMENT_EXECUTE|[706]
+14:08:17.3 (197280639)|STATEMENT_EXECUTE|[707]
+14:08:17.3 (197286208)|HEAP_ALLOCATE|[707]|Bytes:60
+14:08:17.3 (197352850)|HEAP_ALLOCATE|[707]|Bytes:27
+14:08:17.3 (197370278)|HEAP_ALLOCATE|[707]|Bytes:3
+14:08:17.3 (197395232)|HEAP_ALLOCATE|[707]|Bytes:37
+14:08:17.3 (197409468)|HEAP_ALLOCATE|[707]|Bytes:4
+14:08:17.3 (197460356)|ENTERING_MANAGED_PKG|
+14:08:17.3 (197495115)|HEAP_ALLOCATE|[707]|Bytes:135
+14:08:17.3 (197517234)|ENTERING_MANAGED_PKG|
+14:08:17.3 (197523528)|USER_DEBUG|[707]|DEBUG|The following exception has occurred in object_ChangesSave: System.NullPointerException : Attempt to de-reference a null object -- null
+14:08:17.3 (197533997)|STATEMENT_EXECUTE|[708]
+14:08:17.3 (197541540)|HEAP_ALLOCATE|[708]|Bytes:5
+14:08:17.3 (197555859)|METHOD_EXIT|[644]|01p36000005Jpvx|shiva15testns.PermissionSetPortalControllers.object_ChangesSave(shiva15testns.PermissionSetPortalControllers.ChangesrecordedfromUser, List<shiva15testns.PermissionSetPortalControllers.ObjectDetailsClass>, String)
+14:08:17.3 (197565021)|HEAP_ALLOCATE|[644]|Bytes:5
+14:08:17.3 (197576696)|VARIABLE_ASSIGNMENT|[644]|checkChangesInSavingObjDetails|false
+14:08:17.3 (197581120)|STATEMENT_EXECUTE|[645]
+14:08:17.3 (197587492)|HEAP_ALLOCATE|[645]|Bytes:30
+14:08:17.3 (197608930)|ENTERING_MANAGED_PKG|
+14:08:17.3 (197629001)|USER_DEBUG|[645]|DEBUG|check whether is this called 1
+14:08:17.3 (197639931)|STATEMENT_EXECUTE|[656]
+14:08:17.3 (197646729)|HEAP_ALLOCATE|[656]|Bytes:30
+14:08:17.3 (197665398)|ENTERING_MANAGED_PKG|
+14:08:17.3 (197682619)|USER_DEBUG|[656]|DEBUG|check whether is this called 2
+14:08:17.3 (197693680)|STATEMENT_EXECUTE|[657]
+14:08:17.3 (197722403)|METHOD_ENTRY|[657]|01p36000005Jpvx|shiva15testns.PermissionSetPortalControllers.field_ChangesSave(shiva15testns.PermissionSetPortalControllers.ChangesrecordedfromUser, List<shiva15testns.PermissionSetPortalControllers.ObjectDetailsClass>, String)
+14:08:17.3 (197803130)|VARIABLE_SCOPE_BEGIN|[712]|changesrecordedfromUserObj|shiva15testns.PermissionSetPortalControllers.ChangesrecordedfromUser|true|false
+14:08:17.3 (197831975)|VARIABLE_ASSIGNMENT|[712]|changesrecordedfromUserObj|{"changesinPermissionS (9 more) ...":true,"permissionSetId":"0PS360000017ld5GAA"}|0x822592b
+14:08:17.3 (197838106)|VARIABLE_SCOPE_BEGIN|[712]|newObjDetailsObj|List<shiva15testns.PermissionSetPortalControllers.ObjectDetailsClass>|true|false
+14:08:17.3 (197842355)|VARIABLE_ASSIGNMENT|[712]|newObjDetailsObj|null|
+14:08:17.3 (197845326)|VARIABLE_SCOPE_BEGIN|[712]|pSetId|String|false|false
+14:08:17.3 (197848271)|VARIABLE_ASSIGNMENT|[712]|pSetId|null
+14:08:17.3 (197857491)|HEAP_ALLOCATE|[713]|Bytes:5
+14:08:17.3 (197861822)|STATEMENT_EXECUTE|[712]
+14:08:17.3 (197863416)|STATEMENT_EXECUTE|[713]
+14:08:17.3 (197864438)|STATEMENT_EXECUTE|[713]
+14:08:17.3 (197865542)|STATEMENT_EXECUTE|[714]
+14:08:17.3 (197869349)|VARIABLE_SCOPE_BEGIN|[714]|checkChangesInSavingFieldDetails|Boolean|false|false
+14:08:17.3 (197873220)|HEAP_ALLOCATE|[714]|Bytes:5
+14:08:17.3 (197878089)|VARIABLE_ASSIGNMENT|[714]|checkChangesInSavingFieldDetails|false
+14:08:17.3 (197903030)|HEAP_ALLOCATE|[715]|Bytes:41
+14:08:17.3 (197933975)|VARIABLE_SCOPE_BEGIN|[727]|e|Exception|true|false
+14:08:17.3 (198043962)|VARIABLE_ASSIGNMENT|[727]|e|"common.apex.runtime.impl.ExecutionException: Attempt to de-reference a null object"|0x143dc245
+14:08:17.3 (198053358)|STATEMENT_EXECUTE|[727]
+14:08:17.3 (198061988)|STATEMENT_EXECUTE|[728]
+14:08:17.3 (198068701)|HEAP_ALLOCATE|[728]|Bytes:59
+14:08:17.3 (198101640)|HEAP_ALLOCATE|[728]|Bytes:27
+14:08:17.3 (198120572)|HEAP_ALLOCATE|[728]|Bytes:37
+14:08:17.3 (198153466)|ENTERING_MANAGED_PKG|
+14:08:17.3 (198167880)|HEAP_ALLOCATE|[728]|Bytes:134
+14:08:17.3 (198179789)|ENTERING_MANAGED_PKG|
+14:08:17.3 (198183200)|USER_DEBUG|[728]|DEBUG|The following exception has occurred in field_ChangesSave: System.NullPointerException : Attempt to de-reference a null object -- null
+14:08:17.3 (198188875)|STATEMENT_EXECUTE|[729]
+14:08:17.3 (198193946)|HEAP_ALLOCATE|[729]|Bytes:5
+14:08:17.3 (198203427)|METHOD_EXIT|[657]|01p36000005Jpvx|shiva15testns.PermissionSetPortalControllers.field_ChangesSave(shiva15testns.PermissionSetPortalControllers.ChangesrecordedfromUser, List<shiva15testns.PermissionSetPortalControllers.ObjectDetailsClass>, String)
+14:08:17.3 (198208027)|HEAP_ALLOCATE|[657]|Bytes:5
+14:08:17.3 (198215446)|VARIABLE_ASSIGNMENT|[657]|checkChangesInSavingFieldDetails|false
+14:08:17.3 (198218497)|STATEMENT_EXECUTE|[677]
+14:08:17.3 (198222418)|HEAP_ALLOCATE|[677]|Bytes:27
+14:08:17.3 (198237086)|ENTERING_MANAGED_PKG|
+14:08:17.3 (198265344)|HEAP_ALLOCATE|[677]|Bytes:4
+14:08:17.3 (198279765)|HEAP_ALLOCATE|[677]|Bytes:31
+14:08:17.3 (198292157)|ENTERING_MANAGED_PKG|
+14:08:17.3 (198295578)|USER_DEBUG|[677]|DEBUG|checkChangesInPSetDetails: true
+14:08:17.3 (198300688)|STATEMENT_EXECUTE|[678]
+14:08:17.3 (198304459)|HEAP_ALLOCATE|[678]|Bytes:32
+14:08:17.3 (198316436)|ENTERING_MANAGED_PKG|
+14:08:17.3 (198334744)|HEAP_ALLOCATE|[678]|Bytes:5
+14:08:17.3 (198346902)|HEAP_ALLOCATE|[678]|Bytes:37
+14:08:17.3 (198358130)|ENTERING_MANAGED_PKG|
+14:08:17.3 (198361204)|USER_DEBUG|[678]|DEBUG|checkChangesInSavingObjDetails: false
+14:08:17.3 (198366028)|STATEMENT_EXECUTE|[679]
+14:08:17.3 (198370189)|HEAP_ALLOCATE|[679]|Bytes:34
+14:08:17.3 (198386991)|ENTERING_MANAGED_PKG|
+14:08:17.3 (198405478)|HEAP_ALLOCATE|[679]|Bytes:5
+14:08:17.3 (198418192)|HEAP_ALLOCATE|[679]|Bytes:39
+14:08:17.3 (198429447)|ENTERING_MANAGED_PKG|
+14:08:17.3 (198432655)|USER_DEBUG|[679]|DEBUG|checkChangesInSavingFieldDetails: false
+14:08:17.3 (198439202)|STATEMENT_EXECUTE|[683]
+14:08:17.3 (198440664)|STATEMENT_EXECUTE|[684]
+14:08:17.3 (198444610)|HEAP_ALLOCATE|[684]|Bytes:5
+14:08:17.3 (198449948)|HEAP_ALLOCATE|[684]|Bytes:5
+14:08:17.3 (198455395)|SYSTEM_MODE_EXIT|false
+14:08:17.207 (207368737)|CUMULATIVE_LIMIT_USAGE
+14:08:17.207 (207368737)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+14:08:17.207 (207368737)|LIMIT_USAGE_FOR_NS|shiva15testns|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+14:08:17.207 (207368737)|CUMULATIVE_LIMIT_USAGE_END
+
+14:08:17.3 (207414839)|CODE_UNIT_FINISHED|PermissionSetPortalControllers.savePSetDetailsChanges

@@ -464,8 +464,9 @@ public with sharing class PermissionSetPortalControllers {
                 DescribeSObjectResult sObjResult = schemaMap.get(selectedObject).getDescribe();
                 if((selectedObject == 'account' && !(accountField.contains(sfield))) || (selectedObject == 'contact' && !(contactsField.contains(sfield))) || (sObjResult.isCustom())) {
                   String labelOfField = IndividiaulfieldMap.get(sfield).getDescribe().getLabel();
-                  System.debug('this is the wanted Field Name ### sfield: ' + sfield + '### label: ' + labelOfField + ' ## name: ' + IndividiaulfieldMap.get(sfield).getDescribe().getName() + '## localname: ' + IndividiaulfieldMap.get(sfield).getDescribe().getLocalName());
-                  fieldClassObj = new FieldDetailsClass(sfield, labelOfField, null);
+
+                  FieldPermissionsClass fieldPermissionsObj = new FieldPermissionsClass(null,false,false);
+                  fieldClassObj = new FieldDetailsClass(sfield, labelOfField, fieldPermissionsObj);
                   individualObjectAllFieldsList.add(fieldClassObj);
                   listOfFieldsForSorting.add(fieldClassObj);
                 }
@@ -540,59 +541,59 @@ public with sharing class PermissionSetPortalControllers {
   //NOTE: This method is capable of retrieving Field permissions in a given Permission Set + Object Name
   //This is called when an object is expanded (+ is clicked) and all the fields are loaded
 
-   @AuraEnabled
-   public static List<FieldDetailsClass> getAllFieldDataWithPermissions(String objName, String pSetId) {
-      try{
-        System.debug('objName in getAllFieldDataWithPermissions: ' + objName);
-        List<FieldDetailsClass> individualObjectAllFieldsListAsInput = get_IndividualObj_AllFieldData(objName);
-        List<FieldPermissions> FieldPermissionsList =
-        [SELECT Id, Field, Parent.Name, ParentId, SobjectType, PermissionsEdit, PermissionsRead FROM FieldPermissions WHERE ParentId = :pSetId AND SobjectType = :objName];
-        Map<String, FieldPermissions> fieldPermissionsListMap;
-        // if(!FieldPermissionsList.isEmpty()) {
-          fieldPermissionsListMap = new Map<String, FieldPermissions>();
-          //Converting FieldPermissions to Map
-          for(FieldPermissions fper : FieldPermissionsList) {
-            fieldPermissionsListMap.put((fper.Field).toLowerCase(), fper);
-          }
-        // }
-        List<FieldDetailsClass> individualObjectAllFieldsFinalList = new List<FieldDetailsClass>();
-
-        FieldPermissionsClass fieldPermissionsObj;
-
-        for(FieldDetailsClass fieldClassObj : individualObjectAllFieldsListAsInput) {
-          if(!fieldPermissionsListMap.isEmpty()) {
-
-            System.debug('fieldPermissionsListMap is not empty');
-            String fieldNameFromAllFields = objName.toLowerCase()+ '.' + fieldClassObj.fieldName.toLowerCase();
-            if(fieldPermissionsListMap.containsKey(fieldNameFromAllFields)) {
-              System.debug('fieldName have been compared and they are equal : ' + fieldNameFromAllFields);
-              FieldPermissions fieldPer = fieldPermissionsListMap.get(fieldNameFromAllFields);
-              fieldPermissionsObj = new FieldPermissionsClass(fieldPer.Id, fieldPer.PermissionsRead,fieldPer.PermissionsEdit);
-              //break;
-            }
-            else {
-              System.debug('fieldName have been compared and they NOT equal : ' + fieldNameFromAllFields);
-              fieldPermissionsObj = new FieldPermissionsClass(null,false,false);
-            }
-            fieldClassObj.fieldPermissions = fieldPermissionsObj;
-            individualObjectAllFieldsFinalList.add(fieldClassObj);
-          }
-          else {
-            System.debug('No Field Permissions concerened to individual Psets and Objs');
-            fieldPermissionsObj = new FieldPermissionsClass(null,false,false);
-            fieldClassObj.fieldPermissions = fieldPermissionsObj;
-            individualObjectAllFieldsFinalList.add(fieldClassObj);
-            //break;
-          }
-        }
-        System.debug('individualObjectAllFieldsFinalList : ' + individualObjectAllFieldsFinalList);
-        return individualObjectAllFieldsFinalList;
+  @AuraEnabled
+  public static List<FieldDetailsClass> getAllFieldDataWithPermissions(String objName, String pSetId) {
+  try{
+    System.debug('objName in getAllFieldDataWithPermissions: ' + objName);
+    List<FieldDetailsClass> individualObjectAllFieldsListAsInput = get_IndividualObj_AllFieldData(objName);
+    List<FieldPermissions> FieldPermissionsList =
+    [SELECT Id, Field, Parent.Name, ParentId, SobjectType, PermissionsEdit, PermissionsRead FROM FieldPermissions WHERE ParentId = :pSetId AND SobjectType = :objName];
+    Map<String, FieldPermissions> fieldPermissionsListMap;
+    // if(!FieldPermissionsList.isEmpty()) {
+      fieldPermissionsListMap = new Map<String, FieldPermissions>();
+      //Converting FieldPermissions to Map
+      for(FieldPermissions fper : FieldPermissionsList) {
+        fieldPermissionsListMap.put((fper.Field).toLowerCase(), fper);
       }
-      catch(Exception e) {
-        System.debug('The following exception has occurred in getAllFieldDataWithPermissions: ' + e.getTypeName() +' : ' + e.getMessage() + ' -- ' + e.getCause());
-        return null;
+    // }
+    List<FieldDetailsClass> individualObjectAllFieldsFinalList = new List<FieldDetailsClass>();
+
+    FieldPermissionsClass fieldPermissionsObj;
+
+    for(FieldDetailsClass fieldClassObj : individualObjectAllFieldsListAsInput) {
+      if(!fieldPermissionsListMap.isEmpty()) {
+
+        System.debug('fieldPermissionsListMap is not empty');
+        String fieldNameFromAllFields = objName.toLowerCase()+ '.' + fieldClassObj.fieldName.toLowerCase();
+        if(fieldPermissionsListMap.containsKey(fieldNameFromAllFields)) {
+          System.debug('fieldName have been compared and they are equal : ' + fieldNameFromAllFields);
+          FieldPermissions fieldPer = fieldPermissionsListMap.get(fieldNameFromAllFields);
+          fieldPermissionsObj = new FieldPermissionsClass(fieldPer.Id, fieldPer.PermissionsRead,fieldPer.PermissionsEdit);
+          //break;
+        }
+        else {
+          System.debug('fieldName have been compared and they NOT equal : ' + fieldNameFromAllFields);
+          fieldPermissionsObj = new FieldPermissionsClass(null,false,false);
+        }
+        fieldClassObj.fieldPermissions = fieldPermissionsObj;
+        individualObjectAllFieldsFinalList.add(fieldClassObj);
+      }
+      else {
+        System.debug('No Field Permissions concerened to individual Psets and Objs');
+        fieldPermissionsObj = new FieldPermissionsClass(null,false,false);
+        fieldClassObj.fieldPermissions = fieldPermissionsObj;
+        individualObjectAllFieldsFinalList.add(fieldClassObj);
+        //break;
       }
     }
+    System.debug('individualObjectAllFieldsFinalList : ' + individualObjectAllFieldsFinalList);
+    return individualObjectAllFieldsFinalList;
+  }
+  catch(Exception e) {
+    System.debug('The following exception has occurred in getAllFieldDataWithPermissions: ' + e.getTypeName() +' : ' + e.getMessage() + ' -- ' + e.getCause());
+    return null;
+  }
+  }
 
   //NOTE: All Server Functions to save data back to backend
   //SAVE Function forever
@@ -617,27 +618,42 @@ public with sharing class PermissionSetPortalControllers {
         System.debug('changedPSetData is not null');
         newPSetObj = (List<PermissionSetClass>)JSON.deSerialize(changedPSetData, List<PermissionSetClass>.class);
       }
-      if(String.isNotEmpty(changedObjData)) {
+      // if(String.isNotEmpty(changedObjData)) {
+      System.debug('check whether is this called -1');
+
+      if(String.isNotBlank(changedObjData)) {
         //This is for Object Changes
-        System.debug('changedObjData is not null : ');
+        System.debug('changedObjData is not null : ' + changedObjData);
         newObjDetailsObj = (List<ObjectDetailsClass>)JSON.deSerialize(changedObjData, List<ObjectDetailsClass>.class);
       }
 
-      if(String.isNotEmpty(changesRecordedObj)) {
+      if(String.isNotBlank(changesRecordedObj)) {
         // Changes Recorded Object
         System.debug('changesRecordedObj is NOT null');
         ChangesrecordedfromUser ChangesrecordedfromUserObj = (ChangesrecordedfromUser)JSON.deSerialize(changesRecordedObj, ChangesrecordedfromUser.class);
-          if(String.isNotEmpty(ChangesrecordedfromUserObj.permissionSetId)) {
+          System.debug('ChangesrecordedfromUserObj: ' + ChangesrecordedfromUserObj);
+
+          if(String.isNotBlank(ChangesrecordedfromUserObj.permissionSetId)) {
               System.debug('ChangesrecordedfromUserObj.permissionSetId is NOT null');
               if(ChangesrecordedfromUserObj.changesinPermissionSetDetails) {
                 System.debug('Inside Permissions Set Changes');
                 checkChangesInPSetDetails = savePSetDetails(newPSetObj, ChangesrecordedfromUserObj.permissionSetId);
+                System.debug('check whether is this called 0');
               }
               else {
                 checkChangesInPSetDetails = true;
               }
+              if(newObjDetailsObj != null) {
+                checkChangesInSavingObjDetails = object_ChangesSave(ChangesrecordedfromUserObj, newObjDetailsObj, null);
+                System.debug('check whether is this called 1');
 
-              checkChangesInSavingObjDetails = object_ChangesSave(ChangesrecordedfromUserObj, newObjDetailsObj, null);
+                System.debug('check whether is this called 2');
+                checkChangesInSavingFieldDetails = field_ChangesSave(ChangesrecordedfromUserObj, newObjDetailsObj, null);
+              }
+              else {
+                checkChangesInSavingObjDetails = true;
+                checkChangesInSavingFieldDetails = true;
+              }
 
               // if(!(ChangesrecordedfromUserObj.changesinObjPermissions).isEmpty()) {
               //   System.debug('Inside Obj Permissions Changes');
@@ -649,7 +665,6 @@ public with sharing class PermissionSetPortalControllers {
               //   checkChangesInSavingObjDetails = true;
               // }
 
-              checkChangesInSavingFieldDetails = field_ChangesSave(ChangesrecordedfromUserObj, newObjDetailsObj, null);
 
               // if(!(ChangesrecordedfromUserObj.changesinFieldPermissions).isEmpty()) {
               //   System.debug('Inside Field Permissions Changes : ' + ChangesrecordedfromUserObj.changesinFieldPermissions);
@@ -686,31 +701,44 @@ public with sharing class PermissionSetPortalControllers {
   }
 
   private static Boolean object_ChangesSave(ChangesrecordedfromUser changesrecordedfromUserObj, List<ObjectDetailsClass> newObjDetailsObj, String pSetId) {
-    Boolean checkChangesInSavingObjDetails = false;
-    if(!(changesrecordedfromUserObj.changesinObjPermissions).isEmpty()) {
-      System.debug('Inside Obj Permissions Changes');
-      // System.debug('value of Obj: ' + changesrecordedfromUserObj.changesinObjPermissions[0].objKey);
-      checkChangesInSavingObjDetails = saveObjectPermissionChanges(newObjDetailsObj, changesrecordedfromUserObj, pSetId);
+    try {
+      Boolean checkChangesInSavingObjDetails = false;
+      if(!(changesrecordedfromUserObj.changesinObjPermissions).isEmpty()) {
+        System.debug('Inside Obj Permissions Changes is not empty');
+        // System.debug('value of Obj: ' + changesrecordedfromUserObj.changesinObjPermissions[0].objKey);
+        checkChangesInSavingObjDetails = saveObjectPermissionChanges(newObjDetailsObj, changesrecordedfromUserObj, pSetId);
+      }
+      else {
+        System.debug('Inside Obj Permissions Changes is empty');
+        checkChangesInSavingObjDetails = true;
+      }
+      return checkChangesInSavingObjDetails;
     }
-    else {
-      checkChangesInSavingObjDetails = true;
+    catch(Exception e) {
+      System.debug('The following exception has occurred in object_ChangesSave: ' + e.getTypeName() +' : ' + e.getMessage() + ' -- ' + e.getCause());
+      return false;
     }
-    return checkChangesInSavingObjDetails;
   }
 
   private static Boolean field_ChangesSave(ChangesrecordedfromUser changesrecordedfromUserObj, List<ObjectDetailsClass> newObjDetailsObj, String pSetId) {
-    Boolean checkChangesInSavingFieldDetails = false;
-    if(!(changesrecordedfromUserObj.changesinFieldPermissions).isEmpty()) {
-      System.debug('Inside Field Permissions Changes : ' + changesrecordedfromUserObj.changesinFieldPermissions);
-      System.debug('value of Field: ' + changesrecordedfromUserObj.changesinFieldPermissions[0].FieldName);
-      checkChangesInSavingFieldDetails = saveFieldPermissionChanges(newObjDetailsObj, changesrecordedfromUserObj, pSetId);
-      System.debug('checkChangesInSavingFieldDetails: ' + checkChangesInSavingFieldDetails);
-    }
-    else {
-      checkChangesInSavingFieldDetails = true;
-    }
+    try {
+      Boolean checkChangesInSavingFieldDetails = false;
+      if(!(changesrecordedfromUserObj.changesinFieldPermissions).isEmpty()) {
+        System.debug('Inside Field Permissions Changes : ' + changesrecordedfromUserObj.changesinFieldPermissions);
+        System.debug('value of Field: ' + changesrecordedfromUserObj.changesinFieldPermissions[0].FieldName);
+        checkChangesInSavingFieldDetails = saveFieldPermissionChanges(newObjDetailsObj, changesrecordedfromUserObj, pSetId);
+        System.debug('checkChangesInSavingFieldDetails: ' + checkChangesInSavingFieldDetails);
+      }
+      else {
+        checkChangesInSavingFieldDetails = true;
+      }
 
-    return checkChangesInSavingFieldDetails;
+      return checkChangesInSavingFieldDetails;
+    }
+    catch(Exception e) {
+      System.debug('The following exception has occurred in field_ChangesSave: ' + e.getTypeName() +' : ' + e.getMessage() + ' -- ' + e.getCause());
+      return false;
+    }
   }
 
   //save Permission Set Details to salesforce
@@ -740,7 +768,7 @@ public with sharing class PermissionSetPortalControllers {
       String newly_created_pSet_id = null;
       // this is to save PSet Details to salesforce database
 
-      if(String.isNotEmpty(newly_Created_pSet_as_String)) {
+      if(String.isNotBlank(newly_Created_pSet_as_String)) {
         //This is for PSet Changes
         new_PSetObj_for_creation = (PermissionSetClass)JSON.deSerialize(newly_Created_pSet_as_String, PermissionSetClass.class);
         check_Whether_PSet_isCreated = create_New_PermissionSet(new_PSetObj_for_creation);
@@ -750,21 +778,34 @@ public with sharing class PermissionSetPortalControllers {
         System.debug('The newly created PSet Id: ' + newly_created_pSet_id);
       }
 
-      if(String.isNotEmpty(recorded_Changes_Obj_as_String)) {
+      System.debug('Just for gags: ' + recorded_Changes_Obj_as_String);
+      if(String.isNotBlank(recorded_Changes_Obj_as_String)) {
         //This is for Changes Recorded Object
         System.debug('recorded_Changes_Obj_as_String is not null');
         changes_recorded = (ChangesrecordedfromUser)JSON.deSerialize(recorded_Changes_Obj_as_String, ChangesrecordedfromUser.class);
       }
 
-      if(String.isNotEmpty(object_Permission_Changes_as_String)) {
+      System.debug('Why is there an error 0');
+
+      // if(object_Permission_Changes_as_String != null && String.isNotEmpty(object_Permission_Changes_as_String)) {
+      if(String.isNotBlank(object_Permission_Changes_as_String)) {
         //This is for Object Changes
         System.debug('object_Permission_Changes_as_String is not null');
         objDetails_for_creation = (List<ObjectDetailsClass>)JSON.deSerialize(object_Permission_Changes_as_String, List<ObjectDetailsClass>.class);
       }
 
-      check_Whether_ChangesIn_Obj_Are_Saved = object_ChangesSave(changes_recorded, objDetails_for_creation, newly_created_pSet_id);
-      check_Whether_ChangesIn_Field_Are_Saved = field_ChangesSave(changes_recorded, objDetails_for_creation, newly_created_pSet_id);
+      System.debug('Why is there an error 1');
 
+      if(changes_recorded != null && objDetails_for_creation != null) {
+        check_Whether_ChangesIn_Obj_Are_Saved = object_ChangesSave(changes_recorded, objDetails_for_creation, newly_created_pSet_id);
+        check_Whether_ChangesIn_Field_Are_Saved = field_ChangesSave(changes_recorded, objDetails_for_creation, newly_created_pSet_id);
+      }
+      else {
+        check_Whether_ChangesIn_Obj_Are_Saved = true;
+        check_Whether_ChangesIn_Field_Are_Saved = true;
+      }
+
+      System.debug('Why is there an error 2');
 
       if(check_Whether_PSet_isCreated && check_Whether_ChangesIn_Obj_Are_Saved && check_Whether_ChangesIn_Field_Are_Saved) {
           return true;
