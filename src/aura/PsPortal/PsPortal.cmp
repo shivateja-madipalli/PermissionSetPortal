@@ -1,4 +1,15 @@
 <aura:component implements="force:appHostable" controller="PermissionSetPortalControllers">
+
+  <aura:attribute name="truthy" type="Boolean"></aura:attribute>
+
+    <aura:if isTrue="{!v.truthy}">
+        True
+    <aura:set attribute="else">
+        False
+    </aura:set>
+    </aura:if>
+
+
   <aura:handler name="init" value="{!this}" action="{!c.onPageload}" />
   <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
   <aura:handler event="aura:doneRendering" action="{!c.doneRendering}"/>
@@ -21,7 +32,7 @@
 
   <center><ui:spinner aura:id="spinner"/></center>
 
-  <div>
+  <div id="parent_Div">
     <div id="permissionSetOptions">
       <div>
         <h5>Permission Set Options</h5>

@@ -115,6 +115,7 @@
 			this.getObjectPermissionsFromServer(component,event);
 			this.disablingEverything();
 		}
+		$('creating_new_permissionSet_Details').hide();
 	},
 
 	//NOTE: Permission Set Edit Server call
@@ -1658,6 +1659,7 @@
 			else {
 				var label = $('#creating_pSetName').val();
 				console.log("label: " + label);
+				console.log(jQuery.type(label));
 				var apiName = $('#creating_pSetAPIName').val();
 				console.log("apiName: " + apiName);
 				var selectedUserLicense = $('#creating_userLicenseddl').val();
@@ -1667,7 +1669,7 @@
 
 				if(selectedUserLicense != "NothingSelected") {
 					$('#successorErrorMessageLabel').html("");
-					if((label != null || label != "") && (apiName != null || apiName != "")) {
+					if(!(jQuery.isEmptyObject(label)) && !(jQuery.isEmptyObject(apiName))) {
 						console.log("inside label and apiname not null");
 						$('#successorErrorMessageLabel').html("");
 						var action = cmp.get("c.create_New_PermissionSet_and_SaveConcerned_Obj_Field_Permissions");
@@ -1677,14 +1679,18 @@
 							console.log('changedRecordedObj is undefined : ' + changedRecordedObj);
 							changedRecordedObj = undefined;
 						}
-						console.log('changedRecordedObj is NOT undefined: ');
+						else {
+							console.log('changedRecordedObj is NOT undefined: ');
+						}
 
 						var objFieldData = cmp.get("{!v.changedAllObjectDetails}");
 						if(objFieldData == undefined) {
 							console.log('objFieldData is undefined: ' + objFieldData);
 							objFieldData = undefined;
 						}
-						console.log('objFieldData is not undefined: ');
+						else {
+							console.log('objFieldData is not undefined: ');
+						}
 
 						console.log("newly_created_PSet val as String: " + JSON.stringify(newly_created_PSet));
 						console.log("objFieldData val as String: " + JSON.stringify(objFieldData));
@@ -1702,13 +1708,20 @@
 								this.contactServertoGetPermissionSet(cmp);
 								setTimeout(function() {
 									// hide things concerned to create new
-									$('#mainDivForAllSubDivs').hide('slow');
-									this.callBack_for_hiding_clearing_Data
+									// $('#mainDivForAllSubDivs').hide('slow');
+									// this.callBack_for_hiding_clearing_Data
+
 									//enabling permissionSetNamesddl
-									$('#permissionSetNamesddl').removeAttr('disabled');
+									// $('#permissionSetNamesddl').removeAttr('disabled');
+
 									//clear success message
-									$('#successorErrorMessageLabel').html("");
+									// $('#successorErrorMessageLabel').html("");
+
+									location.reload();
+									// cmp.set("v.truthy","false")
 								}, 2000, cmp);
+
+								// $A.get('e.force:refreshView').fire();
 							}
 							else if(!response.getReturnValue()) {
 								$('#successorErrorMessageLabel').css('color', 'red');
