@@ -157,12 +157,18 @@ public with sharing class PermissionSetPortalControllers {
     try{
       AllPermissionSets = [SELECT Id,label,Name,Description,NamespacePrefix,UserLicenseId,CreatedDate FROM PermissionSet];
       if(!AllPermissionSets.isEmpty()) {
+        System.debug('inside AllPermissionSets not empty');
         PermissionSetClass pSetObj;
         List<PermissionSetClass> permissionSetsLst = new List<PermissionSetClass>();
         for(PermissionSet PSetName : AllPermissionSets) {
           if(!(PSetName.label).startsWith('00e')) {
-            UserLicense ulicense = [SELECT Id, Name FROM UserLicense WHERE Id =:PSetName.UserLicenseId];
-            pSetObj = new PermissionSetClass(PSetName.label, PSetName.Name, String.valueOf(PSetName.Id), PSetName.Description, PSetName.NamespacePrefix, ulicense.Name, String.valueOf(PSetName.CreatedDate));
+            // System.debug('PSetName.UserLicenseId: ' + PSetName.UserLicenseId);
+            String user_License_Name = null;
+            if(PSetName.UserLicenseId != null) {
+              UserLicense ulicense = [SELECT Id, Name FROM UserLicense WHERE Id =:PSetName.UserLicenseId];
+              user_License_Name = ulicense.Name;
+            }
+            pSetObj = new PermissionSetClass(PSetName.label, PSetName.Name, String.valueOf(PSetName.Id), PSetName.Description, PSetName.NamespacePrefix, user_License_Name, String.valueOf(PSetName.CreatedDate));
             //pSetObj = new PermissionSetClass(PSetName.label, PSetName.Name, String.valueOf(PSetName.Id), PSetName.Description, PSetName.NamespacePrefix, null, String.valueOf(PSetName.CreatedDate));
             permissionSetsLst.add(pSetObj);
             System.debug(Logginglevel.ERROR, 'The PermissionSet Name: ' + PSetName);
@@ -824,12 +830,18 @@ public with sharing class PermissionSetPortalControllers {
       PermissionSet pSetObj = new PermissionSet();
       pSetObj.label = pSetObj_As_Param.label;
       pSetObj.name = pSetObj_As_Param.apiName;
-      pSetObj.UserLicenseId = pSetObj_As_Param.userLicenseId;
+      if(pSetObj_As_Param.userLicenseId == '') {
+        pSetObj.UserLicenseId = null;
+      }
+      else {
+        pSetObj.UserLicenseId = pSetObj_As_Param.userLicenseId;
+      }
       pSetObj.description = pSetObj_As_Param.description;
       INSERT pSetObj;
       return true;
     }
     catch(Exception e) {
+      System.debug('The following exception has occurred in create_New_PermissionSet: ' + e.getTypeName() +' : ' + e.getMessage() + ' -- ' + e.getCause());
       return false;
     }
   }

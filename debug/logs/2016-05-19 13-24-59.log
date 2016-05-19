@@ -1,0 +1,147 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+13:24:49.0 (485538)|EXECUTION_STARTED
+13:24:49.0 (525997)|CODE_UNIT_STARTED|[EXTERNAL]|01p36000005Jpvx|PermissionSetPortalControllers.getAllPermissionSets
+13:24:49.0 (788318)|VARIABLE_SCOPE_BEGIN|[3]|PermissionSetPortalControllers.AllPermissionSets|List<PermissionSet>|true|true
+13:24:49.0 (812524)|VARIABLE_SCOPE_BEGIN|[10]|PermissionSetPortalControllers.accountField|Set<String>|true|true
+13:24:49.0 (819063)|VARIABLE_SCOPE_BEGIN|[5]|PermissionSetPortalControllers.allObjectsOfOrg|List<shiva15testns.PermissionSetPortalControllers.ObjectDetailsClass>|true|true
+13:24:49.0 (824356)|VARIABLE_SCOPE_BEGIN|[9]|PermissionSetPortalControllers.contactsField|Set<String>|true|true
+13:24:49.0 (828760)|VARIABLE_SCOPE_BEGIN|[7]|PermissionSetPortalControllers.isNotSystemSObjectList|Set<String>|true|true
+13:24:49.0 (1010417)|HEAP_ALLOCATE|[72]|Bytes:3
+13:24:49.0 (1077100)|HEAP_ALLOCATE|[77]|Bytes:152
+13:24:49.0 (1098662)|HEAP_ALLOCATE|[342]|Bytes:408
+13:24:49.0 (1118672)|HEAP_ALLOCATE|[355]|Bytes:408
+13:24:49.0 (1137255)|HEAP_ALLOCATE|[467]|Bytes:48
+13:24:49.0 (1171336)|HEAP_ALLOCATE|[139]|Bytes:6
+13:24:49.0 (1202516)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:168
+13:24:49.0 (1208297)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:90
+13:24:49.0 (1212286)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:406
+13:24:49.0 (1227912)|METHOD_ENTRY|[1]|01p36000005Jpvx|PermissionSetPortalControllers.PermissionSetPortalControllers()
+13:24:49.0 (1233049)|STATEMENT_EXECUTE|[1]
+13:24:49.0 (1238333)|STATEMENT_EXECUTE|[1]
+13:24:49.0 (1270240)|HEAP_ALLOCATE|[50]|Bytes:5
+13:24:49.0 (1299090)|HEAP_ALLOCATE|[56]|Bytes:5
+13:24:49.0 (1307978)|HEAP_ALLOCATE|[64]|Bytes:7
+13:24:49.0 (1334372)|SYSTEM_MODE_ENTER|false
+13:24:49.0 (1370863)|HEAP_ALLOCATE|[9]|Bytes:5
+13:24:49.0 (1377885)|STATEMENT_EXECUTE|[9]
+13:24:49.0 (1390920)|HEAP_ALLOCATE|[9]|Bytes:4
+13:24:49.0 (1457664)|ENTERING_MANAGED_PKG|
+13:24:49.0 (1628709)|VARIABLE_ASSIGNMENT|[9]|PermissionSetPortalControllers.contactsField|{"s":1,"v":[]}|0x4d48a979
+13:24:49.0 (1634548)|STATEMENT_EXECUTE|[10]
+13:24:49.0 (1640407)|HEAP_ALLOCATE|[10]|Bytes:4
+13:24:49.0 (1655508)|ENTERING_MANAGED_PKG|
+13:24:49.0 (1692049)|VARIABLE_ASSIGNMENT|[10]|PermissionSetPortalControllers.accountField|{"s":1,"v":[]}|0x5fa7fa41
+13:24:49.0 (1696104)|STATEMENT_EXECUTE|[1080]
+13:24:49.0 (1697928)|STATEMENT_EXECUTE|[1109]
+13:24:49.0 (1699457)|STATEMENT_EXECUTE|[1137]
+13:24:49.0 (1700990)|STATEMENT_EXECUTE|[1166]
+13:24:49.0 (1702503)|STATEMENT_EXECUTE|[1182]
+13:24:49.0 (1703856)|STATEMENT_EXECUTE|[1199]
+13:24:49.0 (1705103)|STATEMENT_EXECUTE|[1210]
+13:24:49.0 (1706343)|STATEMENT_EXECUTE|[1215]
+13:24:49.0 (1713434)|SYSTEM_MODE_EXIT|false
+13:24:49.0 (1726712)|METHOD_EXIT|[1]|PermissionSetPortalControllers
+13:24:49.0 (1735066)|SYSTEM_MODE_ENTER|false
+13:24:49.0 (1750829)|HEAP_ALLOCATE|[157]|Bytes:5
+13:24:49.0 (1755003)|STATEMENT_EXECUTE|[156]
+13:24:49.0 (1756755)|STATEMENT_EXECUTE|[157]
+13:24:49.0 (1757970)|STATEMENT_EXECUTE|[157]
+13:24:49.0 (1759250)|STATEMENT_EXECUTE|[158]
+13:24:49.0 (1762659)|HEAP_ALLOCATE|[158]|Bytes:99
+13:24:49.0 (1774781)|HEAP_ALLOCATE|[158]|Bytes:4
+13:24:49.0 (3130458)|SOQL_EXECUTE_BEGIN|[158]|Aggregations:0|SELECT Id, label, Name, Description, NamespacePrefix, UserLicenseId, CreatedDate FROM PermissionSet
+13:24:49.0 (9803285)|SOQL_EXECUTE_END|[158]|Rows:42
+13:24:49.0 (9831142)|HEAP_ALLOCATE|[158]|Bytes:172
+13:24:49.0 (9937088)|HEAP_ALLOCATE|[158]|Bytes:7631
+13:24:49.0 (9995184)|HEAP_ALLOCATE|[158]|Bytes:172
+13:24:49.0 (10051604)|VARIABLE_ASSIGNMENT|[158]|PermissionSetPortalControllers.AllPermissionSets|{"s":1,"v":"List of size 42 too large to display"}|0x1e5c52e7
+13:24:49.0 (10147815)|ENTERING_MANAGED_PKG|
+13:24:49.0 (10192743)|STATEMENT_EXECUTE|[159]
+13:24:49.0 (10195565)|STATEMENT_EXECUTE|[160]
+13:24:49.0 (10201396)|HEAP_ALLOCATE|[160]|Bytes:34
+13:24:49.0 (10233403)|ENTERING_MANAGED_PKG|
+13:24:49.0 (10264681)|USER_DEBUG|[160]|DEBUG|inside AllPermissionSets not empty
+13:24:49.0 (10273074)|STATEMENT_EXECUTE|[161]
+13:24:49.0 (10443059)|VARIABLE_SCOPE_BEGIN|[161]|pSetObj|shiva15testns.PermissionSetPortalControllers.PermissionSetClass|true|false
+13:24:49.0 (10458319)|VARIABLE_ASSIGNMENT|[161]|pSetObj|null|
+13:24:49.0 (10461286)|STATEMENT_EXECUTE|[162]
+13:24:49.0 (10469536)|HEAP_ALLOCATE|[162]|Bytes:4
+13:24:49.0 (10520156)|ENTERING_MANAGED_PKG|
+13:24:49.0 (10543783)|VARIABLE_SCOPE_BEGIN|[162]|permissionSetsLst|List<shiva15testns.PermissionSetPortalControllers.PermissionSetClass>|true|false
+13:24:49.0 (10567462)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+13:24:49.0 (10582851)|VARIABLE_ASSIGNMENT|[162]|permissionSetsLst|{"s":1,"v":[]}|0x7ebf3d08
+13:24:49.0 (10599346)|ENTERING_MANAGED_PKG|
+13:24:49.0 (10823554)|HEAP_ALLOCATE|[163]|Bytes:5
+13:24:49.0 (10912855)|HEAP_ALLOCATE|[163]|Bytes:28
+13:24:49.0 (10928998)|VARIABLE_SCOPE_BEGIN|[163]|PSetName|PermissionSet|true|false
+13:24:49.0 (10985618)|VARIABLE_ASSIGNMENT|[163]|PSetName|{"s":1,"v":{"Id":"0PS36000000P2KIGA0","Label":"Connect to this Sale (29 more) ...","Name":"Connect_to_this_Sale (28 more) ...","Description":"If a user in this or (106 more) ...","NamespacePrefix":"skuid","CreatedDate":"2016-05-18T18:25:47.000Z"}}|0x7aee553a
+13:24:49.0 (10991800)|STATEMENT_EXECUTE|[163]
+13:24:49.0 (10993530)|STATEMENT_EXECUTE|[164]
+13:24:49.0 (10998047)|HEAP_ALLOCATE|[164]|Bytes:28
+13:24:49.0 (11032873)|ENTERING_MANAGED_PKG|
+13:24:49.0 (11126510)|HEAP_ALLOCATE|[164]|Bytes:345
+13:24:49.0 (11150762)|HEAP_ALLOCATE|[164]|Bytes:373
+13:24:49.0 (11163587)|ENTERING_MANAGED_PKG|
+13:24:49.0 (11171536)|USER_DEBUG|[164]|DEBUG|this is the Permission Set: PermissionSet:{Id=0PS36000000P2KIGA0, Label=Connect to this Salesforce org's data using Skuid, Name=Connect_to_this_Salesforce_orgs_data_using_Skuid, Description=If a user in this org has this Permission Set, then Skuid can be used from other Salesforce orgs to connect to this org's data, NamespacePrefix=skuid, CreatedDate=2016-05-18 18:25:47}
+13:24:49.0 (11203720)|HEAP_ALLOCATE|[165]|Bytes:3
+13:24:49.0 (11224014)|ENTERING_MANAGED_PKG|
+13:24:49.0 (11250111)|STATEMENT_EXECUTE|[165]
+13:24:49.0 (11252488)|STATEMENT_EXECUTE|[166]
+13:24:49.0 (11256716)|HEAP_ALLOCATE|[166]|Bytes:49
+13:24:49.0 (11269200)|ENTERING_MANAGED_PKG|
+13:24:49.0 (11285865)|USER_DEBUG|[166]|DEBUG|inside check for PSetName.label startsWith("00e")
+13:24:49.0 (11293227)|STATEMENT_EXECUTE|[167]
+13:24:49.0 (11297100)|HEAP_ALLOCATE|[167]|Bytes:52
+13:24:49.0 (11306338)|HEAP_ALLOCATE|[167]|Bytes:4
+13:24:49.0 (11313847)|HEAP_ALLOCATE|[167]|Bytes:7
+13:24:49.0 (12284492)|SOQL_EXECUTE_BEGIN|[167]|Aggregations:0|SELECT Id, Name FROM UserLicense WHERE Id = :tmpVar1
+13:24:49.0 (14077123)|SOQL_EXECUTE_END|[167]|Rows:0
+13:24:49.0 (14093681)|HEAP_ALLOCATE|[167]|Bytes:4
+13:24:49.0 (14101438)|HEAP_ALLOCATE|[167]|Bytes:0
+13:24:49.0 (14127887)|HEAP_ALLOCATE|[167]|Bytes:4
+13:24:49.0 (14138163)|HEAP_ALLOCATE|[167]|Bytes:37
+13:24:49.0 (14252118)|HEAP_ALLOCATE|[167]|Bytes:46
+13:24:49.0 (16301300)|VARIABLE_SCOPE_BEGIN|[185]|e|Exception|true|false
+13:24:49.0 (16423475)|VARIABLE_ASSIGNMENT|[185]|e|"common.apex.runtime.impl.ExecutionException: List has no rows for assignment to SObject"|0x954afda
+13:24:49.0 (16430074)|STATEMENT_EXECUTE|[185]
+13:24:49.0 (16432058)|STATEMENT_EXECUTE|[186]
+13:24:49.0 (16437145)|HEAP_ALLOCATE|[186]|Bytes:62
+13:24:49.0 (16492830)|HEAP_ALLOCATE|[186]|Bytes:42
+13:24:49.0 (16508710)|HEAP_ALLOCATE|[186]|Bytes:104
+13:24:49.0 (16522744)|ENTERING_MANAGED_PKG|
+13:24:49.0 (16531636)|USER_DEBUG|[186]|DEBUG|The following exception has occurred in getAllPermissionSets: List has no rows for assignment to SObject
+13:24:49.0 (16538765)|STATEMENT_EXECUTE|[187]
+13:24:49.0 (16554485)|SYSTEM_MODE_EXIT|false
+13:24:49.16 (16601364)|CUMULATIVE_LIMIT_USAGE
+13:24:49.16 (16601364)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:24:49.16 (16601364)|LIMIT_USAGE_FOR_NS|shiva15testns|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 42 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:24:49.16 (16601364)|CUMULATIVE_LIMIT_USAGE_END
+
+13:24:49.0 (16655549)|CODE_UNIT_FINISHED|PermissionSetPortalControllers.getAllPermissionSets
+13:24:49.0 (18550661)|EXECUTION_FINISHED

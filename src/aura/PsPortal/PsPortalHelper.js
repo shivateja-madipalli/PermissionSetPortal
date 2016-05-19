@@ -96,7 +96,8 @@
 	addPSetDetailsToListofPSets : function(pSetDetailsFromServer){
 		var allPSetDetails = [];
 		for(var i=0;i<pSetDetailsFromServer.length;i++) {
-			allPSetDetails.push(this.createAPermissionSetDetailsClass(pSetDetailsFromServer[i].label, pSetDetailsFromServer[i].name, pSetDetailsFromServer[i].id, pSetDetailsFromServer[i].description, pSetDetailsFromServer[i].namespacePrefix, pSetDetailsFromServer[i].userLicenseId,pSetDetailsFromServer[i].createdDate));
+			//posibility of error
+			allPSetDetails.push(this.createAPermissionSetDetailsClass(pSetDetailsFromServer[i].label, pSetDetailsFromServer[i].name, pSetDetailsFromServer[i].id, pSetDetailsFromServer[i].description, pSetDetailsFromServer[i].namespacePrefix, pSetDetailsFromServer[i].userLicenseId, pSetDetailsFromServer[i].createdDate));
 		}
 		return allPSetDetails;
 	},
@@ -1667,7 +1668,14 @@
 				var description = $('#creating_pSetDescription').val();
 				console.log("description: " + description);
 
-				if(selectedUserLicense != "NothingSelected") {
+				if(selectedUserLicense == "NothingSelected") {
+					selectedUserLicense = "";
+				}
+				else {
+
+				}
+
+				// if(selectedUserLicense != "NothingSelected") {
 					$('#successorErrorMessageLabel').html("");
 					if(!(jQuery.isEmptyObject(label)) && !(jQuery.isEmptyObject(apiName))) {
 						console.log("inside label and apiname not null");
@@ -1740,12 +1748,12 @@
 						$('#successorErrorMessageLabel').css('color', 'red');
 						$('#successorErrorMessageLabel').html("Enter Name");
 					}
-				}
-				else {
-					$('#creating_userLicenseddl').focus();
-					$('#successorErrorMessageLabel').css('color', 'red');
-					$('#successorErrorMessageLabel').html("Select a User License");
-				}
+				// }
+				// else {
+				// 	$('#creating_userLicenseddl').focus();
+				// 	$('#successorErrorMessageLabel').css('color', 'red');
+				// 	$('#successorErrorMessageLabel').html("Select a User License");
+				// }
 			}
 		}
 		catch(error) {
